@@ -3,20 +3,20 @@ import Countries from "../components/home/countries";
 import Hero from "../components/home/hero";
 import Testimonials from "../navs/testimonails";
 import Clients from "../components/home/Clients";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  const [color, setColor] = useState("white");
+  useEffect(() => {
+
+  }, [color]);
+
   return (
-    <div className="md:pb-40 overflow-hidden pb-10 w-full flex flex-col h-max">
+    <div className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 w-full flex flex-col h-max`}>
       <Hero />
-
-      <Countries />
-
+      <Countries setColor={setColor} />
       <About />
-
-<div className="md:block hidden">
-<Clients />
-</div>
-  
       <br />
       <br />
       <br />

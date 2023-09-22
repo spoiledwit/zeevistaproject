@@ -61,68 +61,6 @@ export const desktopNav = [
         title: "Australia",
         href: "/immigration/australia",
       },
-
-      // {
-      //   title: "UK",
-      //   id: "uk",
-      //   href: "/immigration/uk",
-      //   visas: [
-      //     {
-      //       title: "Expansion Worker Visa",
-      //     },
-      //     {
-      //       title: "Innovator Visa",
-      //     },
-      //   ],
-      // },
-      // {
-      //   id: "portugal",
-      //   title: "Portugal",
-      //   href: "/immigration/portugal",
-      //   visas: [
-      //     {
-      //       title: "Golden Visa",
-      //     },
-      //     {
-      //       title: "D2 Business Visa",
-      //     },
-      //     {
-      //       title: "D7 Passive Income Visa",
-      //     },
-      //     {
-      //       title: "Digital Nomad Visa",
-      //     },
-      //   ],
-      // },
-      // {
-      //   id: "canada",
-      //   title: "Canada",
-      //   href: "/immigration/canada",
-      //   visas: [
-      //     {
-      //       title: "Express Entry",
-      //     },
-      //     {
-      //       title: "Provincial Nominee Program",
-      //     },
-      //   ],
-      // },
-      // {
-      //   id: "australia",
-      //   title: "Australia",
-      //   href: "/immigration/australia",
-      //   visas: [
-      //     {
-      //       title: "Subclass 189",
-      //     },
-      //     {
-      //       title: "Subclass 190",
-      //     },
-      //     {
-      //       title: "Subclass 491",
-      //     },
-      //   ],
-      // },
     ],
   },
   {

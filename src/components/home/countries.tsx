@@ -1,13 +1,27 @@
 import { Link } from "react-router-dom";
-import { BsArrowRightShort } from "react-icons/bs";
-import Heading2 from "../heading2";
-
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 import portugal from "../../../assets/portugal.webp";
 import australia from "../../../assets/aus_im_cover.webp";
 import canada from "../../../assets/canada_im_cover.webp";
 import newzealand from "../../../assets/newzealandCover.webp";
+import React from "react";
+import Clients from "./Clients";
 
-export default function Countries() {
+interface Props {
+  setColor: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Countries = ({ setColor }: Props) => {
+  
+  const { ref, inView } = useInView({ threshold: 0.3 });
+
+  useEffect(() => {
+    if (inView) {
+      setColor("#faf5ed");
+    }
+  }, [inView, setColor]);
+
   const countries = [
     {
       name: "Caribbean Passports",
@@ -32,55 +46,43 @@ export default function Countries() {
   ];
 
   return (
-    <div className="  bg-transparent mt-10 md:mt-20 px-4 md:px-20 xl:px-40">
-      <section className=" flex flex-col md:pr-20">
-        <Heading2 className="text-yellow-600">Countries</Heading2>
-        <div className=" flex mt-4 md:mt-8 flex-col md:flex-row justify-between w-full">
-          <h3 className="text-3xl md:text-4xl font-medium text-black leading-[37px] md:leading-[45px]">
-            Embark on a journey of endless possibilities as you prepare to
-            migrate to your{" "}
-            <span className=" italic  font-serif bg-yellow-600 text-white">
-              dream destination!
-            </span>
-          </h3>
-          <p className="md:mt-0 mt-5 md:ml-20 text-gray-500 leading-snug">
-            When it comes to studying abroad, there are several countries giving
-            international student great opportunities of higher education and
-            becoming part of their international community. See which country
-            suits you best.
-          </p>
-        </div>
-      </section>
-
-<div className="w-full flex items-center justify-center">
-
-<div className=" grid grid-cols-1 md:grid-cols-4 gap-4 mr-8 mt-10 md:mt-20">
-        {countries.map((c) => (
-          <div
-            key={c.name}
-            className="w-full div-div-img flex flex-col  p-4 aspect-square bg-white shadow-2xl shadow-black/[0.05] hover:shadow-black/[0.15] transition-all "
-          >
-            <div className=" bg-gray-100 w-full aspect-square overflow-hidden rounded-lg ">
-              <img
-                src={c.image}
-                alt={c.name}
-                className=" rounded-lg w-full h-full object-cover transition-all"
-              />
-            </div>
-
-            <Link
-              to={c.href}
-              className=" mt-6 md:px-6 h-12 w-full md:w-auto rounded-full border-2 border-yellow-600 text-gray-500 hover:bg-yellow-600 hover:text-white transition duration-200 grid place-items-center"
-            >
-              <div className=" flex items-center text-xs md:text-base gap-3">
-                {c.name}
-                <BsArrowRightShort size={24} />
-              </div>
-            </Link>
+    <div ref={ref} className="mt-10 px-4 md:px-20 xl:px-40">
+        <h2
+        className="text-3xl md:text-7xl font-play  text-center mb-16 mt-5"
+        >
+        Our Services
+        </h2>
+        <div className="w-full relative flex items-center justify-center">
+          <div className="absolute">
+            <Clients />
           </div>
-        ))}
-      </div>
-</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {countries.map((c, i) => (
+                    <div 
+                        className="relative bg-cover w-[530px] h-[600px] bg-center" 
+                        style={{ backgroundImage: `url(${c.image})` }} 
+                        key={i}
+                    >
+                        <div 
+                            className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"
+                        >
+                            <div className="relative w-[490px] flex-col flex items-center justify-center h-[562px] border m-5">
+                                <h2 className="text-white text-3xl font-play">
+                                    {c.name}
+                                </h2>
+                                <Link
+                                to={c.href}
+                                className="text-white font-open font-medium text-center w-[130px] hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-20 glass">
+                                  More
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </div>
     </div>
-  );
-}
+);
+                }
+
+export default Countries;

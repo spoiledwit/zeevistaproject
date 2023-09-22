@@ -57,13 +57,13 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   );
 }
 
-export default function App() {
+export default function Clients() {
   return (
-    <section className="text-white bg-yellow-600 font-serif relative mt-12">
-    <ParallaxText baseVelocity={-3}>ZeeVista. ZeeVista.</ParallaxText>
+    <section className="text-white  font-serif relative mt-12">
+    <ParallaxText baseVelocity={-1}>ZeeVista. Consultants ZeeVista.</ParallaxText>
       <div className="w-full bg-white font-serif h-[0.1px]" />
       
-    <ParallaxText baseVelocity={3}>ZeeVista. ZeeVista.</ParallaxText>
+    <ParallaxText baseVelocity={1}>ZeeVista. Consultants ZeeVista.</ParallaxText>
       <div className="w-full bg-white h-[0.1px]" />
     </section>
   );

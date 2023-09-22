@@ -48,19 +48,19 @@ export default function About() {
       title: "Comprehensive Services",
       description:
         "We represent a wide range of foreign institutes in Pakistan, offering free consultancy for admissions, scholarships, interview preparation, and visa-related matters across Australia, Canada, UK, USA, Europe, and more.",
-      icon: <MdBiotech size={32} className="text-yellow-600" />,
+      icon: <MdBiotech size={42} className="text-yellow-600" />,
     },
   ];
 
   return (
     <div className="w-full">
       {/* why choose us */}
-      <div className=" w-full flex flex-col md:flex-row  items-center md:mt-20 relative">
+      <div className=" w-full flex flex-col md:flex-row  items-center md:mt-10 relative">
         <div className=" grid place-items-center w-full min-h-full">
           <img className="w-auto md:block hidden h-full md:h-[600px]" src={img} alt="image" />
         </div>
 
-        <div className=" py-20 w-full flex flex-col px-8 md:px-20 xl:px-40">
+        <div className=" py-20 w-full flex flex-col pr-10">
           <h2 className="text-yellow-600 text-3xl font-serif">Why Choose Us</h2>
           <h3 className=" text-gray-900 mt-6 text-3xl md:text-4xl font-medium">
             Reasons For trusting{" "}
@@ -87,7 +87,7 @@ export default function About() {
       </div>
       {/* what we do */}
       <div className=" w-full">
-        <section className=" flex flex-col items-center">
+        {/* <section className=" flex flex-col items-center">
           <h3 className=" text-yellow-600 text-3xl md:text-4xl font-serif">What We Do</h3>
           <h3 className=" text-gray-900 font-medium md:text-center md:px-0 px-8 text-2xl md:text-4xl mt-5">
             Empowering Your Journey:{" "}
@@ -95,10 +95,10 @@ export default function About() {
               Our Comprehensive Services{" "}
             </span>
           </h3>
-        </section>
+        </section> */}
 
         {/* TODO: carousel */}
-        <div className=" flex flex-col md:flex-row gap-6 mt-6 md:mt-20 px-4 md:px-[20%]">
+        {/* <div className=" flex flex-col md:flex-row gap-6 mt-6 md:mt-20 px-4 md:px-[20%]">
           {whatWeDos.map((e) => (
             <div
               key={e.title}
@@ -129,7 +129,7 @@ export default function About() {
               </Link>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
