@@ -2,7 +2,7 @@ import { useState } from "react";
 import Input from "./input";
 import Select from "./select";
 import toast from "react-hot-toast";
-// import { createAssessment } from "@/lib/assessment";
+import { createContact } from "../../lib/utils";
 
 export type SubmitProps = {
   name: string;
@@ -21,28 +21,34 @@ const AssessmentForm = () => {
   const [jobTitle, setJobTitle] = useState("");
   const [education, setEducation] = useState("");
   const [country, setCountry] = useState("");
-  const [visaType, setVisaType] = useState("");
+  const [text, setText] = useState("");
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
-
-    const props = {
+    const res = await createContact(
       name,
       email,
+      phone,
       jobTitle,
       education,
       country,
-      phone,
-      visaType,
-    };
-    // const success = await createAssessment(props);
-    const success = true;
-
-    if (success) {
-      toast.success("Application Recieved!");
-    } else {
-      toast.error("Unable to submit application.");
+      text
+    );
+    if (res.success) {
+      toast.success("Message Submitted successfully!");
+      setPhone("");
+      setCountry("");
+      setPhone("");
+      setEmail("");
+      setText("");
+      setEducation("");
+      setName("");
+      setJobTitle("");
     }
+    else {
+      toast.error("Please try again later!")
+    }
+
   };
 
   const countries = [
@@ -51,35 +57,27 @@ const AssessmentForm = () => {
     { label: "Bangladesh", value: "bangladesh" },
   ];
 
-  const visaTypes = [
-    { label: "Study Visa", value: "study-visa" },
-    { label: "Work Visa", value: "work-visa" },
-    {
-      label: "Visit Visa",
-      value: "visit-visa",
-    },
-  ];
-
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
-      <Input label="Name" onChange={(e) => setName(e.target.value)} />
-      <Input label="Phone" onChange={(e) => setPhone(e.target.value)} />
+      <Input label="Name" value={name} onChange={(e) => setName(e.target.value)} />
+      <Input label="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
       <Input
         label="Email"
+        value={email}
         type="email"
         onChange={(e) => setEmail(e.target.value)}
       />
-      <Input label="Job Title" onChange={(e) => setJobTitle(e.target.value)} />
-      <Input label="Education" onChange={(e) => setEducation(e.target.value)} />
+      <Input value={jobTitle} label="Job Title" onChange={(e) => setJobTitle(e.target.value)} />
+      <Input label="Education" value={education} onChange={(e) => setEducation(e.target.value)} />
       <Select
         defaultLabel="Select a Country"
         onChange={(e) => setCountry(e.target.value)}
         options={countries}
       />
-      <Select
-        defaultLabel="Select a Visa Type"
-        onChange={(e) => setVisaType(e.target.value)}
-        options={visaTypes}
+      <Input
+        value={text}
+        label="Please write your message"
+        onChange={(e) => setText(e.target.value)}
       />
       <button
         type="submit"

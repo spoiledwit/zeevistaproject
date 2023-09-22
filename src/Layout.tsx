@@ -5,6 +5,7 @@ import MenuPage from "./components/MenuPage";
 import Button from "./components/Button";
 import { RiMenu3Fill } from "react-icons/ri";
 import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 const Layout = () => {
 
@@ -12,6 +13,7 @@ const Layout = () => {
 
   return (
     <div className="relative w-screen bg-white ">
+      <Toaster />
       {isMenuOpen && (<MenuPage closeMenu={() => setIsMenuOpen(false)} />)}
       <div className="fixed left-32 top-5"
       style={{

@@ -1,10 +1,12 @@
 const Input = ({
   label,
   type,
+  value,
   onChange,
 }: {
   label: string;
   type?: "text" | "number" | "email";
+  value:string,
   onChange: (e: any) => void;
 }) => {
   return (
@@ -13,6 +15,7 @@ const Input = ({
         onChange={onChange}
         type={type || "text"}
         id="name"
+        value={value}
         className="block appearance-none py-2.5 px-0 w-full h-10 bg-transparent caret-primary text-gray-700 border-b-[2px] border-black/30 focus:border-primary outline-none ring-0 focus:delay-[99999] peer"
         placeholder=" "
       />
