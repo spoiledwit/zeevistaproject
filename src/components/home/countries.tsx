@@ -7,6 +7,7 @@ import canada from "../../../assets/canada_im_cover.webp";
 import newzealand from "../../../assets/newzealandCover.webp";
 import React from "react";
 import Clients from "./Clients";
+import { desktopNav } from "../../navs";
 
 interface Props {
   setColor: React.Dispatch<React.SetStateAction<string>>;
@@ -29,17 +30,17 @@ const Countries = ({ setColor }: Props) => {
       href: "/immigration/caribbean/saint-lucia",
     },
     {
-      name: "Immigration Programs",
+      name: "Immigration",
       image: canada,
       href: "/immigration/uk",
     },
     {
-      name: "Visit Visa",
+      name: "Visit Visas",
       image: newzealand,
       href: "/immigration/visit-visas/uk",
     },
     {
-      name: "Student Visa",
+      name: "Student Visas",
       image: portugal,
       href: "/immigration/student-visas/usa",
     },
@@ -67,9 +68,30 @@ const Countries = ({ setColor }: Props) => {
                             className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"
                         >
                             <div className="relative w-[490px] flex-col flex items-center justify-center h-[562px] border m-5">
-                                <h2 className="text-white text-3xl font-play">
+                                <h2 className="text-white text-4xl mb-14 font-play">
                                     {c.name}
                                 </h2>
+                                <div
+                                className="flex flex-wrap max-w-[400px] mt-5 justify-center items-center"
+                                >
+                                {desktopNav.map((d) => {
+                                  if (d.title === c.name) {
+                                    return (
+                                      <>
+                                      {d.children?.map((c, i) => (
+                                        <Link
+                                          to={c.href}
+                                          className="text-white py-2 px-4 m-1 border rounded-full  glass"
+                                          key={i}
+                                        >
+                                          {c.title}
+                                        </Link>
+                                      ))}
+                                      </>
+                                    )
+                                  }
+                                })}
+                                </div>
                                 <Link
                                 to={c.href}
                                 className="text-white font-open font-medium text-center w-[130px] hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-20 glass">

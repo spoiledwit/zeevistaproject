@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button className={`text-white bg-yellow-700 py-4 px-8 rounded-full w-fit hover:bg-yellow-600 font-open`} onClick={onClick}>
-      {Icon && <Icon className="inline-block mr-2"/>}
+      {Icon && <Icon className="inline-block text-white text-xl mr-2"/>}
       {text}
     </button>
   )

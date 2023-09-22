@@ -103,7 +103,7 @@ export const desktopNav = [
   {
     id: "student-visas",
     title: "Student Visas",
-    href: "/immigration/student-visas",
+    href: "/immigration/student-visas/usa",
     children: [
       {
         id: "uk",
