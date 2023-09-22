@@ -1,11 +1,11 @@
-import canada from "../../assets/canada_im_cover.webp";
-import australia from "../../assets/aus_im_cover.webp";
-import europe from "../../assets/europe_im_cover.webp";
-import uk from "../../assets/europe_im_cover.webp";
-import poland from "../../assets/poland.webp";
-import newzealand from "../../assets/newzealand.webp";
-import usa from "../../assets/usaCover.webp";
-import portugal from "../../assets/poland.webp";
+import canada from "../../../assets/canada_im_cover.webp";
+import australia from "../../../assets/aus_im_cover.webp";
+import europe from "../../../assets/europe_im_cover.webp";
+import uk from "../../../assets/europe_im_cover.webp";
+import poland from "../../../assets/poland.webp";
+import newzealand from "../../../assets/newzealand.webp";
+import usa from "../../../assets/usaCover.webp";
+import portugal from "../../../assets/poland.webp";
 import { useLocation } from "react-router-dom";
 import Motion from "../Motion";
 import AnimateToView from "../AnimateToView";
@@ -57,7 +57,7 @@ const Hero = ({
         <img
           src={getImageSource()}
           alt="travel country wallpaper"
-          style={{ width: "100%" }}
+          className=" w-full h-full object-cover"
         />
       </div>
       <div className="absolute w-full h-screen flex px-4 md:px-20 xl:px-40">

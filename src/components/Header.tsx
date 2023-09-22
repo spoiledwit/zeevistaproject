@@ -14,7 +14,7 @@ type LinkWithChildren = {
   id: string;
   title: string;
   to: string;
-  children: { id: string; to: string; title: string }[];
+  children: { id: string; href: string; title: string }[];
 };
 
 const MobileNav = () => {
@@ -38,7 +38,8 @@ const MobileNav = () => {
           {isOpen && (
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}              exit={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               className="w-screen absolute h-screen flex flex-col overflow-y-scroll top-0 left-0 bg-white border-b-[2px] shadow-xl border-gray-400 p-4 transition-all"
             >
@@ -137,8 +138,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768);
-  }
-  , []);
+  }, []);
 
   useEffect(() => {
     setPathname(url.substring(url.lastIndexOf("/") - 1));
@@ -148,8 +148,7 @@ const Navbar = () => {
     if (pathname === "/contact") {
       setIsVisible(true);
       return;
-    }
-    else {
+    } else {
       setIsVisible(false);
     }
     const currentScrollPos = window.scrollY;
@@ -204,7 +203,7 @@ const Navbar = () => {
         {link.children.map((c) => (
           <Link
             key={c.id}
-            to={c.to}
+            to={c.href}
             className="w-full px-6 max-w-[200px] text-xs h-10 flex items-center hover:text-primary-blue hover:bg-gray-100 transition-all"
           >
             {c.title}
@@ -241,11 +240,13 @@ const Navbar = () => {
         <nav
           className={`w-full  flex py-3 items-center justify-between border-gray-200 px-4 xl:px-24`}
         >
-          <Link to={"/"} className={`relative md:w-[100px] w-[80px] h-[80px] md:h-[100px] ${isVisible ? "mt-0" : isMobile ? "mt-10" : "mt-0"}`}>
-            <img
-              src={logo}
-              alt="Zee Vista Logo"
-            />
+          <Link
+            to={"/"}
+            className={`relative md:w-[100px] w-[80px] h-[80px] md:h-[100px] ${
+              isVisible ? "mt-0" : isMobile ? "mt-10" : "mt-0"
+            }`}
+          >
+            <img src={logo} alt="Zee Vista Logo" />
           </Link>
           <div className="w-full hidden md:block">
             <ul id="desktop-nav" className="w-full flex justify-center">
