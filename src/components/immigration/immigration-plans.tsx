@@ -1,9 +1,9 @@
 import { CountryData, PlanData } from "../../types";
 import { Link } from "react-router-dom";
-import canada from "../../assets/canada.jpeg";
-import eu from "../../assets/eu.jpeg";
-import uk from "../../assets/ukcover.jpg";
-import aus from "../../assets/aus_im_cover.webp";
+import canada from "../../../assets/canada.jpeg";
+import eu from "../../../assets/eu.jpeg";
+import uk from "../../../assets/ukcover.jpg";
+import aus from "../../../assets/aus_im_cover.webp";
 import { useLocation } from "react-router-dom";
 
 const PlanCard = ({
@@ -13,7 +13,6 @@ const PlanCard = ({
   countryName: string;
   plan: PlanData;
 }) => {
-
   const pathname = useLocation().pathname;
 
   return (
