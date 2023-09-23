@@ -1,6 +1,11 @@
 import london from "../../../assets/img7.jpg"
+import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+
+  const nav = useNavigate();
+
   return (
     <div className="flex w-full h-[100vh] justify-center items-center relative">
       <img
@@ -19,7 +24,14 @@ const Hero = () => {
             case and Our professional registered agents will assist you <br />{" "}
             with your visa application.
           </span>
-          <span></span>
+          <span>
+            <Button
+            text="Contact Us"
+            onClick={()=>{
+              nav("/contact")
+            }}
+            />
+          </span>
         </span>
       </span>
     </div>
