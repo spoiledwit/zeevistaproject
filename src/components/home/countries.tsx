@@ -6,7 +6,6 @@ import australia from "../../../assets/aus_im_cover.webp";
 import canada from "../../../assets/canada_im_cover.webp";
 import newzealand from "../../../assets/newzealandCover.webp";
 import React from "react";
-import Clients from "./Clients";
 import { desktopNav } from "../../navs";
 
 interface Props {
