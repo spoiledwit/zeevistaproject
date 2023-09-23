@@ -10,7 +10,7 @@ export type SubmitProps = {
   phone: string;
   jobTitle: string;
   education: string;
-  country: string;
+  nationality: string;
   visaType: string;
 };
 
@@ -20,7 +20,7 @@ const AssessmentForm = () => {
   const [phone, setPhone] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [education, setEducation] = useState("");
-  const [country, setCountry] = useState("");
+  const [nationality, setNationality] = useState("");
   const [text, setText] = useState("");
 
   const handleSubmit = async (e: any) => {
@@ -31,13 +31,13 @@ const AssessmentForm = () => {
       phone,
       jobTitle,
       education,
-      country,
+      nationality,
       text
     );
     if (res.success) {
       toast.success("Message Submitted successfully!");
       setPhone("");
-      setCountry("");
+      setNationality("");
       setPhone("");
       setEmail("");
       setText("");
@@ -51,12 +51,6 @@ const AssessmentForm = () => {
 
   };
 
-  const countries = [
-    { label: "Pakistan", value: "pakistan" },
-    { label: "India", value: "india" },
-    { label: "Bangladesh", value: "bangladesh" },
-  ];
-
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
       <Input label="Name" value={name} onChange={(e) => setName(e.target.value)} />
@@ -69,10 +63,10 @@ const AssessmentForm = () => {
       />
       <Input value={jobTitle} label="Job Title" onChange={(e) => setJobTitle(e.target.value)} />
       <Input label="Education" value={education} onChange={(e) => setEducation(e.target.value)} />
-      <Select
-        defaultLabel="Select a Country"
-        onChange={(e) => setCountry(e.target.value)}
-        options={countries}
+      <Input
+        label="Nationality"
+        value={nationality}
+        onChange={(e) => setNationality(e.target.value)}
       />
       <Input
         value={text}
