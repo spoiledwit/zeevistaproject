@@ -4,7 +4,11 @@ import { createContact } from "../../lib/utils";
 import Hero from "../components/Contact/Hero";
 import { toast } from "react-hot-toast";
 
-const Contact = () => {
+interface Props {
+  setProgress: (progress: number) => void;
+}
+
+const Contact = ({ setProgress }: Props) => {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -14,8 +18,14 @@ const Contact = () => {
   const [nationality, setNationality] = useState("");
   const [text, setText] = useState("");
 
+
   useEffect(() => {
     window.scrollTo(0, 0);
+    setProgress(70);
+    setTimeout(() => {
+      setProgress(100);
+    }
+    , 300);
   }, [])
 
   const sendMessage = async () => {
