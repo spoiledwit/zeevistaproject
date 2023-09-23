@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import Input from "../components/input/index";
 import { createContact } from "../../lib/utils";
 import Hero from "../components/Contact/Hero";
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
 
@@ -10,7 +11,7 @@ const Contact = () => {
   const [phone, setPhone] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [education, setEducation] = useState("");
-  const [country, setCountry] = useState("");
+  const [nationality, setNationality] = useState("");
   const [text, setText] = useState("");
 
   useEffect(() => {
@@ -24,13 +25,13 @@ const Contact = () => {
       phone,
       jobTitle,
       education,
-      country,
+      nationality,
       text
     );
     if (res.success) {
-      alert("Message Submitted successfully!");
+      toast.success("Message Submitted successfully!");
       setPhone("");
-      setCountry("");
+      setNationality("");
       setPhone("");
       setEmail("");
       setText("");
@@ -39,7 +40,7 @@ const Contact = () => {
       setJobTitle("");
     }
     else {
-      alert("Please try again later!")
+      toast.error("Please try again later!")
     }
   }
 
@@ -55,7 +56,7 @@ const Contact = () => {
             <Input label="Phone" value={phone} type="text" onChange={(e) => { setPhone(e.target.value) }} />
             <Input label="Job Title" value={jobTitle} type="text" onChange={(e) => { setJobTitle(e.target.value) }} />
             <Input label="Education" value={education} type="text" onChange={(e) => { setEducation(e.target.value) }} />
-            <Input label="Country" value={country} type="text" onChange={(e) => { setCountry(e.target.value) }} />
+            <Input label="Nationality" value={nationality} type="text" onChange={(e) => { setNationality(e.target.value) }} />
             <Input label="Ask us antything..." value={text} type="text" onChange={(e) => { setText(e.target.value) }} />
 
             <button
