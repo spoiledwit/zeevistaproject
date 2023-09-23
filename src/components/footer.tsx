@@ -71,7 +71,8 @@ export default function Footer() {
           <div className=" mt-3 text-gray-300 flex gap-3">
             <MdPhone size={20} />
             <p>
-(04) 448 7073</p>
+            (04) 449 0918
+</p>
           </div>
         </section>
       </div>
