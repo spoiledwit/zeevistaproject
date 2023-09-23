@@ -1,7 +1,7 @@
 import img from "../../../assets/bg1.jpeg";
 import { GiTechnoHeart } from "react-icons/gi";
 import { MdBiotech } from "react-icons/md";
-import { FaFile, FaPassport, FaUserClock } from "react-icons/fa6";
+import { FaPassport } from "react-icons/fa6";
 import Heading4 from "../heading4";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";

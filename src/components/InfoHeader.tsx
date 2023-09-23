@@ -1,8 +1,6 @@
 
 import logo from "../../assets/logowhite.png";
 import { AiOutlineStar } from "react-icons/ai"
-import Button from "./Button";
-import { RiMenu3Fill } from "react-icons/ri"
 import { Link } from "react-router-dom";
 
 const InfoHeader = () => {
