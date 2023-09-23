@@ -5,19 +5,19 @@ export default function Testimonials() {
     {
       name: "Ahmed Al-Saad",
       content:
-        "ZeeVista guided me through my immigration journey with unparalleled expertise. Their comprehensive understanding of visa regulations was invaluable, ensuring that I faced no hurdles. Today, I am living and working in my dream country, and it wouldn't have been possible without ZeeVista's exceptional service.",
+        "ZeeVista Advisors guided me through my immigration journey with unparalleled expertise. Their comprehensive understanding of visa regulations was invaluable, ensuring that I faced no hurdles. Today, I am living and working in my dream country, and it wouldn't have been possible without ZeeVista Advisors's exceptional service.",
       image: "https://loremflickr.com/640/480/nature",
     },
     {
       name: "Fatima Al-Khaleej",
       content:
-        "ZeeVista has been a beacon of professionalism and guidance throughout my visa application process. Their attention to detail and timely responses eliminated any stress I had. They took care of everything from start to finish, making the experience seamless. I can't recommend them enough.",
+        "ZeeVista Advisors has been a beacon of professionalism and guidance throughout my visa application process. Their attention to detail and timely responses eliminated any stress I had. They took care of everything from start to finish, making the experience seamless. I can't recommend them enough.",
       image: "https://loremflickr.com/640/480/nature",
     },
     {
       name: "Yusuf Al-Qasim",
       content:
-        "Navigating the complex web of visa applications can be daunting, but ZeeVista's team made it look effortless. Their in-depth consultations and meticulous planning helped me secure a visa to study at a prestigious university abroad. I am beyond grateful for their exceptional support and expertise.",
+        "Navigating the complex web of visa applications can be daunting, but ZeeVista Advisors' team made it look effortless. Their in-depth consultations and meticulous planning helped me secure a visa to study at a prestigious university abroad. I am beyond grateful for their exceptional support and expertise.",
       image: "https://loremflickr.com/640/480/nature",
     },
   ];

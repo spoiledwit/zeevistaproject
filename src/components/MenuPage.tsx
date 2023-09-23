@@ -35,16 +35,14 @@ const MenuPage: React.FC<Props> = ({
                 zIndex: 99999,
             }}
         >
-            <button className="absolute top-10 border p-3 transition-all duration-300 hover:scale-110 rounded-full left-32 z-10"
+            <button className="absolute top-8 md:top-10 border p-3 transition-all duration-300 hover:scale-110 rounded-full left-8 md:left-32 z-10"
                 onClick={closeMenu}
             >
                 <AiOutlineClose className="text-lg text-white" />
             </button>
             
-          
-            
             <div
-                className="w-[67%] relative bg-cover h-screen"
+                className="md:w-[67%] w-full relative bg-cover h-screen"
                 style={{
                     backgroundImage: `url(${img})`,
                 }}
@@ -57,7 +55,7 @@ const MenuPage: React.FC<Props> = ({
                 />
                   <div
             className="
-            flex flex-col absolute top-40 left-32 z-10 gap-8
+            flex flex-col absolute top-40 left-8 md:left-32 z-10 gap-8
             "
             >
             {desktopNav.map((item, index) => {
@@ -66,7 +64,7 @@ const MenuPage: React.FC<Props> = ({
 
               return (
               <Link
-                className={`text-4xl font-play text-white font-medium hover:text-opacity-100 transition duration-200 ${isActive ? " text-opacity-100" : "text-opacity-60"}`}
+                className={`md:text-4xl text-2xl font-play text-white font-medium hover:text-opacity-100 transition duration-200 ${isActive ? " text-opacity-100" : "text-opacity-60"}`}
                 to={item.href}
                 onClick={closeMenu}
                 key={index}
@@ -76,7 +74,7 @@ const MenuPage: React.FC<Props> = ({
                 )})}
             </div>
             </div> 
-            <div className="w-[33%] flex-col h-screen flex bg-white items-center">
+            <div className="md:flex hidden w-[33%] flex-col h-screen bg-white items-center">
                 <img src={logo} alt=""  className="w-[100px] h-[93px] mt-16"/>
                 <h2
                 className=" font-medium text-center mt-10 text-2xl font-play"

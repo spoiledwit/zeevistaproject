@@ -1,5 +1,4 @@
 import london from "../../../assets/img6.jpg";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -9,6 +8,7 @@ const Hero = () => {
         <img
           src={london}
           alt="london wallpaper"
+          className="object-cover w-full h-full"
         />
       </div>
 
@@ -32,9 +32,6 @@ const Hero = () => {
 
           <span
           >
-            <Link to={"/"} className=" button-86">
-              Contact Us
-            </Link>
           </span>
         </span>
       </span>

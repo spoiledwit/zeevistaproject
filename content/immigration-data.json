@@ -2,12 +2,12 @@
   "caribbean": {
     "name": "caribbean",
     "hero": {
-      "title": "Unlock Caribbean Dreams with ZeeVista Immigration Advisor",
-      "description": "Welcome to ZeeVista Immigration Advisor – Your gateway to Caribbean dreams. Let our experts simplify your Caribbean plans with seamless visa consultancy services."
+      "title": "Unlock Caribbean Dreams with ZeeVista Immigration Advisors",
+      "description": "Welcome to ZeeVista Immigration Advisors – Your gateway to Caribbean dreams. Let our experts simplify your Caribbean plans with seamless visa consultancy services."
     },
     "plans": {
-      "title": "Discover all Plans for Caribbean with ZeeVista Immigration Advisor",
-      "description": "Unlock Caribbean Dreams with ZeeVista Immigration Advisor. Let our experts simplify your Caribbean plans with seamless visa consultancy services.",
+      "title": "Discover all Plans for Caribbean with ZeeVista Immigration Advisors",
+      "description": "Unlock Caribbean Dreams with ZeeVista Immigration Advisors. Let our experts simplify your Caribbean plans with seamless visa consultancy services.",
       "values": [
         {
           "id": "saint-lucia",
@@ -59,7 +59,7 @@
   "student-visas": {
     "name": "Easy Visa For Students Across The Globe",
     "hero": {
-      "title": "Unlock Your Dreams as a Student with ZeeVista Immigration Advisor",
+      "title": "Unlock Your Dreams as a Student with ZeeVista Immigration Advisors",
       "description": "A pathway to permanent residence and citizenship for entrepreneurs wishing to start or invest in a business in Portugal."
     },
     "plans": {
@@ -114,8 +114,8 @@
   "visit-visas": {
     "name": "Visit Visa For People Across The Globe",
     "hero": {
-      "title": "Unlock Your Dreams with ZeeVista Immigration Advisor",
-      "description": "Embark on Your Global Adventures with Confidence, Guided by Our Visa Consultancy Experts. Your Journey to Explore, Connect, and Prosper Awaits at ZeeVista Immigration Advisor."
+      "title": "Unlock Your Dreams with ZeeVista Immigration Advisors",
+      "description": "Embark on Your Global Adventures with Confidence, Guided by Our Visa Consultancy Experts. Your Journey to Explore, Connect, and Prosper Awaits at ZeeVista Immigration Advisors."
     },
     "plans": {
       "values": [
@@ -265,8 +265,8 @@
     "uk":{
       "name": "UK Immigration",
       "hero": {
-        "title": "Discover the United Kingdom with ZeeVista",
-        "description": "Embark on your UK journey with the expertise of ZeeVista. With our unparalleled experience in immigration services, we make your UK dreams come true, be it in business or permanent residency."
+        "title": "Discover the United Kingdom with ZeeVista Advisers.",
+        "description": "Embark on your UK journey with the expertise of ZeeVista Advisors. With our unparalleled experience in immigration services, we make your UK dreams come true, be it in business or permanent residency."
       },
       "plans": {
         "values":[
@@ -277,7 +277,7 @@
           "href": "/immigration/uk/uk-innovator-founder",
           "description": {
             "title": "The UK Innovator Founder Visa: Your Pathway to UK Business Success",
-            "html": "<h1>Transform Your Business Aspirations into Reality in the UK</h1><p>This exclusive visa category is tailor-made for seasoned entrepreneurs looking to bring a groundbreaking business concept to the UK market.</p><h2>What Sets This Visa Apart?</h2><p>It's a golden opportunity for business enthusiasts who possess a unique, scalable, and viable business proposition.</p><h2>Perks of the Innovator Founder Visa</h2><ul><li>A mere 3-year journey to permanent UK residency</li><li>Initial investment post-visa approval</li><li>Instant eligibility for your family to join you</li><li>Complimentary healthcare and free educational benefits for your children</li><li>A UK passport provides unrestricted travel to 180 countries</li></ul><h2>Eligibility Criteria</h2><p>Financial capability between £50,000 and £150,000 for business investment, an endorsement from a recognized endorsing body, sufficient maintenance funds, and proficiency in English.</p><h2>Why Choose ZeeVista?</h2><p>As the leading immigration consultants, ZeeVista will represent you professionally throughout your application process, right from business plan formulation to securing the required endorsements and beyond.</p>",
+            "html": "<h1>Transform Your Business Aspirations into Reality in the UK</h1><p>This exclusive visa category is tailor-made for seasoned entrepreneurs looking to bring a groundbreaking business concept to the UK market.</p><h2>What Sets This Visa Apart?</h2><p>It's a golden opportunity for business enthusiasts who possess a unique, scalable, and viable business proposition.</p><h2>Perks of the Innovator Founder Visa</h2><ul><li>A mere 3-year journey to permanent UK residency</li><li>Initial investment post-visa approval</li><li>Instant eligibility for your family to join you</li><li>Complimentary healthcare and free educational benefits for your children</li><li>A UK passport provides unrestricted travel to 180 countries</li></ul><h2>Eligibility Criteria</h2><p>Financial capability between £50,000 and £150,000 for business investment, an endorsement from a recognized endorsing body, sufficient maintenance funds, and proficiency in English.</p><h2>Why Choose ZeeVista Advisors?</h2><p>As the leading immigration consultants, ZeeVista Advisors will represent you professionally throughout your application process, right from business plan formulation to securing the required endorsements and beyond.</p>",
             "slogan": "Empower Your Business Venture in the UK"
           }
         },

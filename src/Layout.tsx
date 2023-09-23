@@ -52,7 +52,7 @@ const Layout = () => {
       <Toaster />
       {isMenuOpen && <MenuPage closeMenu={() => setIsMenuOpen(false)} />}
       <motion.div
-        className="fixed left-32 top-5"
+        className="fixed left-4 md:left-32 top-5"
         style={{ zIndex: 999 }}
         animate={controls}
       >
@@ -65,7 +65,7 @@ const Layout = () => {
         />
       </motion.div>
       <motion.div
-        className="fixed right-32 top-5"
+        className="fixed md:right-32 right-4 top-5"
         style={{ zIndex: 999 }}
         animate={controls}
       >
@@ -77,7 +77,7 @@ const Layout = () => {
           }}
         />
       </motion.div>
-      <div className="top-0 left-0 absolute w-full z-50">
+      <div className="top-0 left-0 md:block hidden absolute w-full z-50">
         <Header />
       </div>
       <Outlet />

@@ -51,26 +51,23 @@ const Countries = ({ setColor }: Props) => {
   return (
     <div ref={ref} className="mt-10 px-4 md:px-20 xl:px-40">
         <h2
-        className="text-3xl md:text-7xl font-play  text-center mb-16 mt-5"
+        className="text-3xl md:text-7xl font-play  text-center md:mb-16 mb-10 md:mt-5"
         >
         Our Services
         </h2>
         <div className="w-full relative flex items-center justify-center">
-          <div className="absolute">
-            <Clients />
-          </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {countries.map((c, i) => (
                     <div 
-                        className="relative bg-cover w-[530px] h-[600px] bg-center" 
+                        className="relative bg-cover w-[300px] md:w-[530px] h-[500px] bg-center" 
                         style={{ backgroundImage: `url(${c.image})` }} 
                         key={i}
                     >
                         <div 
                             className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"
                         >
-                            <div className="relative w-[490px] flex-col flex items-center justify-center h-[562px] border m-5">
-                                <h2 className="text-white text-4xl mb-14 font-play">
+                            <div className="relative w-[490px] flex-col flex items-center justify-center h-[462px] border m-5">
+                                <h2 className="text-white text-2xl md:text-4xl mb-14 font-play">
                                     {c.name}
                                 </h2>
                                 <div
@@ -83,7 +80,7 @@ const Countries = ({ setColor }: Props) => {
                                       {d.children?.map((c, i) => (
                                         <Link
                                           to={c.href}
-                                          className="text-white py-2 px-4 m-1 border rounded-full  glass"
+                                          className="text-white py-2 md:text-md text-xs px-4 m-1 border rounded-full  glass"
                                           key={i}
                                         >
                                           {c.title}
@@ -96,7 +93,7 @@ const Countries = ({ setColor }: Props) => {
                                 </div>
                                 <Link
                                 to={c.href}
-                                className="text-white font-open font-medium text-center w-[130px] hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-20 glass">
+                                className="text-white mb-[-20px] md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-20 glass">
                                   More
                                 </Link>
                             </div>

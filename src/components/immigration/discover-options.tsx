@@ -12,7 +12,7 @@ const DiscoverImmigrationOptions = ({
   return (
     <div className=" w-full px-4 md:px-16 xl:px-32 flex flex-col md:flex-row ">
       <section className="md:w-[70%] flex flex-col gap-8 items-center md:items-start">
-        <h3 className=" md:-translate-x-10 text-center md:text-start text-yellow-600 font-play text-3xl uppercase tracking-wide">
+        <h3 className=" md:-translate-x-10 text-xl text-center md:text-start text-yellow-600 font-play md:text-3xl uppercase tracking-wide">
           {slogan}
         </h3>
         <section

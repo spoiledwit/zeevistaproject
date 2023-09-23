@@ -42,7 +42,7 @@ export default function About() {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full md:p-0 p-10">
       {/* why choose us */}
       <div
           ref={ref}  
@@ -69,14 +69,14 @@ export default function About() {
            hidden: { opacity: 0, x: 100 },
          }}
          transition={{ duration: 1 }}
-         className="py-20 w-full flex flex-col pr-10"
+         className="pt-10 w-full flex flex-col pr-10"
         >
           <h2 className="text-yellow-600 text-3xl font-serif">Why Choose Us</h2>
           <h3 className=" text-gray-900 mt-6 text-3xl md:text-4xl font-medium">
             Reasons For trusting{" "}
             <span className="italic font-serif text-white bg-yellow-600">
               {" "}
-              ZeeVista{" "}
+              ZeeVista{" "} Advisors
             </span>
           </h3>
 

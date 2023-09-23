@@ -7,8 +7,8 @@ import footer2 from "../../assets/footer2.jpg";
 
 export default function Footer() {
   return (
-    <footer className=" w-full flex items-center flex-col  bg-black">
-      <span className="bg-yellow-600 w-[80vw] flex items-center z-10 justify-between h-40 mt-[-65px] bg-cover bg-center rounded-3xl overflow-hidden">
+    <footer className=" w-full flex items-center flex-col border-t  bg-black">
+      <span className="bg-yellow-600 md:flex hidden w-[80vw] items-center z-10 justify-between h-40 mt-[-65px] bg-cover bg-center rounded-3xl overflow-hidden">
         <img src={footer1} className="h-full w-[270px] object-cover" alt="" />
         <span
           className="flex flex-col items-center"
@@ -35,7 +35,7 @@ export default function Footer() {
         <section className=" flex flex-col w-full md:w-1/2">
           <img src={logo} alt="logo" className="mt-[-10px]" width={80} height={40} />
           <p className="text-gray-300 mt-5">
-            <strong className="text-yellow-600">ZeeVista</strong> specializes in hassle-free secondary passports and citizenships. Customer satisfaction drives our growth and success. We prioritize client trust and aim to set new service standards in the document clearing sector.
+            <strong className="text-yellow-600">ZeeVista Advisors</strong> specializes in hassle-free secondary passports and citizenships. Customer satisfaction drives our growth and success. We prioritize client trust and aim to set new service standards in the document clearing sector.
           </p>
         </section>
         <section className=" flex flex-col w-full md:w-1/4">
@@ -70,13 +70,14 @@ export default function Footer() {
           </div>
           <div className=" mt-3 text-gray-300 flex gap-3">
             <MdPhone size={20} />
-            <p>+(11) 333 4567890</p>
+            <p>
+(04) 448 7073</p>
           </div>
         </section>
       </div>
 
       <p className="h-20 border-t border-gray-300 text-gray-300 md:text-center md:px-0 px-8 md:text-lg text-sm pt-6">
-        Copyright © 2023 Zee Vista Consultant. All rights reserved.
+        Copyright © 2023 ZeeVista Advisors. All rights reserved.
       </p>
     </footer>
   );

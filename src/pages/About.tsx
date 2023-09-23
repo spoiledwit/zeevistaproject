@@ -13,9 +13,9 @@ export default function AboutUs() {
   return (
     <div className="flex flex-col">
       <Hero />
-      <StartProcess />
+      {/* <StartProcess /> */}
       <OurMission />
-      <StepsToApply />
+      {/* <StepsToApply /> */}
     </div>
   );
 }

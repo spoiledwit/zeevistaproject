@@ -1,5 +1,6 @@
 import img1 from "../../../assets/img6.jpg";
 import img2 from "../../../assets/img7.jpg";
+import logo from "../../../assets/logowhite.png";
 
 import Carousel from "../../components/carousel/simple";
 
@@ -36,21 +37,22 @@ export default function Hero() {
           backgroundImage: `url(${item.image})`,
         }}
         >
+
           <div
           className="absolute top-0 left-0 w-full h-full bg-black opacity-50"
           />
+          <img src={logo} className="w-32 mb-[-30px] md:hidden block z-10" />
           <div className="flex mt-20 flex-col items-center justify-center z-10">
-          <h2 className="font-play text-white text-3xl ">
+          <h2 className="font-play text-white text-lg md:text-3xl ">
             {item.subtitle}
           </h2>
-            <h1 className="text-white font-play text-[110px]">
+            <h1 className="text-white font-play text-[50px] md:text-[110px]">
             {item.title}
             </h1> 
             <p
-            className="text-white mt-4 font-open text-xl">
+            className="text-white mt-2 md:mt-4 font-open md:text-xl">
             {item.description}
             </p>
-        
           </div>
           </div>
       ))}
