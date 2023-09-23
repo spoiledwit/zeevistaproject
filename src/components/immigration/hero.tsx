@@ -9,7 +9,8 @@ import portugal from "../../../assets/poland.webp";
 import { useLocation } from "react-router-dom";
 import Motion from "../Motion";
 import AnimateToView from "../AnimateToView";
-import { Link } from "react-router-dom";
+import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 const textVariants = {
   hidden: { opacity: 0, y: -100 },
@@ -24,6 +25,8 @@ const Hero = ({
   description: string;
   imageURL: string;
 }) => {
+
+  const navigate = useNavigate();
   let { pathname } = useLocation();
   const planname = pathname.substring(pathname.lastIndexOf("/") + 1);
 
@@ -51,17 +54,15 @@ const Hero = ({
   }
 
   return (
-    <div className="flex w-full h-[calc(100vh)] justify-center items-center">
-      <div className="absolute w-full h-[100vh] bg-black opacity-30"></div>
-      <div className=" w-full h-screen object-cover relative bg-green-300">
-        <img
-          src={getImageSource()}
-          alt="travel country wallpaper"
-          className=" w-full h-full object-cover"
-        />
-      </div>
-      <div className="absolute w-full h-screen flex px-4 md:px-20 xl:px-40">
-        <div className="flex flex-col mt-20 justify-center items-start">
+    <div className="flex w-full h-[calc(100vh)] justify-center items-center relative">
+    <img
+      src={getImageSource()}
+      alt="travel country wallpaper"
+      className="absolute w-full h-full object-cover z-0"
+    />
+    <div className="absolute w-full h-full bg-black opacity-50 z-10"></div>
+  <div className="absolute w-full h-screen flex px-4 md:px-20 xl:px-40">
+        <div className="flex z-10 flex-col mt-20 justify-center items-start">
           <AnimateToView>
             <Motion
               className="text-white capitalize text-3xl md:text-5xl mb-4 leading-snug"
@@ -85,9 +86,12 @@ const Hero = ({
               {description}
             </Motion>
           </AnimateToView>
-          <Link to={"/contact"} className=" button-86">
-            Book Free Consultation
-          </Link>
+          <Button
+            onClick={() => {
+              navigate("/contact");
+            }}
+            text="Get Free Assessment"
+            />
         </div>
       </div>
     </div>
