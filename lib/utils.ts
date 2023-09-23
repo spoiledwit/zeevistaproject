@@ -6,14 +6,14 @@ export const totTitleCase = (s: string): string =>
     .replace(/[-_]+(.)/g, (_, c) => " " + c.toUpperCase());
 
 
-export const createContact = async (name: string, email:string, phone:string, jobTitle:string, education:string, country:string, text:string) => {
+export const createContact = async (name: string, email:string, phone:string, jobTitle:string, education:string, nationality:string, text:string) => {
   const res = await axios.post("http://localhost:4000/contact", {
     name,
     email,
     phone,
     jobTitle,
     education,
-    country,
+    nationality,
     text
   });
   return res.data;

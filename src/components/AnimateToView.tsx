@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 export default function AnimateToView(props: any) {
   const { ref, inView } = useInView({
-    threshold: 0.7,
+    threshold: 0.4,
     triggerOnce: true,
   });
 
@@ -18,9 +18,3 @@ export default function AnimateToView(props: any) {
     </motion.div>
   );
 }
-
-// variants={{
-//   visible: { opacity: 1, y: 0 },
-//   hidden: { opacity: 0, y: 48 },
-// }}
-// transition={{ duration: 1 }}

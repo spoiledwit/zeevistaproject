@@ -23,6 +23,8 @@ const Countries = ({ setColor }: Props) => {
     }
   }, [inView, setColor]);
 
+  
+
   const countries = [
     {
       name: "Caribbean Passports",

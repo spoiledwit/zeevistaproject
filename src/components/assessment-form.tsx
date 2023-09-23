@@ -83,7 +83,7 @@ const AssessmentForm = () => {
         type="submit"
         className="mt-4 rounded-lg h-12 px-6 text-gray-500 hover:text-primary text-lg bg-transparent border-2 border-gray-500 hover:border-primary transition-all"
       >
-        Submit
+        Submit the form
       </button>
     </form>
   );

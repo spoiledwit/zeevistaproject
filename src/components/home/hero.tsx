@@ -16,14 +16,13 @@ const data = [
   {
     id: 2,
     image: img2,
-    title: "Investor's Dream",
-    subtitle: "Invest & Migrate Easily",
-    description: "High ROI, fast-track migration.",
-    action: "Discover",
-    href: "/investor-dream",
-  },
-];
-
+    title: "Tourist Guide",
+    subtitle: "Easy Visit Visa Process",
+    description: "Simple application, quick approval.",
+    action: "Learn More",
+    href: "/visit-visa-info",
+  }
+];  
 
 export default function Hero() {
 

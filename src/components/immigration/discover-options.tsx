@@ -8,10 +8,11 @@ const DiscoverImmigrationOptions = ({
   title: string;
   html: string;
 }) => {
+
   return (
-    <div className="w-full px-4 md:px-16 lg:px-48 xl:px-60 flex flex-col md:flex-row gap-12 md:gap-16">
-      <section className="md:w-7/12 flex flex-col gap-8 items-center md:items-start">
-        <h3 className=" md:-translate-x-10 text-center md:text-start text-lg text-primary-gold uppercase tracking-wide">
+    <div className=" w-full px-4 md:px-16 xl:px-32 flex flex-col md:flex-row ">
+      <section className="md:w-[70%] flex flex-col gap-8 items-center md:items-start">
+        <h3 className=" md:-translate-x-10 text-center md:text-start text-yellow-600 font-play text-3xl uppercase tracking-wide">
           {slogan}
         </h3>
         <section
@@ -21,8 +22,9 @@ const DiscoverImmigrationOptions = ({
           }}
         />
       </section>
-      <div className="md:w-5/12 h-min shadow-2xl shadow-black/10 bg-primary-blue rounded-xl px-4 py-8">
-        <h2 className="text-yellow-600 font-semibold font-serif text-xl md:text-2xl text-center tracking-wider">
+      
+      <div className="md:w-[35%] h-min shadow-lg rounded-xl px-4 py-8  border">
+        <h2 className="text-yellow-600 mb-5 text-center font-semibold font-play text-xl md:text-2xl tracking-wider">
           Apply For Free Assessment
         </h2>
         <AssessmentForm />

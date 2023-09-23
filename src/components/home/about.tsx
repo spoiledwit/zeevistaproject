@@ -1,35 +1,12 @@
-import { Link } from "react-router-dom";
 import img from "../../../assets/bg1.jpeg";
-import { BsArrowRightShort } from "react-icons/bs";
 import { GiTechnoHeart } from "react-icons/gi";
 import { MdBiotech } from "react-icons/md";
 import { FaFile, FaPassport, FaUserClock } from "react-icons/fa6";
 import Heading4 from "../heading4";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function About() {
-  const whatWeDos = [
-    {
-      title: "Visa Consultation",
-      description:
-        "Navigate the complex world of visas with ease. Our experts are here to guide you through the visa application process, ensuring you have the best chances for success.",
-      icon: <FaPassport size={64} />,
-      href: "/visa-consultation",
-    },
-    {
-      title: "Customized Plans",
-      description:
-        "Tailored solutions for your unique journey. We create personalized immigration plans that suit your specific needs and aspirations.",
-      icon: <FaUserClock size={64} />,
-      href: "/customized-plans",
-    },
-    {
-      title: "Document Assistance",
-      description:
-        "Say goodbye to paperwork hassles. We provide thorough assistance in gathering and organizing all the necessary documents for your visa application.",
-      icon: <FaFile size={64} />,
-      href: "/document-assistance",
-    },
-  ];
 
   const reasons = [
     {
@@ -52,15 +29,48 @@ export default function About() {
     },
   ];
 
+  const controlsImage = useAnimation();
+  const controlsText = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.3,
+  });
+
+  if (inView) {
+    controlsImage.start("visible");
+    controlsText.start("visible");
+  }
+
   return (
     <div className="w-full">
       {/* why choose us */}
-      <div className=" w-full flex flex-col md:flex-row  items-center md:mt-10 relative">
-        <div className=" grid place-items-center w-full min-h-full">
+      <div
+          ref={ref}  
+        className="w-full flex flex-col md:flex-row items-center md:mt-10 relative"
+      > 
+     <motion.div
+         animate={controlsImage}
+         initial="hidden"
+         variants={{
+           visible: { opacity: 1, x: 0 },
+           hidden: { opacity: 0, x: -100 },
+         }}
+         transition={{ duration: 1 }}
+         className="grid place-items-center w-full min-h-full"
+        >
           <img className="w-auto md:block hidden h-full md:h-[600px]" src={img} alt="image" />
-        </div>
+        </motion.div>
 
-        <div className=" py-20 w-full flex flex-col pr-10">
+        <motion.div
+         animate={controlsText}
+         initial="hidden"
+         variants={{
+           visible: { opacity: 1, x: 0 },
+           hidden: { opacity: 0, x: 100 },
+         }}
+         transition={{ duration: 1 }}
+         className="py-20 w-full flex flex-col pr-10"
+        >
           <h2 className="text-yellow-600 text-3xl font-serif">Why Choose Us</h2>
           <h3 className=" text-gray-900 mt-6 text-3xl md:text-4xl font-medium">
             Reasons For trusting{" "}
@@ -83,7 +93,7 @@ export default function About() {
               </div>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* what we do */}
       <div className=" w-full">

@@ -1,4 +1,4 @@
-import london from "../../../assets/aus_im_cover.webp";
+import london from "../../../assets/img6.jpg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

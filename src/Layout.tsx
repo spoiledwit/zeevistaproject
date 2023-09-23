@@ -9,7 +9,8 @@ import { RiMenu3Fill } from 'react-icons/ri';
 import { Toaster } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import {MdContactSupport} from 'react-icons/md';
+import { MdContactSupport } from 'react-icons/md';
+import {RiWhatsappFill} from "react-icons/ri";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -81,6 +82,13 @@ const Layout = () => {
       </div>
       <Outlet />
       <Footer />
+      <a
+        href="https://wa.me/919999999999"
+        target="_blank"
+        className="fixed right-5 bottom-5 z-50"
+      >
+        <RiWhatsappFill className="text-5xl animate-bounce text-green-500 bg-white rounded-lg" />
+      </a>
     </div>
   );
 };

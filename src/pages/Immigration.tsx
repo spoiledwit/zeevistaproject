@@ -4,28 +4,15 @@ import ImmigrationPlans from "../components/immigration/immigration-plans";
 import { CountryData, PlanData } from "../types";
 import immigrationData from "../../content/immigration-data.json";
 import { useParams } from "react-router-dom";
-
-// export async function getStaticPaths({ params }: Props) {
-//   const [country, plan] = params.plan;
-//   let title: string;
-//   if (plan) {
-//     title = `${totTitleCase(plan)} | ${totTitleCase(
-//       country
-//     )} | ZeeVista Immigration Advisor`;
-//   } else {
-//     title = `${totTitleCase(country)} | ZeeVista Immigration Advisor`;
-//   }
-
-//   return {
-//     title,
-//     description: `${plan} plan for ${country} by ZeeVista Immigration Advisor`,
-//   };
-// }
+import { useEffect } from "react";
 
 const ImmigrationPage = () => {
-  // const [country, plan] = params.plan;
 
   const { country, plan } = useParams();
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [country, plan])
 
   //   @ts-ignore
   const countryData = immigrationData[country] as CountryData;

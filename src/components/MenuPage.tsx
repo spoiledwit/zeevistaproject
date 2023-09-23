@@ -1,14 +1,14 @@
 import React from "react";
-import img from "../../assets/img2.jpg";
+import img from "../../assets/img7.jpg";
 import { AiOutlineClose } from "react-icons/ai";
-import logo from "../../assets/logowhite.png";
+import logo from "../../assets/logo.png";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { MdArrowRightAlt } from "react-icons/md";
 import { desktopNav } from "../navs";
 import { useLocation } from "react-router-dom";
-import {motion} from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface Props {
     closeMenu: () => void;
@@ -20,6 +20,7 @@ const MenuPage: React.FC<Props> = ({
 
     const location = useLocation();
     const path = location.pathname;
+    
 
     return (
         <AnimatePresence
@@ -75,19 +76,19 @@ const MenuPage: React.FC<Props> = ({
                 )})}
             </div>
             </div> 
-            <div className="w-[33%] flex-col h-screen flex bg-yellow-600 items-center">
+            <div className="w-[33%] flex-col h-screen flex bg-white items-center">
                 <img src={logo} alt=""  className="w-[100px] h-[93px] mt-16"/>
                 <h2
-                className="text-white font-medium text-center mt-10 text-2xl font-play"
+                className=" font-medium text-center mt-10 text-2xl font-play"
                 >
                     ZeeVista Immigration <br /> Advisors
                 </h2>
 
-                <p className="text-white text-center font-open mt-4">
+                <p className=" text-center font-open mt-4">
                     H3 Business Bay, <br /> Dubai, UAE
                 </p>
                 
-                <span className="text-white flex gap-1 items-center flex-col mt-6">
+                <span className=" flex gap-1 items-center flex-col mt-6">
                 <Link
                 className="text-xl font-open tracking-wider"
                     to={"/about"}
@@ -101,8 +102,9 @@ const MenuPage: React.FC<Props> = ({
                     info@zeevista.com
                 </Link>
                 <Link
-                    className="text-xl font-open tracking-wider"
+                    className="text-xl hover:text-yellow-600 font-open tracking-wider"
                     to={"/contact"}
+                    onClick={closeMenu}
                 >
                 contact    
                 <MdArrowRightAlt className="inline-block text-xl" />
@@ -110,7 +112,7 @@ const MenuPage: React.FC<Props> = ({
                 </span>
                 
             <span 
-            className="flex text-white gap-10 text-2xl mb-5  mt-auto"
+            className="flex text-yellow-600 gap-10 text-2xl mb-5  mt-auto"
             >
                 <a href="/">
                     <FaFacebook className="opacity-80 hover:opacity-100"/>

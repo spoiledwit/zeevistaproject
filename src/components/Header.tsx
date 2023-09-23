@@ -3,7 +3,6 @@ import { desktopNav } from "../navs";
 import InfoHeader from "./InfoHeader";
 import {FiChevronDown} from "react-icons/fi";
 
-
 const MegaMenu = () => {
   const [activeMenu, setActiveMenu] = useState(null);
 
