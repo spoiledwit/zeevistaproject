@@ -56,7 +56,9 @@ const Contact = () => {
           </div>
           <AssessmentForm />
         </motion.div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.509399328769!2d55.25959967554834!3d25.18603827771828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69bc6751efa5%3A0x15345538a83e31ca!2sOntario%20Tower%20Business%20Bay!5e0!3m2!1sen!2s!4v1689674369219!5m2!1sen!2s" className="md:w-[530px] mt-6 md:mt-0 rounded-xl border hover:border-black" height="530" loading="lazy"></iframe>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9188.621571131165!2d55.262344946395025!3d25.18092631951039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69cdf5cf9a7f%3A0xaa17e79f93b66aef!2sAl%20A&#39;amal%20St%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1695645937665!5m2!1sen!2s"
+        className="md:w-[530px] mt-6 md:mt-0 rounded-xl border hover:border-black" height="530" loading="lazy"></iframe>
       </div>
     </motion.div>
   );
