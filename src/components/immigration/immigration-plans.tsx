@@ -2,6 +2,8 @@ import { CountryData, PlanData } from "../../types";
 import { Link } from "react-router-dom";
 import passport from "../../../assets/passport2.png";
 import Uk from "../../../assets/ukcover.jpg";
+import portugal from "../../../assets/portugal.webp";
+import canada from "../../../assets/canada.jpg";
 
 import { useLocation } from "react-router-dom";
 
@@ -30,9 +32,10 @@ const PlanCard = ({
               ? Uk 
               : countryName.toLocaleLowerCase() == "caribbean"
               ? passport
-              : countryName == "uk"
-              ? passport
-              : passport
+              : countryName.toLocaleLowerCase() == "portugal immigration"
+              ? portugal
+              : countryName.toLocaleLowerCase() == "canada immigration"
+              ? canada : canada
           }
           alt="Canada"
           className="absolute inset-0 w-full h-full object-cover"

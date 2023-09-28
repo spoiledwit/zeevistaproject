@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { motion, useAnimation } from 'framer-motion';
+import {  useAnimation } from 'framer-motion';
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/footer';
