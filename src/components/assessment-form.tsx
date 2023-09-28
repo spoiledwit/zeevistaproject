@@ -2,6 +2,7 @@ import { useState } from "react";
 import Input from "./input";
 import toast from "react-hot-toast";
 import { createContact } from "../../lib/utils";
+import Button from "./Button";
 
 export type SubmitProps = {
   name: string;
@@ -72,12 +73,10 @@ const AssessmentForm = () => {
         label="Please write your message"
         onChange={(e) => setText(e.target.value)}
       />
-      <button
-        type="submit"
-        className="mt-4 rounded-lg h-12 px-6 text-gray-500 hover:text-primary text-lg bg-transparent border-2 border-gray-500 hover:border-primary transition-all"
-      >
-        Submit the form
-      </button>
+     <Button
+     text="Submit"
+     onClick={()=>{handleSubmit}}
+     />
     </form>
   );
 };
