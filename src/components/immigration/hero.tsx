@@ -1,8 +1,7 @@
 import canada from "../../../assets/canada_im_cover.webp";
 import australia from "../../../assets/aus_im_cover.webp";
-import europe from "../../../assets/img7.jpg";
+import europe from "../../../assets/bg.jpg";
 import uk from "../../../assets/london.webp";
-import poland from "../../../assets/poland.webp";
 import newzealand from "../../../assets/newzealand.webp";
 import usa from "../../../assets/usaCover.webp";
 import portugal from "../../../assets/poland.webp";
@@ -11,7 +10,6 @@ import Motion from "../Motion";
 import AnimateToView from "../AnimateToView";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 const textVariants = {
   hidden: { opacity: 0, y: -100 },
@@ -51,7 +49,10 @@ const Hero = ({
       else if (planname.includes("new-zealand")) {
         return newzealand;
       }
-      return usa;
+      else if (planname.includes("usa")) {
+        return usa;
+      }
+      return europe;
   }
 
   return (
