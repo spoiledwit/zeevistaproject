@@ -52,11 +52,10 @@ const Layout = () => {
     <div className="relative w-screen bg-white">
       <Toaster />
       {isMenuOpen && <MenuPage closeMenu={() => setIsMenuOpen(false)} />}
-      <motion.div
+      <div
         className="fixed left-4 md:left-32 top-10"
         style={{ zIndex: 999 }}
-        animate={controls}
-      >
+       >
         <Button
           text="Menu"
           Icon={RiMenu3Fill}
@@ -64,11 +63,10 @@ const Layout = () => {
             setIsMenuOpen(true);
           }}
         />
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className="fixed md:right-32 right-4 top-10"
         style={{ zIndex: 999 }}
-        animate={controls}
       >
         <Button
           text="Contact"
@@ -77,7 +75,7 @@ const Layout = () => {
             navigate('/contact');
           }}
         />
-      </motion.div>
+      </div>
       <div className="top-0 left-0 md:block hidden absolute w-full z-50">
         <SocialHeader />
         <Header />

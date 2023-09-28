@@ -1,9 +1,8 @@
 import { CountryData, PlanData } from "../../types";
 import { Link } from "react-router-dom";
-import canada from "../../../assets/canada.jpeg";
-import eu from "../../../assets/eu.jpeg";
-import uk from "../../../assets/ukcover.jpg";
-import aus from "../../../assets/aus_im_cover.webp";
+import passport from "../../../assets/passport2.png";
+import Uk from "../../../assets/ukcover.jpg";
+
 import { useLocation } from "react-router-dom";
 
 const PlanCard = ({
@@ -14,7 +13,7 @@ const PlanCard = ({
   plan: PlanData;
 }) => {
   const pathname = useLocation().pathname;
-
+  console.log(countryName)
   return (
     <Link
       to={plan.href}
@@ -27,13 +26,13 @@ const PlanCard = ({
       <div className="w-full object-cover relative h-64 bg-primary-blue rounded-lg overflow-hidden">
         <img
           src={
-            countryName == "canada"
-              ? canada
-              : countryName == "usa"
-              ? eu
+            countryName.toLocaleLowerCase() == "uk immigration"
+              ? Uk 
+              : countryName.toLocaleLowerCase() == "caribbean"
+              ? passport
               : countryName == "uk"
-              ? uk
-              : aus
+              ? passport
+              : passport
           }
           alt="Canada"
           className="absolute inset-0 w-full h-full object-cover"
