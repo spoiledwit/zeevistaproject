@@ -46,12 +46,12 @@ export default function About() {
     <div className="w-full md:p-0 flex flex-col p-10">
       {/* why choose us */}
       <span className="mx-auto">
-      <h2 className="text-yellow-600 text-3xl mt-10 font-serif">Why Choose Us</h2>
+      <h2 className="text-yellow-600 text-3xl mt-4 md:mt-10 font-serif">Why Choose Us</h2>
       <Bar w={"w-[120px]"} />
       </span>
       <div
           ref={ref}  
-        className="w-full flex flex-col  md:flex-row md:mt-10 relative"
+        className="w-full mt-8 flex flex-col  md:flex-row md:mt-10 relative"
       > 
       
         <motion.div
@@ -75,16 +75,16 @@ export default function About() {
            hidden: { opacity: 0, x: 100 },
          }}
          transition={{ duration: 1 }}
-         className="w-full flex flex-col pr-10"
+         className="w-full flex flex-col md:pr-10"
         >
-          <div className="flex flex-col gap-6 mr-32">
+          <div className="flex flex-col md:w-auto w-full gap-6  mr-32">
             {reasons.map((r) => (
               <div key={r.title} className=" flex font-play flex-col gap-3">
                 <div className=" flex items-center gap-6">
                   <div className=" w-12 h-12 md:w-8 md:h-8">{r.icon}</div>
                   <Heading4 className=" text-gray-900">{r.title}</Heading4>
                 </div>
-                <p className=" text-gray-700 leading-loose tracking-tight">
+                <p className=" text-gray-700 w-full leading-loose tracking-tight">
                   {r.description}
                 </p>
               </div>
