@@ -20,7 +20,7 @@ export default function Home({ setProgress }: Props) {
   }, [color]);
 
   useEffect(()=>{
-    window.scrollTo(0,0);
+    // window.scrollTo(0,0);
     // adding a progress bar with delay of 0.5s
     setProgress(70);
     setTimeout(() => {
@@ -36,10 +36,9 @@ export default function Home({ setProgress }: Props) {
       <Countries setColor={setColor} />
       <About />
       <Testimonials />
-      <br />
-      <br />
-      <br />
-      <br />
+      <br className="md:block hidden" />
+      <br className="md:block hidden" />
+
       
       <Accordion />
       <Contact />
