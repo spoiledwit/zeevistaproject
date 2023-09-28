@@ -35,9 +35,6 @@ export default function Home({ setProgress }: Props) {
       <Introduction />
       <Countries setColor={setColor} />
       <About />
-      <br />
-      <br />
-      <br />
       <Testimonials />
       <br />
       <br />
