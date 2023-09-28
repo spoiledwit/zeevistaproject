@@ -11,6 +11,7 @@ import Motion from "../Motion";
 import AnimateToView from "../AnimateToView";
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const textVariants = {
   hidden: { opacity: 0, y: -100 },
@@ -26,11 +27,19 @@ const Hero = ({
   imageURL: string;
 }) => {
 
+  const [derivedTitle, setDerivedTitle] = useState(title);
+
+
   const navigate = useNavigate();
   let { pathname } = useLocation();
   const planname = pathname.substring(pathname.lastIndexOf("/") + 1);
 
-  
+  useEffect(()=>{
+    // adding plan name to title
+    if(planname !== undefined && planname !== null && planname !== ""){
+      setDerivedTitle(title + " " + planname);
+    }
+  }, [planname])
 
   function getImageSource() {
     switch (planname) {
@@ -73,7 +82,7 @@ const Hero = ({
               exit="hidden"
               transition={{ type: "spring", stiffness: 120 }}
             >
-              {title}
+              {derivedTitle}
             </Motion>
           </AnimateToView>
           <AnimateToView>
