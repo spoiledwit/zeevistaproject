@@ -46,7 +46,7 @@ export default function Hero() {
           <h2 className="font-play text-white text-lg md:text-3xl ">
             {item.subtitle}
           </h2>
-            <h1 className="text-white font-play text-[50px] md:text-[110px]">
+            <h1 className="text-white font-play text-[30px] md:text-[110px]">
             {item.title}
             </h1> 
             <p
