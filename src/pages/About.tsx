@@ -1,7 +1,6 @@
 import Hero from "../components/AboutUs/Hero";
 import OurMission from "../components/AboutUs/OurMission";
 import { useEffect } from "react";
-import img from "../../assets/bg.jpg"
 
 interface Props {
   setProgress: (progress: number) => void;
