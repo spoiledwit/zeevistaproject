@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/img7.jpg";
+import img from "../../assets/globe.jpg";
 import { AiOutlineClose } from "react-icons/ai";
 import logo from "../../assets/logo.png";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa6";
