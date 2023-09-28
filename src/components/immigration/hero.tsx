@@ -1,7 +1,7 @@
 import canada from "../../../assets/canada_im_cover.webp";
 import australia from "../../../assets/aus_im_cover.webp";
 import europe from "../../../assets/img7.jpg";
-import uk from "../../../assets/img6.jpg";
+import uk from "../../../assets/london.webp";
 import poland from "../../../assets/poland.webp";
 import newzealand from "../../../assets/newzealand.webp";
 import usa from "../../../assets/usaCover.webp";
@@ -27,41 +27,31 @@ const Hero = ({
   imageURL: string;
 }) => {
 
-  const [derivedTitle, setDerivedTitle] = useState(title);
-
-
   const navigate = useNavigate();
   let { pathname } = useLocation();
   const planname = pathname.substring(pathname.lastIndexOf("/") + 1);
-
-  useEffect(()=>{
-    // adding plan name to title
-    if(planname !== undefined && planname !== null && planname !== ""){
-      setDerivedTitle(title + " " + planname);
-    }
-  }, [planname])
+  console.log(planname);
 
   function getImageSource() {
-    switch (planname) {
-      case "canada":
-        return canada;
-      case "australia":
-        return australia;
-      case "uk":
-        return uk;
-      case "europe":
-        return europe;
-      case "poland":
-        return poland;
-      case "usa":
-        return usa;
-      case "new-zealand":
-        return newzealand;
-      case "portugal":
+      if (planname.includes("uk")) {
+          return uk;
+      }
+      else if (planname.includes("portugal")) {
         return portugal;
-      default:
-        return europe;
-    }
+      }
+      else if (planname.includes("canada")) {
+        return canada;
+      }
+      else if (planname.includes("australia")) {
+        return australia;
+      }
+      else if (planname.includes("portugal")) {
+        return portugal;
+      }
+      else if (planname.includes("new-zealand")) {
+        return newzealand;
+      }
+      return usa;
   }
 
   return (
@@ -82,7 +72,8 @@ const Hero = ({
               exit="hidden"
               transition={{ type: "spring", stiffness: 120 }}
             >
-              {derivedTitle}
+              {title}
+              <br />
             </Motion>
           </AnimateToView>
           <AnimateToView>
