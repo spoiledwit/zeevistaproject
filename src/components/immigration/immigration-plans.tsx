@@ -1,12 +1,5 @@
 import { CountryData, PlanData } from "../../types";
 import { Link } from "react-router-dom";
-import passport from "../../../assets/passport2.png";
-import Uk from "../../../assets/ukcover.jpg";
-import portugal from "../../../assets/portugal.webp";
-import canada from "../../../assets/canada.jpg";
-import sydney from "../../../assets/sydneyCover.webp"
-import usa from "../../../assets/usaCover.webp"
-import newzealand from "../../../assets/newzealandCover.webp"
 
 import { useLocation } from "react-router-dom";
 
@@ -18,34 +11,16 @@ const PlanCard = ({
   plan: PlanData;
 }) => {
   const pathname = useLocation().pathname;
-  console.log(pathname);
   return (
     <Link
       to={plan.href}
-      className={`${
-        pathname !==
-          `/immigration/${countryName.toLocaleLowerCase()}/${plan.id}` &&
-        "hover:scale-105"
-      }  relative transition duration-300 ease-in-out overflow-hidden rounded-2xl`}
+      className={`hover:scale-105 relative transition duration-300 ease-in-out overflow-hidden rounded-2xl`}
     >
-      <div className="w-full object-cover relative h-64 bg-primary-blue rounded-lg overflow-hidden">
+      <div className="w-full object-cover relative h-[280px] bg-primary-blue rounded-lg overflow-hidden">
         <img
-          src={
-            countryName.toLocaleLowerCase() == "uk immigration"
-              ? Uk 
-              : countryName.toLocaleLowerCase() == "caribbean"
-              ? passport
-              : countryName.toLocaleLowerCase() == "portugal immigration"
-              ? portugal
-              : countryName.toLocaleLowerCase() == "canada immigration"
-              ? canada 
-              : pathname.includes("uk") ? Uk
-              : pathname.includes("australia") ? sydney
-              : pathname.includes("canada") ? canada
-              : pathname.includes("usa") ? usa
-              : pathname.includes("new-zealand") ? newzealand : usa
-          }
-          alt="Canada"
+        //@ts-ignore
+          src={plan.image}
+          alt="Plan"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div
@@ -76,19 +51,16 @@ const PlanCard = ({
 
 const ImmigrationPlans = ({ countryData }: { countryData: CountryData }) => {
   return (
-    <section className="w-full px-4 md:px-32 lg:px-60 xl:px-80 flex flex-col items-center md:items-start gap-8">
-      <h3 className=" md:-translate-x-10 text-lg text-primary-gold uppercase tracking-wide">
+    <section className="w-full px-8 md:px-32 flex flex-col items-center md:items-start gap-2">
+      <h3 className="font-play text-yellow-600 text-2xl uppercase tracking-wide">
         {countryData.name}
       </h3>
       <div className=" w-full gap-8 md:gap-0 flex flex-col md:flex-row text-center md:text-start items-center justify-between">
-        <h2 className="md:w-2/5 capitalize text-2xl md:text-4xl font-medium text-primary-blue tracking-wide">
-          {countryData.plans.title}
-        </h2>
         <p className="md:w-1/2 text-gray-900 tracking-wide">
           {countryData.plans.description}
         </p>
       </div>
-      <div className="mt-8 w-full grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 md:gap-8 gap-4">
+      <div className="w-full mt-3 grid grid-cols-2 md:grid-cols-5 md:gap-8 gap-4">
         {countryData.plans.values.map((p, i) => (
           <PlanCard key={i} plan={p} countryName={countryData.name} />
         ))}

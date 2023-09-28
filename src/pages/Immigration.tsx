@@ -2,7 +2,7 @@ import DiscoverImmigrationOptions from "../components/immigration/discover-optio
 import Hero from "../components/immigration/hero";
 import ImmigrationPlans from "../components/immigration/immigration-plans";
 import { CountryData, PlanData } from "../types";
-import immigrationData from "../../content/immigration-data.json";
+import immigrationData from "../../content/data.js";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 
