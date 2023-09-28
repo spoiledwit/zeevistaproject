@@ -5,7 +5,7 @@ import Testimonials from "../navs/testimonails";
 import { useEffect, useState } from "react";
 import Accordion from "../components/Accordian/Accordian";
 import Contact from "../components/home/Contact";
-
+import Introduction from "../components/home/Introduction";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -32,6 +32,7 @@ export default function Home({ setProgress }: Props) {
   return (
     <div className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 w-full flex flex-col h-max`}>
       <Hero />
+      <Introduction />
       <Countries setColor={setColor} />
       <About />
       <br />

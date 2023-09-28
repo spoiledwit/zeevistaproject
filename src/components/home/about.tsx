@@ -5,6 +5,7 @@ import { FaPassport } from "react-icons/fa6";
 import Heading4 from "../heading4";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Bar from "../Bar";
 
 export default function About() {
 
@@ -42,13 +43,18 @@ export default function About() {
   }
 
   return (
-    <div className="w-full md:p-0 p-10">
+    <div className="w-full md:p-0 flex flex-col p-10">
       {/* why choose us */}
+      <span className="mx-auto">
+      <h2 className="text-yellow-600 text-3xl mt-10 font-serif">Why Choose Us</h2>
+      <Bar w={"w-[120px]"} />
+      </span>
       <div
           ref={ref}  
-        className="w-full flex flex-col md:flex-row items-center md:mt-10 relative"
+        className="w-full flex flex-col  md:flex-row md:mt-10 relative"
       > 
-     <motion.div
+      
+        <motion.div
          animate={controlsImage}
          initial="hidden"
          variants={{
@@ -58,7 +64,7 @@ export default function About() {
          transition={{ duration: 1 }}
          className="grid place-items-center w-full min-h-full"
         >
-          <img className="w-auto md:block hidden h-full md:h-[600px]" src={img} alt="image" />
+          <img className="w-auto md:block hidden h-full md:h-[520px]" src={img} alt="image" />
         </motion.div>
 
         <motion.div
@@ -69,20 +75,11 @@ export default function About() {
            hidden: { opacity: 0, x: 100 },
          }}
          transition={{ duration: 1 }}
-         className="pt-10 w-full flex flex-col pr-10"
+         className="w-full flex flex-col pr-10"
         >
-          <h2 className="text-yellow-600 text-3xl font-serif">Why Choose Us</h2>
-          <h3 className=" text-gray-900 mt-6 text-3xl md:text-4xl font-medium">
-            Reasons For trusting{" "}
-            <span className="italic font-serif text-white bg-yellow-600">
-              {" "}
-              ZeeVista{" "} Advisors
-            </span>
-          </h3>
-
-          <div className="md:mt-14 mt-10 flex flex-col gap-6">
+          <div className="flex flex-col gap-6 mr-32">
             {reasons.map((r) => (
-              <div key={r.title} className=" flex flex-col gap-3">
+              <div key={r.title} className=" flex font-play flex-col gap-3">
                 <div className=" flex items-center gap-6">
                   <div className=" w-12 h-12 md:w-8 md:h-8">{r.icon}</div>
                   <Heading4 className=" text-gray-900">{r.title}</Heading4>
@@ -93,53 +90,8 @@ export default function About() {
               </div>
             ))}
           </div>
+          
         </motion.div>
-      </div>
-      {/* what we do */}
-      <div className=" w-full">
-        {/* <section className=" flex flex-col items-center">
-          <h3 className=" text-yellow-600 text-3xl md:text-4xl font-serif">What We Do</h3>
-          <h3 className=" text-gray-900 font-medium md:text-center md:px-0 px-8 text-2xl md:text-4xl mt-5">
-            Empowering Your Journey:{" "}
-            <span className=" text-white bg-yellow-600 font-serif italic">
-              Our Comprehensive Services{" "}
-            </span>
-          </h3>
-        </section> */}
-
-        {/* TODO: carousel */}
-        {/* <div className=" flex flex-col md:flex-row gap-6 mt-6 md:mt-20 px-4 md:px-[20%]">
-          {whatWeDos.map((e) => (
-            <div
-              key={e.title}
-              className=" rounded-xl items-center  transition-all bg-white shadow-2xl flex flex-col w-full py-8 px-4"
-            >
-              <div className=" rounded-full border-2 border-yellow-600 text-yellow-600  p-6 w-max h-max">
-                {e.icon}
-              </div>
-
-              <section className=" mt-6 flex flex-col gap-3 items-center">
-                <h4 className=" text-yellow-600 text-xl font-serif text-center">
-                  {e.title}
-                </h4>
-                <p className=" text-gray-400 mb-6 text-center leading-loose tracking-tight">
-                  {e.description}
-                </p>
-              </section>
-
-              <Link
-                to={e.href}
-                className="link flex flex-col gap-1 text-yellow-600 p-2 rounded-xl mt-auto"
-              >
-                <div className=" items-center flex gap-3">
-                  Read more
-                  <BsArrowRightShort size={24} />
-                </div>
-                <div className=" ele bg-yellow-600 h-[2px] w-0 transition-all" />
-              </Link>
-            </div>
-          ))}
-        </div> */}
       </div>
     </div>
   );

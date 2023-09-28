@@ -1,25 +1,25 @@
-import img1 from "../../../assets/img6.jpg";
-import img2 from "../../../assets/img7.jpg";
+import img2 from "../../../assets/bg2.jpg";
 import logo from "../../../assets/logowhite.png";
+import bg from "../../../assets/bg.jpg";
 
 import Carousel from "../../components/carousel/simple";
 
 const data = [
   {
     id: 1,
-    image: img1,
-    title: "Euro Access",
+    image: bg,
+    title: <span>Second <span className="text-yellow-600">Citizenship</span></span>,
     subtitle: "Caribbean Passport & Freedom",
-    description: "Unlock Europe in 90 days.",
-    action: "Explore",
-    href: "/euro-access",
+    description: "Achieve European Citizenship in 3 months.",
+    action: "Learn More",
+    href: "/second-citizenship-infos",
   },
   {
     id: 2,
     image: img2,
-    title: "Tourist Guide",
-    subtitle: "Easy Visit Visa Process",
-    description: "Simple application, quick approval.",
+    title: <span> <span className="text-yellow-600">Immigration</span> Services</span>,
+    subtitle: "Streamlined Visa Application Process",
+    description: "Effortless Application with Rapid Approval.",
     action: "Learn More",
     href: "/visit-visa-info",
   }

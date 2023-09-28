@@ -1,31 +1,49 @@
 
 import logo from "../../assets/logowhite.png";
-import { AiOutlineStar } from "react-icons/ai"
 import { Link } from "react-router-dom";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa6";
 
 const InfoHeader = () => {
   return (
     <div className="flex items-center justify-center h-[100px] glass ">
-      <div className="flex gap-10 items-center justify-center">
+      <div className="flex gap-10 items-center justify-center mr-32">
         <h2 className=" text-white opacity-70 tracking-[10px]">
-          2023
+         since 2008
         </h2>
         <Link
-        to={"/"}
+          to={"/"}
         >
 
-        <img
-          src={logo}
-          alt="logo"
-          className="h-[100px] w-[100px] object-contain"
-        />
+          <img
+            src={logo}
+            alt="logo"
+            className="h-[100px] w-[100px] object-contain"
+          />
         </Link>
 
-        <h2 className=" text-white opacity-70 hover:opacity-100  tracking-[10px]">
-          <AiOutlineStar className="inline-block text-white text-2xl" />
-          <AiOutlineStar className="inline-block text-white text-2xl" />
-          <AiOutlineStar className="inline-block text-white text-2xl" />
-        </h2>
+        <span className=" flex gap-3 tracking-[10px]">
+          <a
+            href="https://www.facebook.com/2023-100103632425622"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaFacebook className="inline-block text-white opacity-70 hover:opacity-100 text-lg" />
+          </a>
+          <a
+            href="https://www.instagram.com/2023_2024/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaInstagram className="inline-block  text-white opacity-70 hover:opacity-100 text-lg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/2023-2024/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaLinkedin className="inline-block  text-white opacity-70 hover:opacity-100 text-lg" />
+          </a>
+        </span>
       </div>
     </div>
   );

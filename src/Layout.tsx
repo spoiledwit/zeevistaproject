@@ -10,7 +10,8 @@ import { Toaster } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MdContactSupport } from 'react-icons/md';
-import {RiWhatsappFill} from "react-icons/ri";
+import SocialHeader from './components/SocialHeader';
+import whatsappimg from "../assets/whatsappimg.webp";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,7 +53,7 @@ const Layout = () => {
       <Toaster />
       {isMenuOpen && <MenuPage closeMenu={() => setIsMenuOpen(false)} />}
       <motion.div
-        className="fixed left-4 md:left-32 top-5"
+        className="fixed left-4 md:left-32 top-10"
         style={{ zIndex: 999 }}
         animate={controls}
       >
@@ -65,7 +66,7 @@ const Layout = () => {
         />
       </motion.div>
       <motion.div
-        className="fixed md:right-32 right-4 top-5"
+        className="fixed md:right-32 right-4 top-10"
         style={{ zIndex: 999 }}
         animate={controls}
       >
@@ -78,16 +79,17 @@ const Layout = () => {
         />
       </motion.div>
       <div className="top-0 left-0 md:block hidden absolute w-full z-50">
+        <SocialHeader />
         <Header />
       </div>
       <Outlet />
       <Footer />
       <a
-        href="https://wa.me/919999999999"
+        href="https://wa.me/00971589240564"
         target="_blank"
         className="fixed right-5 bottom-5 z-50"
       >
-        <RiWhatsappFill className="text-5xl animate-bounce text-green-500 bg-white rounded-lg" />
+        <img src={whatsappimg} className="w-14 animate-bounce" />
       </a>
     </div>
   );
