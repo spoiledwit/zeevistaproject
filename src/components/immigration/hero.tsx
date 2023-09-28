@@ -30,6 +30,8 @@ const Hero = ({
   let { pathname } = useLocation();
   const planname = pathname.substring(pathname.lastIndexOf("/") + 1);
 
+  
+
   function getImageSource() {
     switch (planname) {
       case "canada":
@@ -65,7 +67,7 @@ const Hero = ({
         <div className="flex z-10 flex-col mt-20 justify-center items-start">
           <AnimateToView>
             <Motion
-              className="text-white capitalize text-3xl md:text-5xl mb-4 leading-snug"
+              className="text-white font-play capitalize text-3xl md:text-5xl mb-4 leading-snug"
               initial="hidden"
               animate="show"
               exit="hidden"

@@ -7,7 +7,7 @@ import footer2 from "../../assets/footer2.jpg";
 
 export default function Footer() {
   return (
-    <footer className=" w-full flex items-center flex-col border-t  bg-black">
+    <footer className=" w-full flex items-center flex-col border-t bg-black">
       <span className="bg-yellow-600 md:flex hidden w-[80vw] items-center z-10 justify-between h-40 mt-[-65px] bg-cover bg-center rounded-3xl overflow-hidden">
         <img src={footer1} className="h-full w-[270px] object-cover" alt="" />
         <span

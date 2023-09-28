@@ -23,10 +23,10 @@ const App = () => {
           <Route path="/" element={<Home setProgress={setProgress} />} />
           <Route path="/about-us" element={<AboutPage setProgress={setProgress} />} />
           <Route path="/contact" element={<ContactUsPage setProgress={setProgress} />} />
-          <Route path="/immigration/:country/" element={<ImmigrationPage />} />
+          <Route path="/immigration/:country/" element={<ImmigrationPage setProgress={setProgress} />} />
           <Route
             path="/immigration/:country/:plan"
-            element={<ImmigrationPage />}
+            element={<ImmigrationPage setProgress={setProgress} />}
           />
         </Route>
       </Routes>

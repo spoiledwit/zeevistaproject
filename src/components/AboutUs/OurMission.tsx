@@ -47,7 +47,7 @@ const OurMission = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="our-mission bg-black px-8 md:px-32 pb-32 md:pt-48"
+      className="our-mission bg-black z-10 px-8 md:px-32 pb-32 md:pt-48"
     >
       <div className="virtues-container">
         {virtues.map((v, i) => (

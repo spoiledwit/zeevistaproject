@@ -6,12 +6,19 @@ import immigrationData from "../../content/immigration-data.json";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 
-const ImmigrationPage = () => {
+
+const ImmigrationPage = ({setProgress}: any) => {
 
   const { country, plan } = useParams();
 
   useEffect(() => {
     window.scrollTo(0, 0)
+    setProgress(70);
+    setTimeout(() => {
+      setProgress(100);
+    }
+      , 300);
+      
   }, [country, plan])
 
   //   @ts-ignore
