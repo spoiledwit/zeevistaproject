@@ -1,4 +1,4 @@
-import london from "../../../assets/img7.jpg"
+import london from "../../../assets/bg.jpg"
 import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 
