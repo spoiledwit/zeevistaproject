@@ -23,8 +23,6 @@ const Countries = ({ setColor }: Props) => {
     }
   }, [inView, setColor]);
 
-  
-
   const countries = [
     {
       name: "Caribbean Passports",
@@ -49,18 +47,18 @@ const Countries = ({ setColor }: Props) => {
   ];
 
   return (
-    <div ref={ref} className="mt-10 px-24 justify-between">
+    <div ref={ref} className="mt-10 md:px-24 md:justify-between">
         <h2
-        className="text-3xl text-center mr-5 font-play font-medium text-yellow-600 mb-10 "
+        className="text-3xl text-center md:mr-5 white font-play font-medium text-yellow-600 mb-10 "
         >
         What we offer
         <Bar w={"w-[130px]"} />
         </h2>
-        <div className="w-full relative flex items-center">
-            <div className="grid md:grid-cols-4 w-full gap-4">
+        <div className="w-full relative flex  items-center">
+            <div className="grid md:grid-cols-4 grid-cols-1 w-full gap-4">
                 {countries.map((c, i) => (
                     <div 
-                        className="relative bg-cover w-[280px] h-[500px] bg-center" 
+                        className="relative mx-auto bg-cover w-[310px] md:w-[280px] h-[500px] bg-center" 
                         style={{ backgroundImage: `url(${c.image})` }} 
                         key={i}
                     >

@@ -31,7 +31,7 @@ const Introduction = () => {
             </div>
             <div className="w-full flex items-center justify-center mt-10">
                 <span
-                    className="mr-10"
+                    className="md:mr-10"
                 >
                     <Button
                         onClick={() => {
