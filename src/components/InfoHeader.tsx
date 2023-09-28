@@ -23,21 +23,21 @@ const InfoHeader = () => {
 
         <span className=" flex gap-3 tracking-[10px]">
           <a
-            href="https://www.facebook.com/2023-100103632425622"
+            href="https://www.facebook.com/zeevistaadvisors"
             target="_blank"
             rel="noreferrer"
           >
             <FaFacebook className="inline-block text-white opacity-70 hover:opacity-100 text-lg" />
           </a>
           <a
-            href="https://www.instagram.com/2023_2024/"
+            href="https://www.instagram.com/zeevista/"
             target="_blank"
             rel="noreferrer"
           >
             <FaInstagram className="inline-block  text-white opacity-70 hover:opacity-100 text-lg" />
           </a>
           <a
-            href="https://www.linkedin.com/company/2023-2024/"
+            href="https://www.linkedin.com/company/zeevista-immigration-advisors/?viewAsMember=true"
             target="_blank"
             rel="noreferrer"
           >
