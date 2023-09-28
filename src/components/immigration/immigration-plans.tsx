@@ -4,6 +4,9 @@ import passport from "../../../assets/passport2.png";
 import Uk from "../../../assets/ukcover.jpg";
 import portugal from "../../../assets/portugal.webp";
 import canada from "../../../assets/canada.jpg";
+import sydney from "../../../assets/sydneyCover.webp"
+import usa from "../../../assets/usaCover.webp"
+import newzealand from "../../../assets/newzealandCover.webp"
 
 import { useLocation } from "react-router-dom";
 
@@ -15,7 +18,7 @@ const PlanCard = ({
   plan: PlanData;
 }) => {
   const pathname = useLocation().pathname;
-  console.log(countryName)
+  console.log(pathname);
   return (
     <Link
       to={plan.href}
@@ -35,7 +38,12 @@ const PlanCard = ({
               : countryName.toLocaleLowerCase() == "portugal immigration"
               ? portugal
               : countryName.toLocaleLowerCase() == "canada immigration"
-              ? canada : canada
+              ? canada 
+              : pathname.includes("uk") ? Uk
+              : pathname.includes("australia") ? sydney
+              : pathname.includes("canada") ? canada
+              : pathname.includes("usa") ? usa
+              : pathname.includes("new-zealand") ? newzealand : usa
           }
           alt="Canada"
           className="absolute inset-0 w-full h-full object-cover"
