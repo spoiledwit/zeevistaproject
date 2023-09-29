@@ -1,13 +1,13 @@
 import img2 from "../../../assets/bg2.jpg";
 import logo from "../../../assets/logowhite.png";
-import bg from "../../../assets/bg.jpg";
+import caribbean from "../../../assets/caribbean.jpeg";
 
 import Carousel from "../../components/carousel/simple";
 
 const data = [
   {
     id: 1,
-    image: bg,
+    image: caribbean,
     title: <span>Second <span className="text-yellow-600">Citizenship</span></span>,
     subtitle: "Caribbean Passport & Freedom",
     description: "Achieve European Citizenship in 3 months.",

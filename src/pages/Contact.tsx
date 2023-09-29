@@ -20,7 +20,7 @@ const Contact = ({ setProgress }: Props) => {
 
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
     setProgress(70);
     setTimeout(() => {
       setProgress(100);
@@ -59,7 +59,7 @@ const Contact = ({ setProgress }: Props) => {
       <Hero />
       <div className="flex md:flex-row flex-col w-full pt-10  md:justify-between px-8 md:px-20">
         <div className="md:mb-0 ">
-        <h2 className="md:text-[60px] text-[35px] leading-10 md:leading-[65px] font-serif font-medium">Let&apos;s have a <br /> <span className="font-medium text-[40px] md:text-[70px] italic border-b-yellow-500 border-b-[5px]">conversation</span><span className="text-yellow-500">.</span> </h2>
+        <h2 className="md:text-[60px] text-[35px] leading-10 md:leading-[65px] font-serif font-medium">Get a free<br /> <span className="font-medium text-[40px] md:text-[70px] italic border-b-yellow-600 border-b-[5px]">assessment</span><span className="text-yellow-600">.</span> </h2>
           <div className="mt-14 max-w-[400px] flex flex-col gap-4">
             <Input value={name} label="Name" type="text" onChange={(e) => { setName(e.target.value) }} />
             <Input label="Email" value={email} type="text" onChange={(e) => { setEmail(e.target.value) }} />

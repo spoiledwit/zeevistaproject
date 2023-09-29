@@ -1,37 +1,113 @@
 import Carousel from "../components/carousel/simple";
 import Bar from "../components/Bar";
 import globe from "../../assets/globe.jpg"
+import { AiFillStar } from "react-icons/ai";
 
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Ahmed Al-Saad",
+      name: "Sania Iqbal",
       content:
-        "ZeeVista Advisors guided me through my immigration journey with unparalleled expertise. Their comprehensive understanding of visa regulations was invaluable, ensuring that I faced no hurdles. Today, I am living and working in my dream country, and it wouldn't have been possible without ZeeVista Advisors's exceptional service.",
+        "The professionals at ZeeVista Advisors were remarkable in handling my immigration case. Their knowledge and diligence ensured a smooth process, making my dream of relocating a reality. I am eternally grateful for their exceptional service and support throughout this journey.",
       image: globe,
     },
     {
-      name: "Fatima Al-Khaleej",
+      name: "Rohit Mehra",
       content:
-        "ZeeVista Advisors has been a beacon of professionalism and guidance throughout my visa application process. Their attention to detail and timely responses eliminated any stress I had. They took care of everything from start to finish, making the experience seamless. I can't recommend them enough.",
-      image: globe
+        "The expertise and professionalism displayed by ZeeVista Advisors were unmatched. They took the time to understand my case and provided tailored solutions, making the visa application a breeze. I highly recommend their services to anyone seeking a hassle-free immigration experience.",
+      image: globe,
     },
     {
-      name: "Yusuf Al-Qasim",
+      name: "Fahad Hussain",
       content:
-        "Navigating the complex web of visa applications can be daunting, but ZeeVista Advisors' team made it look effortless. Their in-depth consultations and meticulous planning helped me secure a visa to study at a prestigious university abroad. I am beyond grateful for their exceptional support and expertise.",
-      image: globe
+        "ZeeVista Advisors have been a pillar of support during my visa application. Their thorough understanding of the process and timely guidance made a significant difference. Today, I am thriving in a new country, all thanks to their exemplary services.",
+      image: globe,
+    },
+    {
+      name: "Ayesha Rahman",
+      content:
+        "Entrusting ZeeVista Advisors with my immigration process was the best decision. They showcased exceptional professionalism and attention to detail, ensuring a seamless journey towards achieving my goals. I can't thank them enough for their invaluable assistance.",
+      image: globe,
+    },
+    {
+      name: "Vikram Singh",
+      content:
+        "The journey of moving abroad seemed complex and daunting until I engaged with ZeeVista Advisors. Their proficient team simplified every step, providing clarity and confidence. I am now living my dream, and it's all thanks to their outstanding guidance.",
+      image: globe,
+    },
+    {
+      name: "Naveen Kumar",
+      content:
+        "ZeeVista Advisors were instrumental in making my overseas education dream come true. Their seasoned professionals provided impeccable service and guidance at every step, ensuring a smooth visa application process. I am wholeheartedly grateful for their support.",
+      image: globe,
+    },
+    {
+      name: "Mehak Ali",
+      content:
+        "The dedication and expertise of ZeeVista Advisors are truly commendable. They handled my case with utmost professionalism, making the daunting visa application process a straightforward experience. I highly recommend their services to anyone with immigration needs.",
+      image: globe,
+    },
+    {
+      name: "Amir Sohail",
+      content:
+        "My experience with ZeeVista Advisors has been nothing short of excellent. Their proficient team guided me meticulously through every step, ensuring a successful visa application. Their dedication and expertise are why I am happily settled abroad today.",
+      image: globe,
+    },
+    {
+      name: "Lakshmi Narayan",
+      content:
+        "The unparalleled expertise of ZeeVista Advisors made my immigration process smooth and stress-free. Their diligent team was always there to address my concerns, making sure every aspect of the application was perfectly handled. I am immensely thankful for their support.",
+      image: globe,
+    },
+    {
+      name: "Mahfuz Rahman",
+      content:
+        "ZeeVista Advisors turned the complicated process of visa application into a hassle-free experience. Their professional guidance and timely responses were invaluable, making my dream of studying abroad a reality. I can't express enough gratitude for their exceptional service.",
+      image: globe,
+    },
+    {
+      name: "Anushka Perera",
+      content:
+        "Engaging with ZeeVista Advisors was a turning point in my immigration journey. Their team's professionalism and meticulous approach made every step manageable. Today, I am living my dream abroad, and it's all thanks to their remarkable service.",
+      image: globe,
+    },
+    {
+      name: "Hassan Malik",
+      content:
+        "ZeeVista Advisors provided unparalleled support throughout my visa application process. Their expertise in handling complex cases ensured a smooth journey from start to finish. I am eternally grateful for their commitment and exceptional service, making my dream come true.",
+      image: globe,
+    },
+    {
+      name: "Kashif Raza",
+      content:
+        "The team at ZeeVista Advisors is nothing short of amazing. Their comprehensive understanding of immigration laws and professional handling of my case made the process seem effortless. I am now happily settled in my dream country, all thanks to their outstanding service.",
+      image: globe,
+    },
+    {
+      name: "Bimal Roy",
+      content:
+        "ZeeVista Advisors were a beacon of hope during my visa application process. Their seasoned professionals provided invaluable guidance, ensuring a smooth and successful journey. I am now living my dream, and it's all thanks to their exceptional service.",
+      image: globe,
+    },
+    {
+      name: "Saima Khan",
+      content:
+        "The expertise of ZeeVista Advisors in handling my immigration case was exemplary. Their dedicated team ensured a seamless process, making my dream of relocating abroad a reality. Their professionalism and support have been invaluable, and I highly recommend their services.",
+      image: globe,
     },
   ];
   
+  
 
   return (
-    <div className=" flex flex-col justify-center">
+    <div className=" flex items-center flex-col w-full justify-center">
       <h2 className=" text-yellow-600 text-center md:text-left self-center text-3xl md:px-0 px-8 md:text-3xl font-play">
         What our clients say
         <Bar w={"w-[200px]"} />
       </h2>
-
+      {/* <p className="max-w-[800px] text-center">
+      Our clients rate us as their "firm of choice" and have described us as "one of the world's very best immigration law firms". We are proud of our reputation for obtaining the results our clients need to meet their life and business goals.
+      </p> */}
       <div className=" w-full relative mt-4 md:px-0 px-8 md:mt-4 self-center">
         <Carousel options={{ loop: true }}>
           {testimonials.map((t, i) => (
@@ -41,7 +117,12 @@ export default function Testimonials() {
               </p>
 
               <h3 className="mt-10 font-serif text-yellow-600 text-lg md:mt-6 ">{t.name}</h3>
-              <div className=" w-12 h-12 mt-3 rounded-full bg-gray-200">
+            <div className="flex my-2">
+            {[...Array(5)].map((_, i) => (
+                <AiFillStar key={i} className=" text-yellow-600 text-lg" />
+              ))}
+            </div>
+              <div className=" w-12 h-12 rounded-full bg-gray-200">
                 <img
                   className=" rounded-full h-full aspect-square object-cover"
                   src={t.image}

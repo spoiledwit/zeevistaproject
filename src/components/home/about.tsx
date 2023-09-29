@@ -43,7 +43,7 @@ export default function About() {
   }
 
   return (
-    <div className="w-full md:mb-12 md:p-0 flex flex-col p-10">
+    <div className="w-full md:mb-12 md:pt-0 md:px-0 flex mt-10 flex-col p-10 bg-gray-100">
       {/* why choose us */}
       <span className="mx-auto">
       <h2 className="text-yellow-600 text-3xl mt-4 md:mt-10 font-serif">Why Choose Us</h2>

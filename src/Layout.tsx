@@ -53,7 +53,7 @@ const Layout = () => {
       <Toaster />
       {isMenuOpen && <MenuPage closeMenu={() => setIsMenuOpen(false)} />}
       <div
-        className="fixed left-4 md:left-32 top-10"
+        className="fixed left-4 md:left-10 top-10"
         style={{ zIndex: 999 }}
        >
         <Button
@@ -65,7 +65,7 @@ const Layout = () => {
         />
       </div>
       <div
-        className="fixed md:right-32 right-4 top-10"
+        className="fixed md:right-10 right-4 top-10"
         style={{ zIndex: 999 }}
       >
         <Button

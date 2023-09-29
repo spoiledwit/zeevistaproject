@@ -9,15 +9,16 @@ interface AccordionItemProps {
   };
   onToggle: () => void;
   active: boolean;
+  border?: boolean;
 }
 
-const AccordionItem: React.FC<AccordionItemProps> = ({ faq, onToggle, active }) => {
+const AccordionItem: React.FC<AccordionItemProps> = ({ faq, onToggle, active, border }) => {
   
   return (
     <>
     <div
       onClick={onToggle}
-      className="tracking-wide md:text-2xl font-play py-3 md:py-5 border-b border-b-gray-200 flex md:items-center justify-between w-full cursor-pointer"
+      className={`tracking-wide ${active ? "border-b border-b-gray-200" : border ? "border-b border-b-gray-200" : "" } md:text-2xl font-play py-3 md:py-5 flex md:items-center justify-between w-full cursor-pointer`}
     >
       {faq.question}
       <motion.div animate={{ rotate: active ? 0 : 180 }} className="h-4">

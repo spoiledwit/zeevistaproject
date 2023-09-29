@@ -53,30 +53,61 @@ const AssessmentForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
-      <Input label="Name" value={name} onChange={(e) => setName(e.target.value)} />
-      <Input label="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
+      <Input label="Full Name" value={name} onChange={(e) => setName(e.target.value)} />
+      <Input label="Mobile Number" value={phone} onChange={(e) => setPhone(e.target.value)} />
       <Input
-        label="Email"
+        label="Email Address"
         value={email}
         type="email"
         onChange={(e) => setEmail(e.target.value)}
       />
       <Input value={jobTitle} label="Job Title" onChange={(e) => setJobTitle(e.target.value)} />
-      <Input label="Education" value={education} onChange={(e) => setEducation(e.target.value)} />
       <Input
         label="Nationality"
         value={nationality}
         onChange={(e) => setNationality(e.target.value)}
       />
       <Input
+        label="Are you an Owner, shareholder, Partner Or Manager of a Business?"
+        value={education}
+        onChange={(e) => setEducation(e.target.value)}
+      />
+      <Input
+        label="What is your business turnover?"
+        value={education}
+        onChange={(e) => setEducation(e.target.value)}
+      />
+      <Input
+        label="All net earning per month:"
+        value={education}
+        onChange={(e) => setEducation(e.target.value)}
+      />
+      <Input
         value={text}
         label="Please write your message"
         onChange={(e) => setText(e.target.value)}
       />
-     <Button
-     text="Submit"
-     onClick={()=>{handleSubmit}}
-     />
+      <Input
+        value={text}
+        label="What is your employment status?"
+        onChange={(e) => setText(e.target.value)}
+      />
+      <Input
+        value={text}
+        label="
+        Employed: Job Title"
+        onChange={(e) => setText(e.target.value)}
+      />
+
+      <Input
+        value={text}
+        label="How did you hear about us?"
+        onChange={(e) => setText(e.target.value)}
+      />
+      <Button
+        text="Submit"
+        onClick={() => { handleSubmit }}
+      />
     </form>
   );
 };

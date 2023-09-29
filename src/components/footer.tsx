@@ -44,16 +44,16 @@ export default function Footer() {
           </h3>
           <ul className=" flex mt-6 flex-col gap-3 text-gray-300">
             <li className=" hover:text-yellow-600 text-white transition-all">
-              <Link to={"/"}>Caribbean Citizenship</Link>
+              <Link to={"/immigration/caribbean/saint-lucia"}>Caribbean Citizenship</Link>
             </li>
             <li className=" hover:text-yellow-600 text-white transition-all">
-              <Link to={"/"}>Immigration Services</Link>
+              <Link to={"/immigration/uk/uk-innovator-founder"}>Immigration Services</Link>
             </li>
             <li className=" hover:text-yellow-600 text-white transition-all">
-              <Link to={"/"}>Student Visa</Link>
+              <Link to={"/immigration/student-visas/uk"}>Student Visa</Link>
             </li>
             <li className=" hover:text-yellow-600 text-white transition-all">
-              <Link to={"/"}>Visit Visa</Link>
+              <Link to={"/immigration/visit-visas/uk"}>Visit Visa</Link>
             </li>
           </ul>
         </section>
@@ -61,18 +61,20 @@ export default function Footer() {
           <h3 className=" text-yellow-600 font-serif text-2xl font-semibold">About Us</h3>
 
           <div className=" mt-9 text-gray-300 flex gap-3">
-            <FaLocationDot size={20} />
-            <p>See Location</p>
+            <FaLocationDot size={47} className="text-yellow-600" />
+            <p>Office 1503, 15th Floor, Executive Bay Tower B, Al Amal Street, Business Bay, Dubai, U.A.E</p>
           </div>
           <div className=" mt-3 text-gray-300 flex gap-3">
-            <MdEmail size={20} />
-            <p>example@domain.com</p>
-          </div>
-          <div className=" mt-3 text-gray-300 flex gap-3">
-            <MdPhone size={20} />
+            <MdEmail size={20} className="text-yellow-600"/>
             <p>
-            (04) 449 0918
-</p>
+                info@zeevistaadvisors.com
+            </p>
+          </div>
+          <div className=" mt-3 text-gray-300 flex gap-3">
+            <MdPhone size={20} className="text-yellow-600" />
+            <p>
+            +971 4449 0918
+            </p>
           </div>
         </section>
       </div>
