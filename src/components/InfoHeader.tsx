@@ -14,13 +14,13 @@ const InfoHeader = () => {
         <div className="flex items-center gap-2">
           <TbDeviceLandlinePhone className="text-white text-xl" />
           <p className="text-white text-sm">
-            <strong>24h: </strong>
+            <strong>24/7: </strong>
             +971 4449 0918</p>
         </div>
         <div className="flex items-center gap-2">
           <PiWhatsappLogoFill className="text-white text-xl" />
           <p className="text-white text-sm">
-            <strong>24h: </strong>
+            <strong>24/7: </strong>
             +91 9876543210</p>
         </div>
       </div>

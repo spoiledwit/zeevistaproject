@@ -4,6 +4,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 import logo from "../../assets/logo.png"
 import footer1 from "../../assets/footer1.jpg";
 import footer2 from "../../assets/footer2.jpg";
+import {BiTime} from "react-icons/bi";
 
 export default function Footer() {
   return (
@@ -74,6 +75,12 @@ export default function Footer() {
             <MdPhone size={20} className="text-yellow-600" />
             <p>
             +971 4449 0918
+            </p>
+          </div>
+          <div className=" mt-3 text-gray-300 flex gap-3">
+            <BiTime size={20} className="text-yellow-600" />
+            <p>
+            9:00 AM to 6:30 PM <br /> Monday to Saturday
             </p>
           </div>
         </section>
