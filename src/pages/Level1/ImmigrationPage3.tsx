@@ -71,20 +71,17 @@ const ImmigrationPage3: React.FC<Props> = ({
                 );
             case 'portugal':
                 return (
-                    "Portugal top section\n\n" +
                     "Portugal is rapidly becoming one of Europe's most popular relocation destinations. This little Atlantic country has a lot to offer, from beautiful areas like the Algarve, Silver Coast, and Madeira to substantial tax breaks for remote workers and online business owners. Furthermore, Portugal boasts one of the lowest costs of living in Western Europe.\n" +
                     "Those who migrate to Portugal for the long term can apply for Portuguese citizenship after only five years, making it one of the shortest processes in the European Union. Dual citizenship may provide you with a slew of advantages, including enhanced travel flexibility, better tax planning opportunities, improved quality of life, and access to a haven."
                 );
             case 'canada':
                 return (
-                    "For Canada PR TOP section\n\n" +
                     "Canada is ranked as the second best country in the world to live and work.\n" +
                     "It is one of the top destinations for overall sustainability, cultural influence, economic influence, entrepreneurship, and primarily for the quality of life.\n" +
                     "Once you get a PR, you have the right to move to any territory or province in Canada. You don’t have to stick with an employer, job, or even a province."
                 );
             case 'australia':
                 return (
-                    "Australia top section\n\n" +
                     "Australia has always been a popular choice for individuals who desire to migrate to another country. The country has favorable factors such as a thriving economy which means there are more jobs in Australia. Australia promises a better quality of life and a multicultural society where there is peace and harmony. Australia offers a permanent residency or PR visa to immigrants. The Australia PR visa has a validity of five years. You can move into Australia with your family with a PR visa. You can apply for citizenship after living in Australia for four years with an Australia"
                 );
             default:
