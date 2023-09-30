@@ -9,6 +9,8 @@ import portugal2 from "../../../assets/polandCover.webp";
 import uk from "../../../assets/ukcover.jpg";
 import sydney from "../../../assets/sydney.webp";
 import canada from "../../../assets/canada_im_cover.webp";
+import portugal from "../../../assets/portugal.webp"
+import canada2 from "../../../assets/canada.webp"
 
 interface Props {
     setProgress: (progress: number) => void;
@@ -53,7 +55,7 @@ const ImmigrationPage3: React.FC<Props> = ({
         {
             name: "Portugal",
             href: "/immigration/portugal",
-            image: portugal2,
+            image: portugal,
             plans: data["portugal"].plans.values
         }
     ]
@@ -94,7 +96,7 @@ const ImmigrationPage3: React.FC<Props> = ({
         <div className="w-full min-h-screen">
             <div className="relative h-screen w-full flex px-8 md:px-32 items-center"
                 style={{
-                    backgroundImage: country === undefined || country ==="uk" ? `url(${img})` : `url(${countries.filter(c => c.href.split('/')[2] === country)[0].image})`,
+                    backgroundImage: country === undefined || country ==="uk" ? `url(${img})` : country === "portugal" ?  `url(${portugal2})` : `url(${countries.filter(c => c.href.split('/')[2] === country)[0].image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
