@@ -68,7 +68,7 @@ const DynamicPage: React.FC<Props> = ({
 
     return (
         <div className="w-full min-h-screen">
-            <div className="relative h-screen w-full flex px-32 items-center"
+            <div className="relative h-screen w-full flex px-8 md:px-32 items-center"
                 style={{
                     backgroundImage: country === undefined ? `url(${img})` : `url(${countries.filter(c => c.name === country)[0].image})`,
                     backgroundSize: "cover",
@@ -99,8 +99,8 @@ const DynamicPage: React.FC<Props> = ({
                     />
                 </div>
             </div>
-            <div className="bg-white flex-col min-h-screen flex justify-center px-32 pb-20 w-ful">
-                <h2 className=" font-play mb-10 text-yellow-600 mt-10 text-center text-2xl">
+            <div className="items-center flex-col min-h-screen flex justify-center px-8 md:px-32 pb-20 w-ful">
+                <h2 className=" font-play  mb-10 text-yellow-600 mt-10 text-center text-2xl">
                     Select from the following countries to know more
                 </h2>
                 <div className="grid md:gris-cols-4 grid-cols-1 w-full gap-4">
@@ -108,11 +108,11 @@ const DynamicPage: React.FC<Props> = ({
                         c.name === country && (
                             <div
                                 key={i}
-                                className="flex flex-wrap gap-4"
+                                className="flex w-full items-center justify-center flex-wrap gap-4"
                             >
                                 {c.plans.map((p, i) => (
                                     <div
-                                        className="relative bg-cover  w-[310px] md:w-[280px] h-[500px]  bg-center"
+                                        className="relative bg-cover w-[320px] md:w-[280px] h-[500px]  bg-center"
                                         style={{ backgroundImage: `url(${p.image})` }}
                                         key={i}
                                     >

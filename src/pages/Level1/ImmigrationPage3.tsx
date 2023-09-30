@@ -6,8 +6,6 @@ import data from "../../../content/data";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import portugal2 from "../../../assets/polandCover.webp";
-
-// import london from "../../../assets/london.webp";
 import uk from "../../../assets/ukcover.jpg";
 import sydney from "../../../assets/sydney.webp";
 import canada from "../../../assets/canada_im_cover.webp";
@@ -94,7 +92,7 @@ const ImmigrationPage3: React.FC<Props> = ({
 
     return (
         <div className="w-full min-h-screen">
-            <div className="relative h-screen w-full flex px-32 items-center"
+            <div className="relative h-screen w-full flex px-8 md:px-32 items-center"
                 style={{
                     backgroundImage: country === undefined || country ==="uk" ? `url(${img})` : `url(${countries.filter(c => c.href.split('/')[2] === country)[0].image})`,
                     backgroundSize: "cover",
@@ -125,7 +123,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                     />
                 </div>
             </div>
-            <div className="bg-white flex-col min-h-screen flex justify-center px-32 pb-20 w-ful">
+            <div className="bg-white flex-col min-h-screen flex justify-center px-8 md:px-32 pb-20 w-ful">
                 <h2 className=" font-play mb-10 text-yellow-600 mt-10 text-center text-2xl">
                     Select from the following countries to know more
                 </h2>
