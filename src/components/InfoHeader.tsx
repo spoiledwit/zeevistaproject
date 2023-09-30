@@ -34,7 +34,7 @@ const InfoHeader = () => {
             className="h-[100px] w-[100px] object-contain"
           />
         </Link>
-
+<div className="flex gap-4 items-center justify-center">
         <span className=" flex gap-3 tracking-[10px]">
           <a
             href="https://www.facebook.com/zeevistaadvisors"
@@ -64,8 +64,11 @@ const InfoHeader = () => {
           <p className="text-white text-sm">
             info@zeevistaadvisors.com
           </p>
-          </div>
+        </div>
+
       </div>
+      </div>
+
       </div>
     </div>
   );
