@@ -82,23 +82,23 @@ const MenuPage: React.FC<Props> = ({
                     ZeeVista Immigration <br /> Advisors
                 </h2>
 
-                <p className=" text-center font-open mt-4">
-                    H3 Business Bay, <br /> Dubai, UAE
+                <p className=" text-center font-open mt-4 max-w-[300px]">
+                Office 1503, 15th Floor, Executive Bay Tower B, Al Amal Street, Business Bay, Dubai, U.A.E
                 </p>
                 
                 <span className=" flex gap-1 items-center flex-col mt-6">
-                <Link
+                <a
                 className="text-xl font-open tracking-wider"
-                    to={"/about"}
+                href="tel:+97144490918"
                 >
-                +421 45 530 00 00
-                </Link>
-                <Link
+                +971 4449 0918
+                </a>
+                <a
                     className="text-xl font-open tracking-wider"
-                    to={"/contact"}
+                    href="mailto:info@zeevistaadvisors.com"
                 >
-                    info@zeevista.com
-                </Link>
+                    info@zeevistaadvisors.com
+                </a>
                 <Link
                     className="text-xl hover:text-yellow-600 font-open tracking-wider"
                     to={"/contact"}

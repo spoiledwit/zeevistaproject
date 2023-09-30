@@ -9,6 +9,16 @@ import newzealand from "../assets/newzealandCover.webp";
 import dominca from "../assets/dominica-passport.jpeg";
 import grenada from "../assets/grenada.jpg";
 import lucia from "../assets/saint-lucia-passport1.jpg";
+import uka from "../assets/uka.webp";
+import ukb from "../assets/ukb.jpg";
+import portugala from "../assets/portugala.jpeg";
+import portugalb from "../assets/portugalb.jpeg";
+import canadaa from "../assets/canadaa.jpeg";
+import canadab from "../assets/canadab.jpeg";
+import canadac from "../assets/canadac.jpeg";
+import ausa from "../assets/ausa.jpeg";
+import ausb from "../assets/ausc.jpeg";
+
 
 const data = {
   "caribbean": {
@@ -225,7 +235,7 @@ const data = {
         {
           "name": "Portugal Steady Revenue (D7) Visa",
           "id": "portugal-steady-revenue",
-          "image": portugal,
+          "image": portugala,
           "href": "/immigration/portugal/portugal-steady-revenue",
           "description": {
             "title": "Portugal Steady Revenue (D7) Visa",
@@ -236,7 +246,7 @@ const data = {
         {
           "name": "Portugal Entrepreneurial Venture (D2) Visa",
           "id": "portugal-entrepreneurial-venture",
-          "image": portugal,
+          "image": portugalb,
           "href": "/immigration/portugal/portugal-entrepreneurial-venture",
           "description": {
             "title": "Portugal Entrepreneurial Venture (D2) Visa",
@@ -271,7 +281,7 @@ const data = {
         {
           "name": "Canadian Express Entry Pathway",
           "id": "canadian-express-entry",
-          "image": canadaCover,
+          "image": canadab,
           "href": "/immigration/canada/canadian-express-entry",
           "description": {
             "title": "Canadian Express Entry Pathway",
@@ -282,7 +292,7 @@ const data = {
         {
           "name": "Canada's Path Through Provincial Nominee Programs (PNPs)",
           "id": "canada-provincial-nominee",
-          "image": canadaCover,
+          "image": canadaa,
           "href": "/immigration/canada/canada-provincial-nominee",
           "description": {
             "title": "Canada's Path Through Provincial Nominee Programs (PNPs)",
@@ -293,7 +303,7 @@ const data = {
         {
           "name": "Saskatchewan Immigrant Nominee Program (SINP)",
           "id": "saskatchewan-sinp",
-          "image": canadaCover,
+          "image": canadac,
           "href": "/immigration/canada/saskatchewan-sinp",
           "description": {
             "title": "Unlock the Opportunities in Saskatchewan with SINP",
@@ -317,7 +327,7 @@ const data = {
         {
           "name": "Skilled Independent Visa (Subclass 189)",
           "id": "skilled-independent-visa",
-          "image": australia,
+          "image": ausa,
           "href": "/immigration/australia/skilled-independent-visa",
           "description": {
             "title": "Skilled Independent Visa (Subclass 189)",
@@ -328,7 +338,7 @@ const data = {
         {
           "name": "Australia 190 Subclass Visa",
           "id": "australia-190-subclass",
-          "image": australia,
+          "image": ausb,
           "href": "/immigration/australia/australia-190-subclass",
           "description": {
             "title": "Australia 190 Subclass Visa",
@@ -353,7 +363,7 @@ const data = {
         {
           "name": "UK Innovator Founder Visa",
           "id": "uk-innovator-founder",
-          "image": uk,
+          "image": uka,
           "href": "/immigration/uk/uk-innovator-founder",
           "description": {
             "title": "The UK Innovator Founder Visa: Your Pathway to UK Business Success",
@@ -364,7 +374,7 @@ const data = {
         {
           "name": "UK Expansion Worker Visa",
           "id": "uk-expansion-worker",
-          "image": uk,
+          "image": ukb,
           "href": "/immigration/uk/uk-expansion-worker",
           "description": {
             "title": "UK Expansion Worker Visa: Your Gateway to UK Business Growth",

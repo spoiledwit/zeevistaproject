@@ -25,7 +25,7 @@ const ImmigrationPage3: React.FC<Props> = ({
     const { country } = useParams();
     useEffect(() => {
         setProgress(70);
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
         setTimeout(() => {
             setProgress(100);
         }
@@ -142,7 +142,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                                         {c.name === "Immigration" ? "Immigration Services" : c.name}
                                     </h2>
                                     <div
-                                        className="flex flex-col w-full px-5 gap-2"
+                                        className="flex h-full  flex-col w-full px-5 gap-2"
                                     >
                                         {c.plans.map((p, i) => (
                                             <Link
@@ -175,7 +175,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                                 {c.plans.map((p, i) => (
                                     <div
                                         className="relative bg-cover  w-[310px] md:w-[280px] h-[500px]  bg-center"
-                                        style={{ backgroundImage: `url(${c.image})` }}
+                                        style={{ backgroundImage: `url(${p.image})` }}
                                         key={i}
                                     >
                                         <div

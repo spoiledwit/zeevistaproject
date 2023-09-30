@@ -83,7 +83,7 @@ const Layout = () => {
       <Outlet />
       <Footer />
       <a
-        href="https://wa.me/00971589240564"
+        href="https://wa.me/+971589240564"
         target="_blank"
         className="fixed right-5 bottom-5 z-50"
       >
