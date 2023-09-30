@@ -220,84 +220,132 @@ const data = {
     "plans": {
       "values": [
         {
-          "name": "Portugal D2 Entrepreneur Visa",
-          "id": "portugal-d2",
+          "name": "Portugal Steady Revenue (D7) Visa",
+          "id": "portugal-steady-revenue",
           "image": portugal,
-          "href": "/immigration/portugal/portugal-d2",
+          "href": "/immigration/portugal/portugal-steady-revenue",
           "description": {
-            "title": "Portugal D2 Entrepreneur Visa",
-            "html": "<h1>Portugal D2 Entrepreneur Visa</h1><p>A pathway to permanent residence and citizenship for those who wish to start (or transfer) a business or have already invested in a business in Portugal.</p><h2>Overview</h2><p>Portugal D2 Visa allows entrepreneurs or freelancers to live and operate their business in Portugal. An entrepreneur is required to incorporate a Company in Portugal.</p><p>D2 Visa allows the main applicant to bring family members, including spouses and dependent children, to Portugal under a family reunification visa.</p><p>Government fees for D2 Visa are insignificant compared to the Golden Visa. Processing of the D2 Visa may also be quicker compared to the Golden Visa.</p><h2>Investment</h2><p>At least EUR 25,000</p><p>This is not the amount that needs to be invested upfront but rather the amount we expect investors to have in their bank account for a successful application.</p><h2>Key benefits</h2><ul><li>Right to live and operate a business in Portugal</li><li>Family can live, work, and study in Portugal</li><li>Visa-free access to the EU Schengen area</li></ul><h2>Who is eligible for the D2 Visa?</h2><ul><li>Those who want to start a business in Portugal</li><li>Already have a business in Portugal but have not yet applied for the visa</li><li>Have enough social capital to sustain running a business</li><li>Have a solid and well-structured business and financial plan for your venture</li><li>Have proof of experience in the proposed business area and a solid background for your business proposal</li></ul>",
-            "slogan": "Invest in Portugal D2 Entrepreneur Visa"
+            "title": "Portugal Steady Revenue (D7) Visa",
+            "html": "<h1>Portugal Steady Revenue (D7) Visa: Your Gateway to a Relaxing Life</h1><p>Introduced in 2007 by the Portuguese government, the Steady Revenue (D7) Visa, alternatively known as Retirement or Passive Income Visa, invites non-EU/EEA/Swiss nationals with a reliable, regular net passive income to settle in Portugal. This income could stem from pensions, movable equity, real estate, intellectual property, or financial investments.</p><p>The eligibility threshold is a yearly income of €8,460, with an additional 50% for the spouse and 30% for each dependent child. This visa opens the door to you and your family for legal residency in Portugal, targeting retirees and individuals with passive income, aiming to contribute to the economy. Although primarily for retirees, this visa doesn’t restrict professional activities in Portugal.</p><p>Application for the D7 visa is through the Portuguese consulate, and upon approval, your family also becomes eligible for residency under family reunification regulations. This visa also grants access to visa-free travel within the Schengen zone.</p><h2>Benefits</h2><ul><li>Visa-free access to Schengen Area</li><li>Pathway to permanent residency and eventually citizenship, post 5 years of legal residency</li><li>Access to National Healthcare and Education Services in Portugal</li><li>Opportunity to conduct professional activities independently</li><li>Option for family reunification</li><li>Special tax program under NHR (non-habitual resident)</li></ul><h2>Eligibility</h2><ul><li>Non-EU national</li><li>Sufficient funds for self-sustenance</li><li>Clean criminal record</li><li>Residence address in Portugal</li><li>Minimum stay of 16 months in Portugal during the first 2-year period</li></ul>",
+            "slogan": "Embrace a Tranquil Life with Steady Revenue in Portugal"
           }
         },
         {
-          "name": "Portugal D7 Passive Income Visa",
-          "id":"portugal-d7",
+          "name": "Portugal Entrepreneurial Venture (D2) Visa",
+          "id": "portugal-entrepreneurial-venture",
           "image": portugal,
-          "href":"/immigration/portugal/portugal-d7",
+          "href": "/immigration/portugal/portugal-entrepreneurial-venture",
           "description": {
-            "title": "Portugal D7 Passive Income Visa",
-            "html": "<h1>Portugal D7 Passive Income Visa</h1><p>The D7 visa is an affordable and attractive visa allowing non-EU citizens to get Portuguese residency provided they have sufficient funds to sustain themselves during their stay in Portugal.</p><p>This visa is ideal for retirees or entrepreneurs who want to live in Portugal without having to make a major economic investment.</p><p>The D7 visa can then be renewed after one year for two successive periods of two years and can be converted into permanent residence.</p><p>The process for a passive income D7 visa is considerably faster and less costly to obtain, entitling the holder to the main benefits of Portugal residency, namely:</p><ul><li>Security, democracy, and life quality;</li><li>Free entry and circulation in the Schengen Area;</li><li>Family reunification;</li><li>Freedom to live in Portugal and to develop, or not, a professional activity;</li><li>Option to apply to the NHR tax program for tax purposes (low or no taxation for 10 years on most foreign-source income, applicable to pension income, dividends, interests, royalties, and real estate income from foreign sources);</li><li>Access to Portugal residents’ rights, such as education, recognition of diplomas and qualifications, healthcare, social security, trade union protection, justice, and courts;</li><li>Access to permanent residency or citizenship after 5 years, subject to passing a language test of basic Portuguese.</li></ul><h2>Documentation necessary for a D7 visa:</h2><ul><li>Application Form D7</li><li>Authentic passport</li><li>Two passport-size photos</li><li>Evidence of recurring or passive income</li><li>Evidence of a residence</li><li>Check for criminal records.</li><li>Valid travel insurance that includes medical coverage.</li><li>Bank statements over the last six months.</li></ul>",
-            "slogan": "Obtain Portuguese Residency with D7 Visa"
+            "title": "Portugal Entrepreneurial Venture (D2) Visa",
+            "html": "<h1>Unlock Business Opportunities with the Portugal Entrepreneurial Venture (D2) Visa</h1><p>The Portugal Entrepreneurial Venture (D2) Visa is a gateway for aspiring entrepreneurs to establish, expand or transfer their businesses to Portugal. This visa can be applied for directly in Portugal, without the need for a preceding special-purpose visa from the Portuguese consulate in your country.</p><p>This visa permits a 4-month stay in Portugal, during which an appointment with SEF is necessary for obtaining a valid Portuguese residency. It’s crafted for entrepreneurs eager to explore the business landscape in Portugal, or self-employed individuals with a contract or job proposal in hand.</p><h2>Qualifications for D2 Visa</h2><ul><li>Declaration of investment in Portugal</li><li>Proof of company set-up or financial resources for setting up a company in Portugal</li><li>Business plan showcasing the economic, social, and cultural impact of your venture</li><li>Financial capacity for company sustenance</li><li>Proof of personal financial means for living in Portugal</li><li>Initial share capital of €5,000 (reference value)</li><li>EU-wide comprehensive health insurance</li><li>Appointment of a Tax Representative in Portugal or opt for official notifications via the Portuguese Tax Authority portal</li></ul><h2>Benefits</h2><ul><li>Right to establish a business and live in Portugal</li><li>Free entry and circulation within the Schengen Area</li><li>Family reunification option in Portugal</li><li>Eligibility for NHR tax regime</li><li>Pathway to permanent residency or citizenship post 5 years of legal residency</li><li>Access to Public Healthcare and Education Systems in Portugal</li></ul>",
+            "slogan": "Foster Your Entrepreneurial Dreams in Portugal"
+          }
+        },
+        {
+          "name": "Portugal Digital Nomad Visa",
+          "id": "portugal-digital-nomad",
+          "image": portugal,
+          "href": "/immigration/portugal/portugal-digital-nomad",
+          "description": {
+            "title": "Portugal Digital Nomad Visa",
+            "html": "<h1>Portugal Digital Nomad Visa</h1><p>Unlock the charm of Portugal's serene and vibrant lifestyle with the Digital Nomad Visa, designed for remote workers.</p><h2>Overview</h2><p>The Portugal Digital Nomad Visa, frequently referred to as the D8 Visa, is a bespoke visa initiative for digital nomads, enabling them to reside and work in Portugal for a span of up to one year. This visa stands apart from conventional temporary residence visas as it is curated for individuals with the freedom to work from any corner of the globe.</p><p>Although it doesn’t offer a route to citizenship, it unveils the richness of Portugal's culture and landscapes to the global digital nomad community.</p><h2>Prerequisites</h2><ul><li>Completion of the designated application form.</li><li>Valid passport or alternate travel document.</li><li>Two recent, identical passport photographs.</li><li>Documentation of return transport.</li><li>Valid travel insurance covering medical emergencies.</li><li>Authorization for the SEF to access Portuguese criminal records.</li><li>Criminal record documentation from the country of origin or residency.</li><li>Evidence of accommodation and financial sustenance.</li></ul><h2>Income Stipulations</h2><p>The income threshold for the Portugal Digital Nomad Visa is set at EUR 3,040 per month, ensuring applicants from non-EU or EEA countries can sustain their remote work lifestyle while residing in Portugal.</p><h2>Costs Involved</h2><p>The initial visa application is priced around EUR 180, with an additional EUR 320 for the initial residence permit once in Portugal.</p><h2>Application Procedure</h2><p>The journey to securing a Portugal Digital Nomad Visa begins with scheduling an appointment with the Portuguese consulate in your home country. For those already in Portugal, a visit to the Portuguese Immigration and Border Services (SEF) office is required. The procedure is fairly straightforward, taking about 3-4 months for processing.</p><h2>Tax Implications</h2><p>As a Digital Nomad Visa holder, you have the option to apply for the Non-Habitual Resident tax regime (NHR), significantly reducing personal income tax liabilities. Nonetheless, a 20% tax rate for high-value-added activities under the NHR regime still applies.</p><h2>Advantages</h2><p>The Portugal Digital Nomad Visa is a golden ticket for individuals looking to explore Portugal temporarily. It grants visa holders the rights of residents including access to national healthcare services, educational facilities, the liberty to work as an independent professional, and protection under Portuguese law. Plus, it allows for hassle-free travel across the Schengen Area without the need for additional visas.</p>"
+            ,
+            "slogan": "Unlock the Charm of Portugal's Serene and Vibrant Lifestyle with the Digital Nomad Visa"
+          }
+        },
+      ]
+    }
+  },
+
+  "canada": {
+    "name": "Canada Immigration",
+    "hero": {
+      "title": "Unlock the Boundless Opportunities of Canada with Across the Globe",
+      "description": "Navigate the journey to your Canadian dream with Across the Globe. From skilled professionals to entrepreneurs, we guide you through Canada's diverse immigration pathways, ensuring a smooth transition to a land of unparalleled opportunities."
+    },
+    "plans": {
+      "values": [
+        {
+          "name": "Canadian Express Entry Pathway",
+          "id": "canadian-express-entry",
+          "image": canadaCover,
+          "href": "/immigration/canada/canadian-express-entry",
+          "description": {
+            "title": "Canadian Express Entry Pathway",
+            "html": "<h1>Canadian Express Entry Pathway</h1><p>Embark on a rewarding journey to Canadian Permanent Residency through the Express Entry Pathway, a digital gateway orchestrated by the Canadian government to streamline the influx of adept professionals keen on building a future in Canada.</p><h2>Gateway Overview</h2><p>The Express Entry operates as a meticulous platform managing a trio of paramount federal economic programs, ensuring a seamless transition for skilled workers towards achieving Canadian Permanent Residency.</p><h2>Embarking on the Express Entry Voyage</h2><p>The commencement of your Express Entry journey involves a two-tier process. Initially, you are required to craft a profile encompassing essential documents such as language test outcomes, an educational credential assessment report, and a valid passport or travel document. Upon the submission of your profile, an invitation to proceed with a comprehensive application for Canadian permanent residence awaits, provided you meet the criteria. This subsequent step mandates the inclusion of reference letters, additional identification documents, police clearance certificates, and medical examination results.</p><h2>Who is the Ideal Candidate?</h2><p>Express Entry is tailored for individuals boasting a solid educational background, proficient skills, and a commendable grasp of English and/or French. The eligibility sieve further extends to encompass the requisites of one of the three federal programs: Federal Skilled Worker (FSW), Federal Skilled Trades (FST), and Canadian Experience Class (CEC).</p><h2>Eligibility Spectrum</h2><p>The eligibility ambit for skilled workers under the Express Entry entails a minimum of one-year continuous full-time (or equivalent part-time) work experience in a skilled occupation within the past decade, a satisfactory score on an approved language test reflecting a Canadian Language Benchmark (CLB) of seven in either English or French, and a post-secondary education assessed against Canadian standards through an Education Credential Assessment.</p><h2>Cost Implications</h2><p>Submitting your initial Express Entry profile is devoid of any government fees. However, the fee requisition materializes once you are beckoned to apply for Canadian permanent residence. This financial phase may also incorporate provincial immigration fees should you traverse through a Provincial Nominee Program (PNP). Besides, demonstrating sufficient funds for your resettlement in Canada is imperative unless you are applying under the Canadian Experience Class program or possess a valid arranged employment offer.</p><h2>Settlement Funds Threshold</h2><table><tr><th>Number of Family Members</th><th>Funds Required</th></tr><tr><td>1</td><td>$13,757</td></tr><tr><td>2</td><td>$17,127</td></tr><tr><td>3</td><td>$21,055</td></tr><tr><td>4</td><td>$25,564</td></tr><tr><td>5</td><td>$28,994</td></tr><tr><td>6</td><td>$32,700</td></tr><tr><td>7</td><td>$36,407</td></tr><tr><td>For each additional family member</td><td>$3,706</td></tr></table>",
+            "slogan": "Your Compass to Canadian Permanent Residency"
+          }
+        },
+        {
+          "name": "Canada's Path Through Provincial Nominee Programs (PNPs)",
+          "id": "canada-provincial-nominee",
+          "image": canadaCover,
+          "href": "/immigration/canada/canada-provincial-nominee",
+          "description": {
+            "title": "Canada's Path Through Provincial Nominee Programs (PNPs)",
+            "html": "<h1>Embark on Your Canadian Dream with Provincial Nominee Programs</h1><p>Canada's Provincial Nominee Programs (PNPs) serve as a vessel for aspiring immigrants to achieve Canadian Permanent Residency, catering to those drawn towards a specific province or territory in Canada.</p><h2>Provincial Nominee Programs Unveiled</h2><p>Every province and territory, with the exception of Quebec and Nunavut, rolls out its distinct PNP, engineered to address its unique economic and demographic requisites. The varied PNP streams designed by these provinces aid in fulfilling their individual immigration aspirations, hence the eligibility benchmarks and application methodologies differ across the board. Despite the distinctions, PNPs are often regarded as a more accessible route to securing Canadian permanent residence.</p><h2>Provinces and Territories Engaging in PNPs</h2><ul><li>Alberta</li><li>British Columbia</li><li>Manitoba</li><li>New Brunswick</li><li>Newfoundland and Labrador</li><li>Northwest Territories</li><li>Nova Scotia</li><li>Ontario</li><li>Prince Edward Island</li><li>Quebec (Distinct Programs)</li><li>Saskatchewan</li><li>Yukon</li></ul><h2>Your Journey Through a Provincial Nominee Program</h2><p>The voyage towards Canadian Permanent Residency via a PNP is a dual-phase endeavor. Initially, an aspirant secures approval at the provincial level, followed by an application to the federal level for the ultimate approval. Although the provincial authorities play a pivotal role in nomination, the final verdict on permanent residency lies in the hands of the federal government.</p><h2>Cost Spectrum of PNPs</h2><p>The financial aspect of immigrating through a Provincial Nominee Program spans between $2,300 to $3,800 CAD, contingent on the selected program. The cost breakdown encompasses various elements like language tests, Educational Credential Assessment (ECA), biometrics, government fees, medical examination fees, police clearance certificates, and PNP processing fees, with some provinces like Ontario levying higher processing fees up to $1,500 CAD.</p><h2>Navigating the PNP Application Landscape</h2><p>The roadmap to applying for a Canadian PNP entails identifying the right PNP, submitting an application to the chosen province or territory, obtaining a Provincial Nomination certificate upon a successful application, and finally, forwarding your application for permanent residence to the Canadian federal government. The 'base' PNP process, a subset of PNPs, involves a slightly different nomination process sans an Express Entry profile requirement.</p><h2>Express Entry Coupled PNPs</h2><p>Canada's Express Entry system, intertwined with many PNPs, facilitates a streamlined application process for permanent residence. A nomination through an Express Entry-aligned PNP bestows an additional 600 Comprehensive Ranking System (CRS) points upon the applicant, significantly bolstering the chances of receiving an invitation to apply (ITA) for permanent residence in subsequent Express Entry draws.</p>",
+            "slogan": "Unlock Your Canadian Future with Provincial Nominee Programs"
+          }
+        },
+        {
+          "name": "Saskatchewan Immigrant Nominee Program (SINP)",
+          "id": "saskatchewan-sinp",
+          "image": canadaCover,
+          "href": "/immigration/canada/saskatchewan-sinp",
+          "description": {
+            "title": "Unlock the Opportunities in Saskatchewan with SINP",
+            "html": "<h1>Step into the Heartland of Canada with the Saskatchewan Immigrant Nominee Program (SINP)</h1><p>If you're eyeing a quicker and more streamlined pathway to Canadian immigration, the SINP could be your golden ticket. Tailored by the province, this program provides a unique set of criteria that could make your dream of settling in Canada a reality.</p><h2>SINP Categories to Choose From:</h2><ul><li>Saskatchewan Express Entry</li><li>Saskatchewan Employment Offer</li><li>Saskatchewan In-Demand Occupation</li></ul><h2>A Closer Look at SINP:</h2><p>Regarded as one of the most popular Provincial Nominee Programs, SINP allows skilled international candidates to make Saskatchewan their new home. Upon receiving the nomination, you're well on your way to securing a Permanent Resident Visa and settling in this vibrant province.</p><h2>Why SINP Stands Out:</h2><ul><li>Unlimited applications accepted year-round, setting it apart from other PNPs</li><li>Expedited processing times</li><li>Personalized guidance from provincial immigration officers</li><li>Transparent and straightforward decision-making by the Government of Saskatchewan</li><li>An added advantage when applying for Permanent Resident status with IRCC</li></ul>",
+            "slogan": "Your Fast-Track Pathway to Saskatchewan"
           }
         }
       ]
     }
   },
 
-"canada": {
-      "name": "Canada Immigration",
-      "hero": {
-        "title": "Unlock the Boundless Opportunities of Canada with Across the Globe",
-        "description": "Navigate the journey to your Canadian dream with Across the Globe. From skilled professionals to entrepreneurs, we guide you through Canada's diverse immigration pathways, ensuring a smooth transition to a land of unparalleled opportunities."
-      },
-      "plans": {
-        "values": [
-          {
-            "name": "Canada Express Entry Program",
-            "id": "canada-express-entry",
-            "image": canadaCover,
-            "href": "/immigration/canada/canada-express-entry",
-            "description": {
-              "title": "Canada Express Entry Program",
-              "html": "<h1>Canada Express Entry Program</h1><p>Step into a world of opportunities with the Canada Express Entry Program, a points-based immigration system designed for skilled professionals. Gain fast-track access to permanent residency in Canada, a land known for its high quality of life and myriad job opportunities.</p><h2>Program Overview</h2><p>The Express Entry Program assesses candidates based on a comprehensive ranking system that takes into account skills, experience, and other factors. Typically, PR applications are processed within 6-12 months, making this one of the fastest pathways to Canadian immigration.</p><h2>Eligibility Criteria</h2><ul><li>Age</li><li>Educational qualifications</li><li>Language proficiency</li><li>Canadian and other work experience</li><li>Skill transferability</li><li>Additional factors like provincial nomination</li></ul><h2>Key Benefits</h2><ul><li>Fast processing time for Permanent Residency</li><li>Access to Canada's world-class healthcare and education</li><li>High earning potential in diverse job markets</li><li>Social security benefits</li><li>Opportunities for family immigration</li></ul>",
-              "slogan": "Fast-Track Your Canadian Dream with Express Entry"
-            }
-          },
-          {
-            "name": "Canada Provincial Nominee Program (PNP)",
-            "id": "canada-pnp",
-            "image": canadaCover,
-            "href": "/immigration/canada/canada-pnp",
-            "description": {
-              "title": "Canada Provincial Nominee Program (PNP)",
-              "html": "<h1>Discover the Intricacies of Canada's Provincial Nominee Program</h1><p>Canada's Provincial Nominee Program (PNP) has gained immense traction as an alternative to federal immigration pathways, thanks to its more lenient eligibility requirements. Depending on the province's specific needs, these programs may be tied to certain occupations or require a job offer.</p><h2>Provinces Offering PNP</h2><ul><li>Alberta</li><li>British Columbia</li><li>Saskatchewan</li><li>Ontario</li><li>Prince Edward Island</li><li>Nova Scotia</li><li>Northwest Territories</li><li>Newfoundland and Labrador</li><li>New Brunswick</li><li>Manitoba</li><li>Quebec (Special Programs and Criteria)</li></ul><h2>Why Choose PNP?</h2><p>Opting for the Provincial Nominee Program could be your fast-track ticket to permanent residency in Canada. Once you receive the coveted PNP nomination, you're not just free to work and live in Canada—you're stepping into a world of endless possibilities.</p><h2>Benefits of Choosing PNP</h2><ul><li>Accelerated PR application process</li><li>Freedom to work and live in Canada indefinitely</li><li>Easier path to Canadian Citizenship</li><li>High earnings potential and strong job market integration</li><li>Low unemployment risks</li></ul>",
-              "slogan": "Fast-Track Your Canadian Journey with PNP"
-            }
-          },
-          {
-            "name": "Saskatchewan Immigrant Nominee Program (SINP)",
-            "id": "saskatchewan-sinp",
-            "image": canadaCover,
-            "href": "/immigration/canada/saskatchewan-sinp",
-            "description": {
-              "title": "Unlock the Opportunities in Saskatchewan with SINP",
-              "html": "<h1>Step into the Heartland of Canada with the Saskatchewan Immigrant Nominee Program (SINP)</h1><p>If you're eyeing a quicker and more streamlined pathway to Canadian immigration, the SINP could be your golden ticket. Tailored by the province, this program provides a unique set of criteria that could make your dream of settling in Canada a reality.</p><h2>SINP Categories to Choose From:</h2><ul><li>Saskatchewan Express Entry</li><li>Saskatchewan Employment Offer</li><li>Saskatchewan In-Demand Occupation</li></ul><h2>A Closer Look at SINP:</h2><p>Regarded as one of the most popular Provincial Nominee Programs, SINP allows skilled international candidates to make Saskatchewan their new home. Upon receiving the nomination, you're well on your way to securing a Permanent Resident Visa and settling in this vibrant province.</p><h2>Why SINP Stands Out:</h2><ul><li>Unlimited applications accepted year-round, setting it apart from other PNPs</li><li>Expedited processing times</li><li>Personalized guidance from provincial immigration officers</li><li>Transparent and straightforward decision-making by the Government of Saskatchewan</li><li>An added advantage when applying for Permanent Resident status with IRCC</li></ul>",
-              "slogan": "Your Fast-Track Pathway to Saskatchewan"
-            }
-          }          
-        ]
-      }
+  "australia": {
+    "name": "Australia Immigration",
+    "hero": {
+      "title": "Embark on a New Journey in the Land Down Under with Across the Globe",
+      "description": "Explore the boundless opportunities Australia has to offer with Across the Globe. Catering to skilled professionals and aspiring entrepreneurs, we navigate you through the diverse Australian immigration pathways ensuring a seamless transition to a country brimming with potential."
     },
+    "plans": {
+      "values": [
 
-    "uk":{
-      "name": "UK Immigration",
-      "hero": {
-        "title": "Discover the United Kingdom with ZeeVista Advisers.",
-        "description": "Embark on your UK journey with the expertise of ZeeVista Advisors. With our unparalleled experience in immigration services, we make your UK dreams come true, be it in business or permanent residency."
-      },
-      "plans": {
-        "values":[
+        {
+          "name": "Skilled Independent Visa (Subclass 189)",
+          "id": "skilled-independent-visa",
+          "image": australia,
+          "href": "/immigration/australia/skilled-independent-visa",
+          "description": {
+            "title": "Skilled Independent Visa (Subclass 189)",
+            "html": "<h1>Skilled Independent Visa (Subclass 189)</h1><p>Embrace a flourishing career and superior lifestyle in Australia with the Skilled Independent Visa (Subclass 189). Designed for invited professionals with distinct skills, this visa unveils the pathway to permanent residency in Australia, laden with numerous advantages.</p><h2>Visa Benefits & Duration</h2><ul><li>Permanent residency with endless stay possibilities</li><li>Entry to Medicare, Australia's governmental healthcare scheme</li><li>Liberty to work, study, and roam across Australia</li><li>Possible route to Australian citizenship</li></ul><h2>Eligibility Criteria</h2><ul><li>Invitation to apply following a skills evaluation</li><li>Below 45 years of age</li><li>A minimum tally of 65 in the points-tested stream</li><li>Competent proficiency in the English language</li></ul><h2>Family Inclusion</h2><p>Integrate eligible family members in your visa application, ensuring a unified transition to a new chapter in Australia.</p><h2>Cost & Processing Duration</h2><p>With a principal application charge of AUD$4,045 and supplementary fees for family members, the Skilled Independent Visa is a cherished asset. The processing duration might fluctuate, making it imperative to guarantee a flawless application to hasten the procedure.</p><h2>Points Calculation</h2><p>Amass points based on age, English proficiency, work tenure, and education among other factors, to reach the necessary threshold of 65 points for eligibility. With our adept guidance at Across the Globe, we scrupulously evaluate and steer you through the points-based scheme, ensuring a serene voyage towards your Australian aspiration.</p>",
+            "slogan": "Venture into a Realm of Opportunities with Subclass 189"
+          }
+        },
+        {
+          "name": "Australia 190 Subclass Visa",
+          "id": "australia-190-subclass",
+          "image": australia,
+          "href": "/immigration/australia/australia-190-subclass",
+          "description": {
+            "title": "Australia 190 Subclass Visa",
+            "html": "<h1>Australia 190 Subclass Visa</h1><p>Establish your roots in the captivating realms of Australia with the 190 Subclass Visa, curated for skilled talents nominated by an Australian State or Territory. Immerse in the Australian work culture and enjoy a life replete with superior facilities and limitless opportunities.</p><h2>Why 190 Subclass Visa?</h2><ul><li>Permanent residency with unbounded work privileges</li><li>Access to a competitive remuneration in AUD</li><li>Smooth family settlement in Australia</li></ul><h2>Eligibility Horizon</h2><ul><li>Endorsement by an Australian State or Territory Government</li><li>Engagement in a profession listed in the pertinent State or Territory</li><li>Successful skill appraisal test</li><li>Submission of an Expression of Interest (EOI)</li><li>Accumulation of at least 65 points in the points-based evaluation</li></ul><h2>Application Odyssey</h2><p>The expedition towards a 190 Subclass Visa initiates with an initial EOI submission, trailed by a nomination application upon selection, and concluding with the visa application post-nomination endorsement. Though the journey is well-defined, it necessitates rigorous adherence to the prescribed conditions and criteria, rendering professional counsel a wise decision.</p><h2>Embark with Proficiency</h2><p>Our seasoned 190 visa consultants at E-Help offer a roadmap to traverse the intricate 190 visa application odyssey, ensuring every requisite is met with precision. Your Australian dream is within grasp with the right expertise illuminating the path.</p>",
+            "slogan": "Your Portal to a Flourishing Life in Australia"
+          }
+        }
+
+      ]
+    }
+  },
+
+  "uk": {
+    "name": "UK Immigration",
+    "hero": {
+      "title": "Discover the United Kingdom with ZeeVista Advisers.",
+      "description": "Embark on your UK journey with the expertise of ZeeVista Advisors. With our unparalleled experience in immigration services, we make your UK dreams come true, be it in business or permanent residency."
+    },
+    "plans": {
+      "values": [
 
         {
           "name": "UK Innovator Founder Visa",
@@ -320,22 +368,34 @@ const data = {
             "html": "<h1>Unlock UK Market Potential with the Expansion Worker Visa</h1><p>This specialized visa empowers you to establish a UK outpost for your existing international business, whether you're a senior executive or a specialist in your field.</p><h2>What Makes This Visa Special?</h2><p>Introduced in April 2021, this visa type offers unparalleled flexibility, eliminating the need for continuous stay and an IELTS test.</p><h2>Investment Freedom</h2><p>You're in control of the capital you wish to allocate for your UK business expansion.</p><h2>Why Choose This Visa?</h2><ul><li>Multiple family members can apply under a single business component</li><li>Education in the UK is permitted</li><li>Freedom to travel in and out of the UK</li></ul><h2>Path to Citizenship</h2><p>Initially, you are granted a 2-year visa. Upon completion, you can apply for Indefinite Leave to Remain (ILR), paving the way for you and your family to secure UK nationality.</p><h2>Why a UK Passport?</h2><ul><li>Ranked 6th globally</li><li>Access to world-class education and healthcare, free of charge</li><li>Travel privileges to over 187 countries</li><li>Generational benefits extending to your children and grandchildren</li></ul>",
             "slogan": "Expand Your Business Horizons in the UK"
           }
-        }, 
+        },
         {
           "name": "UK Entrepreneurial Visa",
           "id": "uk-entrepreneurial",
           "image": uk,
           "href": "/immigration/uk/uk-entrepreneurial",
           "description": {
-              "title": "Kickstart Your Business Venture in the UK",
-              "html": "<h1>Entrepreneurial Visa: Your Launchpad to the UK's Business Arena</h1><p>The Entrepreneurial Visa application is a doorway for aspiring business magnates to initiate, lead, and grow their enterprises in the UK, without requiring a UK Sponsor. This visa realm not only unlocks business horizons but also carves a path towards permanent residency and a UK Passport for you and your loved ones.</p><h2>Is this Visa for You?</h2><p>This is an apt choice for seasoned business individuals or innovative entrepreneurs who have discovered a business niche in the UK or possess a groundbreaking business proposition. Through this visa, you get to:</p><ul><li>Become a proprietor of a UK business</li><li>Steer your UK business endeavours</li><li>Reside with no worries of visa termination</li></ul><h2>Qualification Benchmarks</h2><p>To be eligible for this visa realm, the aspirant:</p><ul><li>Should have pertinent experience, acumen, or qualifications in the business sector they aim to venture into.</li><li>Must have a viable business proposition or have pinpointed a UK business for acquisition.</li><li>Needs to have ample resources to bolster the proposed business venture with an investment that resonates with the business requisites, generally commencing from £25,000 or more.</li><li>Must be proficient in an approved English language test at Level B1.</li></ul><h2>The Entrepreneurial Edge</h2><p>The Entrepreneurial route is a tempting option for those zealous to inaugurate or expand their business horizons in the UK. Under the broader umbrella of the Skilled Worker Visa category, this route obviates the need for a separate sponsorship, thereby facilitating your ingress and establishment in the UK business echelon. Moreover, the absence of a minimum investment barrier makes it an adaptable choice for business aficionados.</p><h2>Embark with ZeeVista Advisors</h2><p>ZeeVista Advisors is at the forefront in aiding you sail through the nuances of Entrepreneurial Visa application. Our suite of services encompass:</p><ul><li>Expertise in formulating a solid business plan.</li><li>Aid in inaugurating a business bank account.</li><li>Guidance on your company sponsor licence application.</li><li>Training for your Authorising Officer.</li><li>Execution of your Skilled Worker Application.</li><li>Comprehensive support in your UK immigration journey.</li></ul>",
-              "slogan": "Foster Your Business Ambitions in the UK"
+            "title": "Kickstart Your Business Venture in the UK",
+            "html": "<h1>Entrepreneurial Visa: Your Launchpad to the UK's Business Arena</h1><p>The Entrepreneurial Visa application is a doorway for aspiring business magnates to initiate, lead, and grow their enterprises in the UK, without requiring a UK Sponsor. This visa realm not only unlocks business horizons but also carves a path towards permanent residency and a UK Passport for you and your loved ones.</p><h2>Is this Visa for You?</h2><p>This is an apt choice for seasoned business individuals or innovative entrepreneurs who have discovered a business niche in the UK or possess a groundbreaking business proposition. Through this visa, you get to:</p><ul><li>Become a proprietor of a UK business</li><li>Steer your UK business endeavours</li><li>Reside with no worries of visa termination</li></ul><h2>Qualification Benchmarks</h2><p>To be eligible for this visa realm, the aspirant:</p><ul><li>Should have pertinent experience, acumen, or qualifications in the business sector they aim to venture into.</li><li>Must have a viable business proposition or have pinpointed a UK business for acquisition.</li><li>Needs to have ample resources to bolster the proposed business venture with an investment that resonates with the business requisites, generally commencing from £25,000 or more.</li><li>Must be proficient in an approved English language test at Level B1.</li></ul><h2>The Entrepreneurial Edge</h2><p>The Entrepreneurial route is a tempting option for those zealous to inaugurate or expand their business horizons in the UK. Under the broader umbrella of the Skilled Worker Visa category, this route obviates the need for a separate sponsorship, thereby facilitating your ingress and establishment in the UK business echelon. Moreover, the absence of a minimum investment barrier makes it an adaptable choice for business aficionados.</p><h2>Embark with ZeeVista Advisors</h2><p>ZeeVista Advisors is at the forefront in aiding you sail through the nuances of Entrepreneurial Visa application. Our suite of services encompass:</p><ul><li>Expertise in formulating a solid business plan.</li><li>Aid in inaugurating a business bank account.</li><li>Guidance on your company sponsor licence application.</li><li>Training for your Authorising Officer.</li><li>Execution of your Skilled Worker Application.</li><li>Comprehensive support in your UK immigration journey.</li></ul>",
+            "slogan": "Foster Your Business Ambitions in the UK"
           }
-      }
-             
+        },
+        {
+          "name": "UK Entrepreneurial Self-Sponsorship Visa",
+          "href":"/immigration/uk/uk-entrepreneurial-self-sponsorship-visa",
+          "id": "uk-entrepreneurial-self-sponsorship-visa",
+          "image": uk,
+          "description": {
+            "title": "UK Entrepreneurial Self-Sponsorship Visa",
+            "html": "<h1>Explore Entrepreneurial Horizons with the UK Self-Sponsorship Visa</h1><p>The UK Entrepreneurial Self-Sponsorship Visa is a pathway for thriving business individuals to initiate and manage their own enterprises in the UK, without the requirement of a local sponsor, leading towards permanent residency and a UK Passport for them and their family.</p><h2>Is This Visa Right for You?</h2><p>If you’re a flourishing entrepreneur, spotting a business opportunity or having a promising business idea for the UK, this visa is your gateway to owning, leading, and securely establishing your venture in the UK.</p><h2>Eligibility Criteria</h2><ul><li>Relevant expertise or qualifications in the business domain.</li><li>A promising business idea or identified an existing UK business for acquisition.</li><li>Sufficient resources for the proposed business, with flexible investment starting from £25,000.</li><li>Capability to clear a Level B1 English language test.</li></ul><h2>Advantages of the Self-sponsorship Route</h2><p>This visa avenue is perfect for those looking to kickstart a business or extend their existing operations to the UK under the Skilled Worker Visa category, with a UK company sponsoring your entry, employment, and no minimum investment requirement, making it a lucrative option for seasoned or aspiring business individuals.</p><h2>Support Services by ZeeVista Advisors</h2><p>ZeeVista Advisors is here to facilitate your journey with services including business plan preparation, business bank account opening assistance, company sponsor license application advice, training for your Authorising Officer, Skilled Worker Application submission, and comprehensive support throughout your UK immigration process.</p>",
+            "slogan": "Unveiling Prosperous Pathways with Entrepreneurial Self-Sponsorship"
+          }
+        }
+
+
       ]
-      }
     }
+  }
 }
 
 export default data;

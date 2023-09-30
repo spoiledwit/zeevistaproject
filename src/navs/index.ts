@@ -44,17 +44,22 @@ export const desktopNav = [
       {
         id: "uk",
         title: "United Kingdom",
-        href: "/immigration/uk/uk-innovator-founder",
+        href: "/immigration/uk",
       },
       {
         id: "portugal",
         title: "Portugal",
-        href: "/immigration/portugal/portugal-d2",
+        href: "/immigration/portugal",
       },
       {
         id: "canada",
         title: "Canada",
-        href: "/immigration/canada/canada-express-entry",
+        href: "/immigration/canada",
+      },
+      {
+        id: "australia",
+        title: "Australia",
+        href: "/immigration/australia",
       },
     ],
   },
@@ -66,15 +71,15 @@ export const desktopNav = [
       {
         title: "UK",
         id: "uk",
-        href: "/visit-visas/uk",
+        href: "/immigration/visit-visas/uk",
       },
       {
         title: "Australia",
         id: "australia",
-        href: "/visit-visas/australia",
+        href: "/immigration/visit-visas/australia",
       },
       {
-        href: "/visit-visas/canada",
+        href: "/immigration/visit-visas/canada",
         title: "Canada",
         id: "canada",
       },
@@ -85,12 +90,12 @@ export const desktopNav = [
       },
       {
         id: "schengen",
-        href: "/visit-visas/schengen",
+        href: "/immigration/visit-visas/schengen",
         title: "Schengen",
       },
       {
         id: "new-zealand",
-        href: "/visit-visas/new-zealand",
+        href: "/immigration/visit-visas/new-zealand",
         title: "New Zealand",
       },
     ],

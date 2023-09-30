@@ -10,6 +10,7 @@ import { useEffect } from "react";
 const ImmigrationPage = ({setProgress}: any) => {
 
   const { country, plan } = useParams();
+  console.log(country, plan);
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -27,13 +28,14 @@ const ImmigrationPage = ({setProgress}: any) => {
 
   if (plan) {
     planData = countryData.plans.values.find((p) => p.id === plan) as PlanData;
-  }
+  };
 
   const optionsData = {
     slogan: planData?.description.slogan || countryData.description.slogan,
     title: planData?.description.title || countryData.description.title,
     html: planData?.description.html || countryData.description.html,
   };
+
 
   return (
     <div className="flex flex-col gap-20 mb-40">

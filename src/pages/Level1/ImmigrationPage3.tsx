@@ -49,7 +49,7 @@ const ImmigrationPage3: React.FC<Props> = ({
             name: "Australia",
             href: "/immigration/australia",
             image: sydney,
-            plans: []
+            plans: data["australia"].plans.values
         },
         {
             name: "Portugal",
