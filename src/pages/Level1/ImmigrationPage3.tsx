@@ -10,7 +10,7 @@ import uk from "../../../assets/ukcover.jpg";
 import sydney from "../../../assets/sydney.webp";
 import canada from "../../../assets/canada_im_cover.webp";
 import portugal from "../../../assets/portugal.webp"
-import canada2 from "../../../assets/canada.webp"
+// import canada2 from "../../../assets/canada.webp"
 
 interface Props {
     setProgress: (progress: number) => void;
