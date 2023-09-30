@@ -320,7 +320,19 @@ const data = {
             "html": "<h1>Unlock UK Market Potential with the Expansion Worker Visa</h1><p>This specialized visa empowers you to establish a UK outpost for your existing international business, whether you're a senior executive or a specialist in your field.</p><h2>What Makes This Visa Special?</h2><p>Introduced in April 2021, this visa type offers unparalleled flexibility, eliminating the need for continuous stay and an IELTS test.</p><h2>Investment Freedom</h2><p>You're in control of the capital you wish to allocate for your UK business expansion.</p><h2>Why Choose This Visa?</h2><ul><li>Multiple family members can apply under a single business component</li><li>Education in the UK is permitted</li><li>Freedom to travel in and out of the UK</li></ul><h2>Path to Citizenship</h2><p>Initially, you are granted a 2-year visa. Upon completion, you can apply for Indefinite Leave to Remain (ILR), paving the way for you and your family to secure UK nationality.</p><h2>Why a UK Passport?</h2><ul><li>Ranked 6th globally</li><li>Access to world-class education and healthcare, free of charge</li><li>Travel privileges to over 187 countries</li><li>Generational benefits extending to your children and grandchildren</li></ul>",
             "slogan": "Expand Your Business Horizons in the UK"
           }
-        }        
+        }, 
+        {
+          "name": "UK Entrepreneurial Visa",
+          "id": "uk-entrepreneurial",
+          "image": uk,
+          "href": "/immigration/uk/uk-entrepreneurial",
+          "description": {
+              "title": "Kickstart Your Business Venture in the UK",
+              "html": "<h1>Entrepreneurial Visa: Your Launchpad to the UK's Business Arena</h1><p>The Entrepreneurial Visa application is a doorway for aspiring business magnates to initiate, lead, and grow their enterprises in the UK, without requiring a UK Sponsor. This visa realm not only unlocks business horizons but also carves a path towards permanent residency and a UK Passport for you and your loved ones.</p><h2>Is this Visa for You?</h2><p>This is an apt choice for seasoned business individuals or innovative entrepreneurs who have discovered a business niche in the UK or possess a groundbreaking business proposition. Through this visa, you get to:</p><ul><li>Become a proprietor of a UK business</li><li>Steer your UK business endeavours</li><li>Reside with no worries of visa termination</li></ul><h2>Qualification Benchmarks</h2><p>To be eligible for this visa realm, the aspirant:</p><ul><li>Should have pertinent experience, acumen, or qualifications in the business sector they aim to venture into.</li><li>Must have a viable business proposition or have pinpointed a UK business for acquisition.</li><li>Needs to have ample resources to bolster the proposed business venture with an investment that resonates with the business requisites, generally commencing from £25,000 or more.</li><li>Must be proficient in an approved English language test at Level B1.</li></ul><h2>The Entrepreneurial Edge</h2><p>The Entrepreneurial route is a tempting option for those zealous to inaugurate or expand their business horizons in the UK. Under the broader umbrella of the Skilled Worker Visa category, this route obviates the need for a separate sponsorship, thereby facilitating your ingress and establishment in the UK business echelon. Moreover, the absence of a minimum investment barrier makes it an adaptable choice for business aficionados.</p><h2>Embark with ZeeVista Advisors</h2><p>ZeeVista Advisors is at the forefront in aiding you sail through the nuances of Entrepreneurial Visa application. Our suite of services encompass:</p><ul><li>Expertise in formulating a solid business plan.</li><li>Aid in inaugurating a business bank account.</li><li>Guidance on your company sponsor licence application.</li><li>Training for your Authorising Officer.</li><li>Execution of your Skilled Worker Application.</li><li>Comprehensive support in your UK immigration journey.</li></ul>",
+              "slogan": "Foster Your Business Ambitions in the UK"
+          }
+      }
+             
       ]
       }
     }

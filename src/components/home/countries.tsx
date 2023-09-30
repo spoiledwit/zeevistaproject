@@ -27,22 +27,22 @@ const Countries = ({ setColor }: Props) => {
     {
       name: "Caribbean Passports",
       image: australia,
-      href: "/immigration/caribbean/saint-lucia",
+      href: "/caribbean",
     },
     {
       name: "Immigration",
       image: immigration,
-      href: "/immigration/uk/uk-innovator-founder",
+      href: "/immigration",
     },
     {
       name: "Visit Visas",
       image: newzealand,
-      href: "/immigration/visit-visas/uk",
+      href: "/visit-visas",
     },
     {
       name: "Student Visas",
       image: canada,
-      href: "/immigration/student-visas/usa",
+      href: "/student-visas",
     },
   ];
 

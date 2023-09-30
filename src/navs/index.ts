@@ -12,7 +12,7 @@ export const desktopNav = [
   {
     id: "caribbean-passports",
     title: "Caribbean Passports",
-    href: "/immigration/caribbean/saint-lucia",
+    href: "/caribbean",
     children: [
       {
         id: "saint-lucia",
@@ -39,7 +39,7 @@ export const desktopNav = [
   {
     id: "immigration",
     title: "Immigration",
-    href: "/immigration/uk/uk-innovator-founder",
+    href: "/immigration",
     children: [
       {
         id: "uk",
@@ -61,36 +61,36 @@ export const desktopNav = [
   {
     id: "visit-visas",
     title: "Visit Visas",
-    href: "/immigration/visit-visas/uk",
+    href: "/visit-visas",
     children: [
       {
         title: "UK",
         id: "uk",
-        href: "/immigration/visit-visas/uk",
+        href: "/visit-visas/uk",
       },
       {
         title: "Australia",
         id: "australia",
-        href: "/immigration/visit-visas/australia",
+        href: "/visit-visas/australia",
       },
       {
-        href: "/immigration/visit-visas/canada",
+        href: "/visit-visas/canada",
         title: "Canada",
         id: "canada",
       },
       {
-        href: "/immigration/visit-visas/usa",
+        href: "/visit-visas/usa",
         title: "USA",
         id: "USA",
       },
       {
         id: "schengen",
-        href: "/immigration/visit-visas/schengen",
+        href: "/visit-visas/schengen",
         title: "Schengen",
       },
       {
         id: "new-zealand",
-        href: "/immigration/visit-visas/new-zealand",
+        href: "/visit-visas/new-zealand",
         title: "New Zealand",
       },
     ],
@@ -98,7 +98,7 @@ export const desktopNav = [
   {
     id: "student-visas",
     title: "Student Visas",
-    href: "/immigration/student-visas/usa",
+    href: "/student-visas",
     children: [
       {
         id: "uk",

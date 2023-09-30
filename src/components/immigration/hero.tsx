@@ -28,8 +28,7 @@ const Hero = ({
   const navigate = useNavigate();
   let { pathname } = useLocation();
   const planname = pathname.substring(pathname.lastIndexOf("/") + 1);
-  console.log(planname);
-
+  
   function getImageSource() {
       if (planname.includes("uk")) {
           return uk;
