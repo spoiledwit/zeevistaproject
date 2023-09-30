@@ -6,6 +6,9 @@ import australia from "../assets/sydneyCover.webp";
 import canadaCover from "../assets/canada_im_cover.webp";
 import usa from "../assets/usaCover.webp";
 import newzealand from "../assets/newzealandCover.webp";
+import dominca from "../assets/dominica-passport.jpeg";
+import grenada from "../assets/grenada.jpg";
+import lucia from "../assets/saint-lucia-passport1.jpg";
 
 const data = {
   "caribbean": {
@@ -22,7 +25,7 @@ const data = {
           "id": "saint-lucia",
           "href": "/immigration/caribbean/saint-lucia",
           "name": "Saint Lucia",
-          "image": passport,
+          "image": lucia,
           "subtitle": "Unlock the gateway to global freedom with Saint Lucia's Investment-based Citizenship.",
           "description": {
             "title": "Invest in Saint Lucia, Invest in Your Global Future",
@@ -46,7 +49,7 @@ const data = {
           "id": "grenada",
           "href": "/immigration/caribbean/grenada",
           "name": "Grenada",
-          "image": passport,
+          "image": grenada,
           "subtitle": "Unlock global possibilities through a strategic investment in Grenada.",
           "description": {
             "title": "Elevate Your Global Standing with Grenada’s Citizenship by Investment",
@@ -58,7 +61,7 @@ const data = {
           "id": "dominica",
           "href": "/immigration/caribbean/dominica",
           "name": "Commonwealth of Dominica",
-          "image": passport,
+          "image": dominca,
           "subtitle": "Transform your global lifestyle through a strategic investment in Dominica.",
           "description": {
             "title": "Elevate Your Worldly Experiences with Dominica’s Citizenship by Investment",

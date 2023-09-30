@@ -1,6 +1,6 @@
 import img2 from "../../../assets/bg2.jpg";
 import logo from "../../../assets/logowhite.png";
-import caribbean from "../../../assets/caribbean.jpeg";
+import caribbean from "../../../assets/map-passport.webp";
 
 import Carousel from "../../components/carousel/simple";
 

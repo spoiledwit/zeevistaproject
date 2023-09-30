@@ -6,7 +6,7 @@ import data from "../../../content/data";
 import { Link } from "react-router-dom";
 
 import visas from "../../../assets/london.webp";
-import passport from "../../../assets/passports.jpg";
+import passport from "../../../assets/map-passport.webp";
 
 interface Props {
     setProgress: (progress: number) => void;
@@ -76,12 +76,13 @@ const DynamicPage: React.FC<Props> = ({
                     backgroundRepeat: "no-repeat",
                 }}
             >
-                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
                 <div className="flex flex-col w-full h-full justify-center mt-20 z-10">
                     <h1
                         className="text-white mt-10 font-play capitalize text-3xl md:text-5xl mb-4 leading-snug"
                     >
                         Explore {country && country.replace("-", " ")}
+                        {country === "caribbean" && " Citizenship"}
 
                         <br />
                     </h1>
