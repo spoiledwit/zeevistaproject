@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import portugal2 from "../../../assets/polandCover.webp";
 
-import london from "../../../assets/london.webp";
+// import london from "../../../assets/london.webp";
 import uk from "../../../assets/ukcover.jpg";
 import sydney from "../../../assets/sydney.webp";
 import canada from "../../../assets/canada_im_cover.webp";

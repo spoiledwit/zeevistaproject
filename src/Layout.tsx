@@ -10,7 +10,7 @@ import { Toaster } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MdContactSupport } from 'react-icons/md';
-import SocialHeader from './components/SocialHeader';
+// import SocialHeader from './components/SocialHeader';
 import whatsappimg from "../assets/whatsappimg.webp";
 
 const Layout = () => {
@@ -53,7 +53,7 @@ const Layout = () => {
       <Toaster />
       {isMenuOpen && <MenuPage closeMenu={() => setIsMenuOpen(false)} />}
       <div
-        className="fixed left-4 md:left-10 top-10"
+        className="fixed left-4 md:left-10 top-5"
         style={{ zIndex: 999 }}
        >
         <Button
@@ -65,7 +65,7 @@ const Layout = () => {
         />
       </div>
       <div
-        className="fixed md:right-10 right-4 top-10"
+        className="fixed md:right-10 right-4 top-5"
         style={{ zIndex: 999 }}
       >
         <Button
@@ -77,7 +77,7 @@ const Layout = () => {
         />
       </div>
       <div className="top-0 left-0 md:block hidden absolute w-full z-50">
-        <SocialHeader />
+        {/* <SocialHeader /> */}
         <Header />
       </div>
       <Outlet />
