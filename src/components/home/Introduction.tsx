@@ -10,7 +10,6 @@ const Introduction = () => {
         <div className="w-full bg-gray-100 text-black pb-10">
             <h2 className="mt-10 text-3xl font-play text-yellow-600 text-center">
                 ZeeVista Immigration Advisors
-
                 <Bar w={"w-[280px]"} />
             </h2>
             <div className="mt-12 md:flex-row flex-col flex font-play max-w-screen-lg gap-10 mx-auto text-sm leading-relaxed">

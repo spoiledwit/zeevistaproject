@@ -1,6 +1,6 @@
-import img2 from "../../../assets/bg2.jpg";
 import logo from "../../../assets/logowhite.png";
 import caribbean from "../../../assets/map-passport.webp";
+import img3 from "../../../assets/consultancy.jpeg";
 
 import Carousel from "../../components/carousel/simple";
 
@@ -10,13 +10,13 @@ const data = [
     image: caribbean,
     title: <span>Second <span className="text-yellow-600">Citizenship</span></span>,
     subtitle: "Caribbean Passport & Freedom",
-    description: "Achieve European Citizenship in 3 months.",
+    description: "Get a Second Passport with Ease.",
     action: "Learn More",
     href: "/second-citizenship-infos",
   },
   {
     id: 2,
-    image: img2,
+    image: img3,
     title: <span> <span className="text-yellow-600">Immigration</span> Services</span>,
     subtitle: "Streamlined Visa Application Process",
     description: "Effortless Application with Rapid Approval.",

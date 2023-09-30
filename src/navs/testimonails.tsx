@@ -97,6 +97,31 @@ export default function Testimonials() {
         "The expertise of ZeeVista Advisors in handling my immigration case was exemplary. Their dedicated team ensured a seamless process, making my dream of relocating abroad a reality. Their professionalism and support have been invaluable, and I highly recommend their services.",
       image: globe,
     },
+    {
+      name: "Mohamed Ahmad",
+      content:
+        "Engaging with ZeeVista Advisors was the gateway to realizing my ambitions of moving abroad. Their seasoned team meticulously handled every aspect of my immigration case, making the process seamless. I am now thriving in my new home, all thanks to their exemplary services.",
+      image: globe,
+    },
+    {
+      name: "Raid",
+      content:
+        "The professional demeanor and expertise of ZeeVista Advisors were beyond my expectations. Their personalized approach to my case made the complex immigration process a breeze. I now enjoy a new life abroad, all thanks to their dedicated and proficient team.",
+      image: globe,
+    },
+    {
+      name: "Moussa Mohammed",
+      content:
+        "The moment I engaged with ZeeVista Advisors, I knew my immigration journey would be in capable hands. Their in-depth understanding and tailored solutions made every step straightforward. I am immensely grateful for their dedication which has allowed me to live my dream.",
+      image: globe,
+    },
+    {
+      name: "Ghahari Mohammed",
+      content:
+        "ZeeVista Advisors turned the daunting task of immigration into a hassle-free experience for me. Their professional guidance and prompt responses were instrumental in ensuring a smooth visa application process. I am living my dream abroad, all thanks to their outstanding service.",
+      image: globe,
+    },
+
   ];
 
 
@@ -113,21 +138,8 @@ export default function Testimonials() {
       </p>
       <div className="w-full flex items-center justify-center">
         
-      <div className="flex max-w-[700px] gap-10 py-10 md:flex-row items-center justify-center md:justify-between w-full">
-        <div className="flex flex-col items-center">
-          <VisibilitySensor
-            partialVisibility
-            offset={{ top: 10 }}
-            delayedCall
-          >
-            {({ isVisible }:{isVisible:any}) => (
-              <h3 className="text-5xl font-bold text-yellow-600">
-                <CountUp end={isVisible ? 80 : 0} duration={4} />
-              </h3>
-            )}
-          </VisibilitySensor>
-          <p className="text-center font-play text-lg mt-2 mr-3">Clients</p>
-        </div>
+      <div className="flex max-w-[500px] gap-10 py-10 md:flex-row items-center justify-center md:justify-between w-full">
+        
         <div className="flex flex-col items-center">
           <VisibilitySensor
             partialVisibility
@@ -150,11 +162,11 @@ export default function Testimonials() {
           >
             {({ isVisible }:{isVisible:any}) => (
               <h3 className="text-5xl font-bold text-yellow-600">
-                <CountUp end={isVisible ? 15 : 0} duration={3} />
+                <CountUp end={isVisible ? 467 : 0} duration={3} />
               </h3>
             )}
           </VisibilitySensor>
-          <p className="text-center text-lg mt-2 font-play">Visas</p>
+          <p className="text-center text-lg mt-2 font-play">Visa Approvals</p>
         </div>
       </div>
 
@@ -162,7 +174,6 @@ export default function Testimonials() {
       
       </div>
        
-
       <div className=" flex flex-col items-center justify-center w-full">
         <h2 className=" text-yellow-600 text-center md:text-left self-center text-3xl md:px-0 px-8 md:text-3xl font-play">
           Testimonials
