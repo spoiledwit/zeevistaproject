@@ -68,40 +68,13 @@ const AssessmentForm = () => {
         onChange={(e) => setNationality(e.target.value)}
       />
       <Input
-        label="Are you an Owner, shareholder, Partner Or Manager of a Business?"
+        label="Education"
         value={education}
         onChange={(e) => setEducation(e.target.value)}
       />
       <Input
-        label="What is your business turnover?"
-        value={education}
-        onChange={(e) => setEducation(e.target.value)}
-      />
-      <Input
-        label="All net earning per month:"
-        value={education}
-        onChange={(e) => setEducation(e.target.value)}
-      />
-      <Input
+        label="Message"
         value={text}
-        label="Please write your message"
-        onChange={(e) => setText(e.target.value)}
-      />
-      <Input
-        value={text}
-        label="What is your employment status?"
-        onChange={(e) => setText(e.target.value)}
-      />
-      <Input
-        value={text}
-        label="
-        Employed: Job Title"
-        onChange={(e) => setText(e.target.value)}
-      />
-
-      <Input
-        value={text}
-        label="How did you hear about us?"
         onChange={(e) => setText(e.target.value)}
       />
       <Button
