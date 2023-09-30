@@ -6,6 +6,11 @@ import footer1 from "../../assets/footer1.jpg";
 import footer2 from "../../assets/footer2.jpg";
 import {BiTime} from "react-icons/bi";
 
+import logo1 from "../../assets/bc_logo.png";
+import logo2 from "../../assets/aisc_logo.png";
+import logo3 from "../../assets/mara.jpeg";
+import logo4 from "../../assets/iccrc.webp";
+
 export default function Footer() {
   return (
     <footer className=" w-full flex items-center flex-col border-t bg-black">
@@ -31,13 +36,19 @@ export default function Footer() {
           }}
         />
       </span>
-
       <div className=" flex flex-col md:flex-row w-full gap-10 md:gap-20 px-4 md:px-20 md:py-20 py-12 xl:px-40">
         <section className=" flex flex-col w-full md:w-1/2">
           <img src={logo} alt="logo" className="mt-[-10px]" width={80} height={40} />
           <p className="text-gray-300 mt-5">
             <strong className="text-yellow-600">ZeeVista Advisors</strong> specializes in hassle-free secondary passports and citizenships. Customer satisfaction drives our growth and success. We prioritize client trust and aim to set new service standards in the document clearing sector.
           </p>
+            
+      <div className="flex  md:flex-row justify-between md:justify-center items-center gap-2 md:gap-6 md:px-20 px-4 py-10">
+        <img src={logo1} alt="logo" className="md:h-12 h-8" />
+        <img src={logo2} alt="logo" className="md:h-12 h-8" />
+        <img src={logo3} alt="logo" className="md:h-12 h-8" />
+        <img src={logo4} alt="logo" className="md:h-12 h-8" />
+      </div>
         </section>
         <section className=" flex flex-col w-full md:w-1/4">
           <h3 className=" text-yellow-600 font-semibold font-serif text-2xl whitespace-nowrap">
@@ -88,7 +99,7 @@ export default function Footer() {
 
       <p className="h-20 border-t border-gray-300 text-gray-300 md:text-center md:px-0 px-8 md:text-lg text-sm pt-6">
         Copyright © 2023 ZeeVista Advisors. All rights reserved.
-      </p>
+      </p>  
     </footer>
   );
 }

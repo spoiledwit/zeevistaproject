@@ -2,6 +2,8 @@ import Carousel from "../components/carousel/simple";
 import Bar from "../components/Bar";
 import globe from "../../assets/globe.jpg"
 import { AiFillStar } from "react-icons/ai";
+import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 export default function Testimonials() {
   const testimonials = [
@@ -96,42 +98,102 @@ export default function Testimonials() {
       image: globe,
     },
   ];
-  
-  
+
+
 
   return (
-    <div className=" flex items-center flex-col w-full justify-center">
+    <div className=" flex items-center flex-col w-full  justify-center">
+      <div className="flex flex-col w-full items-center">
       <h2 className=" text-yellow-600 text-center md:text-left self-center text-3xl md:px-0 px-8 md:text-3xl font-play">
-        What our clients say
-        <Bar w={"w-[200px]"} />
+          What our clients says
+          <Bar w={"w-[160px]"} />
       </h2>
-      {/* <p className="max-w-[800px] text-center">
-      Our clients rate us as their "firm of choice" and have described us as "one of the world's very best immigration law firms". We are proud of our reputation for obtaining the results our clients need to meet their life and business goals.
-      </p> */}
-      <div className=" w-full relative mt-4 md:px-0 px-8 md:mt-4 self-center">
-        <Carousel options={{ loop: true }}>
-          {testimonials.map((t, i) => (
-            <div key={i} className=" flex flex-col items-center">
-              <p className=" text-gray-500 leading-loose text-center text-lg max-w-3xl">
-              <strong className="text-yellow-600 text-lg mr-1">"</strong>{t.content} <strong className="text-yellow-600 text-lg">"</strong>
-              </p>
+      <p className="max-w-[800px] text-center">
+        Our clients rate us as their "firm of choice" and have described us as "one of the world's very best immigration law firms". We are proud of our reputation for obtaining the results our clients need to meet their life and business goals.
+      </p>
+      <div className="w-full flex items-center justify-center">
+        
+      <div className="flex max-w-[700px] gap-10 py-10 md:flex-row items-center justify-center md:justify-between w-full">
+        <div className="flex flex-col items-center">
+          <VisibilitySensor
+            partialVisibility
+            offset={{ top: 10 }}
+            delayedCall
+          >
+            {({ isVisible }:{isVisible:any}) => (
+              <h3 className="text-5xl font-bold text-yellow-600">
+                <CountUp end={isVisible ? 80 : 0} duration={4} />
+              </h3>
+            )}
+          </VisibilitySensor>
+          <p className="text-center font-play text-lg mt-2 mr-3">Clients</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <VisibilitySensor
+            partialVisibility
+            offset={{ top: 10 }}
+            delayedCall
+          >
+            {({ isVisible }:{isVisible:any}) => (
+              <h3 className="text-5xl font-bold text-yellow-600">
+                <CountUp end={isVisible ? 10 : 0} duration={3} />
+              </h3>
+            )}
+          </VisibilitySensor>
+          <p className="text-center font-play text-lg mt-2 ">Countries</p>
+        </div>
+        <div className="flex flex-col items-center">
+          <VisibilitySensor
+            partialVisibility
+            offset={{ top: 10 }}
+            delayedCall
+          >
+            {({ isVisible }:{isVisible:any}) => (
+              <h3 className="text-5xl font-bold text-yellow-600">
+                <CountUp end={isVisible ? 15 : 0} duration={3} />
+              </h3>
+            )}
+          </VisibilitySensor>
+          <p className="text-center text-lg mt-2 font-play">Visas</p>
+        </div>
+      </div>
 
-              <h3 className="mt-10 font-serif text-yellow-600 text-lg md:mt-6 ">{t.name}</h3>
-            <div className="flex my-2">
-            {[...Array(5)].map((_, i) => (
-                <AiFillStar key={i} className=" text-yellow-600 text-lg" />
-              ))}
-            </div>
-              <div className=" w-12 h-12 rounded-full bg-gray-200">
-                <img
-                  className=" rounded-full h-full aspect-square object-cover"
-                  src={t.image}
-                  alt={t.name}
-                />
+      </div>
+      
+      </div>
+       
+
+      <div className=" flex flex-col items-center justify-center w-full">
+        <h2 className=" text-yellow-600 text-center md:text-left self-center text-3xl md:px-0 px-8 md:text-3xl font-play">
+          Testimonials
+          <Bar w={"w-[160px]"} />
+        </h2>
+        <div className=" w-full relative mt-4 md:px-0 px-8 md:mt-4 self-center">
+          <Carousel options={{ loop: true }}>
+            {testimonials.map((t, i) => (
+              <div key={i} className=" flex flex-col items-center">
+                <p className=" text-gray-500 leading-loose text-center text-lg max-w-3xl">
+                  <strong className="text-yellow-600 text-lg mr-1">"</strong>{t.content} <strong className="text-yellow-600 text-lg">"</strong>
+                </p>
+
+                <h3 className="mt-10 font-serif text-yellow-600 text-lg md:mt-6 ">{t.name}</h3>
+                <div className="flex my-2">
+                  {[...Array(5)].map((_, i) => (
+                    <AiFillStar key={i} className=" text-yellow-600 text-lg" />
+                  ))}
+                </div>
+                <div className=" w-12 h-12 rounded-full bg-gray-200">
+                  <img
+                    className=" rounded-full h-full aspect-square object-cover"
+                    src={t.image}
+                    alt={t.name}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
-        </Carousel>
+            ))}
+          </Carousel>
+        </div>
+
       </div>
     </div>
   );
