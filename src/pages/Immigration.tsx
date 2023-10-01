@@ -10,7 +10,6 @@ import { useEffect } from "react";
 const ImmigrationPage = ({setProgress}: any) => {
 
   const { country, plan } = useParams();
-  console.log(country, plan);
 
   useEffect(() => {
     window.scrollTo(0, 0)

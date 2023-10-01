@@ -6,7 +6,7 @@ import data from "../../../content/data";
 import { Link } from "react-router-dom";
 
 import visas from "../../../assets/london.webp";
-import passport from "../../../assets/map-passport.webp";
+import passport from "../../../assets/passports.webp";
 
 interface Props {
     setProgress: (progress: number) => void;
@@ -22,7 +22,7 @@ const DynamicPage: React.FC<Props> = ({
 
     useEffect(() => {
         setProgress(70);
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
         setTimeout(() => {
             setProgress(100);
         }
@@ -76,7 +76,7 @@ const DynamicPage: React.FC<Props> = ({
                     backgroundRepeat: "no-repeat",
                 }}
             >
-                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
                 <div className="flex flex-col w-full h-full justify-center mt-20 z-10">
                     <h1
                         className="text-white mt-10 font-play capitalize text-3xl md:text-5xl mb-4 leading-snug"
@@ -87,7 +87,7 @@ const DynamicPage: React.FC<Props> = ({
                         <br />
                     </h1>
                     <span
-                        className="text-white  mb-12"
+                        className="text-white text-xl mb-12"
                     >
                         {getCountryContent(country)}
                     </span>
@@ -99,7 +99,7 @@ const DynamicPage: React.FC<Props> = ({
                     />
                 </div>
             </div>
-            <div className="items-center flex-col min-h-screen flex justify-center px-8 md:px-32 pb-20 w-ful">
+            <div className="items-center flex-col min-h-screen flex justify-center px-8 md:px-32 pb-32 w-ful">
                 <h2 className=" font-play  mb-10 text-yellow-600 mt-10 text-center text-2xl">
                     Select from the following countries to know more
                 </h2>
@@ -112,22 +112,31 @@ const DynamicPage: React.FC<Props> = ({
                             >
                                 {c.plans.map((p, i) => (
                                     <div
-                                        className="relative bg-cover w-[320px] md:w-[280px] h-[500px]  bg-center"
+                                        className="relative flex items-center justify-center bg-cover w-[320px] md:w-[280px] h-[500px]  bg-center"
                                         style={{ backgroundImage: `url(${p.image})` }}
                                         key={i}
                                     >
+                                        <div className="w-[90%] h-[94%] z-10 border border-white" />
+                                        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40" />
                                         <div
-                                            className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"
+                                            className="absolute z-20 top-0 left-0 w-full h-full flex items-center justify-center"
                                         >
+                                            <span className="flex flex-col mx-5">
+                                                
                                             <Link
-                                                className="flex flex-col text-center font-play mb-20 text-xl items-center text-white p-5"
+                                                className="flex flex-col text-center font-play  text-2xl items-center text-white p-5"
                                                 to={p.href}
                                             >
                                                 {p.name}
                                             </Link>
+                                            <p className="text-white text-center">
+                                                {p.subtitle}
+                                            </p>
+
+                                            </span>
                                             <Link
                                                 to={p.href}
-                                                className="text-white whitespace-nowrap hover:border-yellow-500 mb-[-30px] md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
+                                                className="text-white whitespace-nowrap hover:border-yellow-500 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
                                                 More
                                             </Link>
                                         </div>

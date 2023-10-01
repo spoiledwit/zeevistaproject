@@ -6,12 +6,10 @@ import data from "../../../content/data";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import portugal2 from "../../../assets/polandCover.webp";
-import uk from "../../../assets/ukcover.jpg";
+import uk from "../../../assets/uk-visa.webp";
 import sydney from "../../../assets/sydney.webp";
-import canada from "../../../assets/canada_im_cover.webp";
-import portugal from "../../../assets/portugal.webp"
-// import canada2 from "../../../assets/canada.webp"
-
+import canada from "../../../assets/canada.jpeg";
+import portugal from "../../../assets/portugal.jpeg"
 interface Props {
     setProgress: (progress: number) => void;
 }
@@ -64,7 +62,6 @@ const ImmigrationPage3: React.FC<Props> = ({
         switch (country) {
             case 'uk':
                 return (
-                    "Why you should do business in United Kingdom\n\n" +
                     "By far the biggest benefit of doing business in the UK is how easy and straightforward it is. According to the World Bank, the UK has one of the highest “ease of doing business scores” out of most countries across the world.\n" +
                     "This is because of how easy it is to enter the market. There are fewer costs and restrictions on starting a new enterprise in the UK when compared to other developed countries in Europe and the rest of the world. There is also a much higher availability of commercial opportunities across different market sectors due to the UK’s strong industry and manufacturing background and its current position as a global tech hub.\n" +
                     "The UK also has a strong business infrastructure and huge improvements in key areas including energy, transportation, and telecommunications are currently being made."
@@ -105,7 +102,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                         className="text-white mt-10 font-play capitalize text-3xl md:text-5xl mb-4 leading-snug"
                     >
                         Migrate to &nbsp;
-                        {country === undefined ? "dream country" : country}
+                        {country === undefined ? "your dream country" : country}
 
                         <br />
                     </h1>
@@ -122,7 +119,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                     />
                 </div>
             </div>
-            <div className="bg-white flex-col min-h-screen flex justify-center px-8 md:px-32 pb-20 w-ful">
+            <div className="bg-white flex-col min-h-screen flex justify-center px-8 md:px-32 pb-32 w-ful">
                 <h2 className=" font-play mb-10 text-yellow-600 mt-10 text-center text-2xl">
                     Select from the following countries to know more
                 </h2>
@@ -134,11 +131,12 @@ const ImmigrationPage3: React.FC<Props> = ({
                             style={{ backgroundImage: `url(${c.image})` }}
                             key={i}
                         >
+                            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"/>
                             <div
-                                className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"
+                                className=" w-full h-full flex items-center justify-center"
                             >
                                 <div className="relative w-[490px] items-center flex-col flex  justify-center h-[462px] border m-5">
-                                    <h2 className="text-white mx-2 text-center text-2xl md:text-2xl mb-14 font-play">
+                                    <h2 className="text-white mx-2 text-center text-2xl md:text-2xl mb-6 mt-20 font-play">
                                         {c.name === "Immigration" ? "Immigration Services" : c.name}
                                     </h2>
                                     <div
@@ -146,7 +144,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                                     >
                                         {c.plans.map((p, i) => (
                                             <Link
-                                                className="flex text-white underline flex-col"
+                                                className="flex text-white hover:text-gray-200 underline flex-col"
                                                 key={i}
                                                 to={p.href}
                                             >
@@ -157,7 +155,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                                     </div>
                                     <Link
                                         to={c.href}
-                                        className="text-white hover:border-yellow-500 mb-[-30px] md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
+                                        className="text-white hover:border-yellow-500 md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
                                         More
                                     </Link>
                                 </div>
@@ -174,22 +172,27 @@ const ImmigrationPage3: React.FC<Props> = ({
                             >
                                 {c.plans.map((p, i) => (
                                     <div
-                                        className="relative bg-cover  w-[310px] md:w-[280px] h-[500px]  bg-center"
+                                        className="relative bg-cover flex items-center justify-center w-[310px] md:w-[280px] h-[500px]  bg-center"
                                         style={{ backgroundImage: `url(${p.image})` }}
                                         key={i}
                                     >
+                                         <div 
+                                            className="w-[90%] z-20 h-[94%] border border-white absolute"
+                                            />
+                                        <div className="absolute z-10 top-0 left-0 w-full h-full bg-black opacity-50" />
                                         <div
-                                            className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"
+                                            className="absolute top-0 z-20 left-0 w-full h-full flex items-center justify-center"
                                         >
+                                           
                                             <Link
-                                                className="flex flex-col text-center font-play mb-20 text-xl items-center text-white p-5"
+                                                className="flex flex-col text-center font-play mb-20 text-2xl items-center text-white p-5"
                                                 to={p.href}
                                             >
                                                 {p.name}
                                             </Link>
                                             <Link
                                         to={p.href}
-                                        className="text-white whitespace-nowrap hover:border-yellow-500 mb-[-30px] md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
+                                        className="text-white whitespace-nowrap hover:border-yellow-500 md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
                                          More
                                     </Link>
                                         </div>

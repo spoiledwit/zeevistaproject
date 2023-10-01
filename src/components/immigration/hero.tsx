@@ -1,9 +1,9 @@
 import canada from "../../../assets/canada_im_cover.webp";
 import australia from "../../../assets/aus_im_cover.webp";
-import europe from "../../../assets/bg.jpg";
+import europe from "../../../assets/passports.webp";
 import uk from "../../../assets/london.webp";
 import newzealand from "../../../assets/newzealand.webp";
-import usa from "../../../assets/usaCover.webp";
+import usa from "../../../assets/usa2.jpeg";
 import portugal from "../../../assets/poland.webp";
 import { useLocation } from "react-router-dom";
 import Motion from "../Motion";

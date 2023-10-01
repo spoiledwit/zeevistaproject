@@ -1,12 +1,12 @@
 import { BsChevronCompactDown } from "react-icons/bs";
-import pic from "../../../assets/consultancy.jpeg";
+import pic from "../../../assets/contact.jpeg";
 import AnimateToView from "../AnimateToView";
 
 
 const Hero = () => {
   return (
-    <div className="flex relative w-full h-screen justify-center items-center">
-      <div className="absolute w-full h-screen bg-black opacity-50"></div>
+    <div className="flex relative w-full h-[45vh] overflow-hidden md:rounded-b-none rounded-b-[40px] md:h-screen justify-center items-center">
+      <div className="absolute w-full h-[45vh] md:h-screen bg-black opacity-50"></div>
       <img
         src={pic}
         alt=""

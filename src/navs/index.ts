@@ -84,7 +84,7 @@ export const desktopNav = [
         id: "canada",
       },
       {
-        href: "/visit-visas/usa",
+        href: "/immigration/visit-visas/usa",
         title: "USA",
         id: "USA",
       },

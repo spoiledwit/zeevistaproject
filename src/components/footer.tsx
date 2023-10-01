@@ -40,7 +40,7 @@ export default function Footer() {
         <section className=" flex flex-col w-full md:w-1/2">
           <img src={logo} alt="logo" className="mt-[-10px]" width={80} height={40} />
           <p className="text-gray-300 mt-5">
-            <strong className="text-yellow-600">ZeeVista Advisors</strong> specializes in hassle-free secondary passports and citizenships. Customer satisfaction drives our growth and success. We prioritize client trust and aim to set new service standards in the document clearing sector.
+            <strong className="text-yellow-600">ZeeVista Advisors </strong> specializes in providing hassle-free secondary passports and citizenships, alongside comprehensive immigration services including visit and student visa facilitations.
           </p>
             
       <div className="flex  md:flex-row justify-between md:justify-center items-center gap-2 md:gap-6 md:px-20 px-4 py-10">
@@ -73,7 +73,7 @@ export default function Footer() {
           <h3 className=" text-yellow-600 font-serif text-2xl font-semibold">About Us</h3>
 
           <div className=" mt-9 text-gray-300 flex gap-3">
-            <FaLocationDot size={47} className="text-yellow-600" />
+            <FaLocationDot className="text-yellow-600 text-3xl md:text-5xl" />
             <p>Office 1503, 15th Floor, Executive Bay Tower B, Al Amal Street, Business Bay, Dubai, U.A.E</p>
           </div>
           <div className=" mt-3 text-gray-300 flex gap-3">
@@ -86,6 +86,12 @@ export default function Footer() {
             <MdPhone size={20} className="text-yellow-600" />
             <p>
             +971 4449 0918
+            </p>
+          </div>
+          <div className=" mt-3 text-gray-300 flex gap-3">
+            <MdPhone size={20} className="text-yellow-600" />
+            <p>
+            +971 589240564
             </p>
           </div>
           <div className=" mt-3 text-gray-300 flex gap-3">
