@@ -77,7 +77,6 @@ const Layout = () => {
         />
       </div>
       <div className="top-0 left-0 md:block hidden absolute w-full z-50">
-        {/* <SocialHeader /> */}
         <Header />
       </div>
       <Outlet />
@@ -87,7 +86,7 @@ const Layout = () => {
         target="_blank"
         className="fixed right-5 bottom-5 z-50"
       >
-        <img src={whatsappimg} className="w-14 animate-bounce" />
+        <img src={whatsappimg} className="w-14 md:animate-bounce" />
       </a>
     </div>
   );
