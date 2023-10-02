@@ -1,28 +1,6 @@
-import Strategy from "../../../assets/strategy.png";
-import mission from "../../../assets/mission.png";
-import vision from "../../../assets/business.png";
 import Motion from "../Motion";
 import Bar from "../Bar";
 
-type Virtue = {
-  icon: string;
-  label: string;
-  text: string;
-};
-
-const VirtueTile = ({ virtue }: { virtue: Virtue }) => {
-  return (
-    <div className=" w-full flex flex-col items-center gap-4 mt-12">
-      <div className=" w-20 h-20 relative ">
-        <img src={virtue.icon} alt="" />
-      </div>
-      <h3 className=" text-xl text-yellow-600 font-serif tracking-tight">{virtue.label}</h3>
-      <p className="text-center max-w-[800px] text-white leading-relaxed">
-        {virtue.text}
-      </p>
-    </div>
-  );
-};
 
 const OurMission = () => {
 
