@@ -37,8 +37,8 @@ export default function Home({ setProgress }: Props) {
       <About />
       <Testimonials />
       <br className="md:block hidden" />
-      <br className="md:block hidden" />
-
+      <br />
+      <br />
       
       <Accordion />
       <Contact />

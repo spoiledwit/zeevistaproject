@@ -21,6 +21,7 @@ export default function About({ setProgress }: Props) {
     <div className="flex flex-col">
       <Hero />
       <Message />
+      <br />
       <OurMission />
      </div>
   );

@@ -7,7 +7,7 @@ const Hero = () => {
   const nav = useNavigate();
 
   return (
-    <div className="flex w-full h-[100vh] justify-center items-center relative">
+    <div className="flex w-full h-[60vh] md:rounded-none rounded-b-[40px] overflow-hidden md:h-[100vh] justify-center items-center relative">
       <img
         src={london}
         alt="london wallpaper"
@@ -20,14 +20,14 @@ const Hero = () => {
             About Us
           </span>
           <span className="text-white text-lg md:text-xl max-w-[1000px] mb-12">
-        <strong className="text-yellow-500"> ZeeVista Advisors </strong> is a global, immigration-focused law firm that helps clients Matters relating to Citizenship by investment, immigration, Visit Visa and Student Visa and procure the necessary visas to move destination. We have helped hundreds of families move to their desire Destination, including the ST Kitts & Nevis, St Lucia, Dominica, Grenada, United Kingdom, Portugal, Canada and Australia. <br /> <br /> We aim to offer only professional advice in the areas of our expertise and we ensure that our advice is tailored towards the personal needs of our clients.
+            Get to know us better and find out how we can help you.
           </span>
           <span>
             <Button
-            text="Contact Us"
-            onClick={()=>{
-              nav("/contact")
-            }}
+              text="Contact Us"
+              onClick={() => {
+                nav("/contact")
+              }}
             />
           </span>
         </span>

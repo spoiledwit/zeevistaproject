@@ -1,8 +1,9 @@
 import logo from "../../../assets/logowhite.png";
 import caribbean from "../../../assets/map-passport.webp";
-import img3 from "../../../assets/consultancy.jpeg";
+import img3 from "../../../assets/immigration.jpeg";
 import {BsChevronDown} from "react-icons/bs";
 import Carousel from "../../components/carousel/simple";
+
 
 const data = [
   {
@@ -28,14 +29,14 @@ const data = [
 export default function Hero() {
 
   return (
-    <div className="w-full relative h-screen">
-      <div className="text-white absolute bottom-10 md:hidden animate-bounce left-[45%] z-10">
+    <div className="w-full relative h-[70vh] md:h-screen">
+      <div className="text-white absolute bottom-5 md:hidden animate-bounce left-[45%] z-10">
       <BsChevronDown className="text-white text-5xl" />    
       </div>
       <Carousel options={{ loop: true }}>
       {data.map((item) => (
         <div 
-        className="w-full flex-col items-center justify-center flex h-screen bg-cover bg-center"
+        className="w-full flex-col items-center justify-center flex h-[70vh] md:h-screen bg-cover bg-center"
         style={{
           backgroundImage: `url(${item.image})`,
         }}
@@ -44,9 +45,9 @@ export default function Hero() {
           <div
           className="absolute top-0 left-0 w-full h-full bg-black opacity-50"
           />
-          <img src={logo} className="w-32 md:mt-0 mt-[-120px] md:mb-[-30px] md:hidden block z-10" />
-          <div className="flex mt-20 flex-col items-center justify-center z-10">
-          <h2 className="font-play text-white text-2xl text-center md:text-3xl ">
+          <img src={logo} className="w-32 md:mt-0 md:mb-[-30px] md:hidden block z-10" />
+          <div className="flex mt-8 md:mt-20 flex-col items-center justify-center z-10">
+          <h2 className="font-play text-white text-xl text-center md:text-3xl ">
             {item.subtitle}
           </h2>
             <h1 className="text-white font-play text-[34px] md:text-[110px]">

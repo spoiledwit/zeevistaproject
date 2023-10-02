@@ -85,13 +85,13 @@ export default function Footer() {
           <div className=" mt-3 text-gray-300 flex gap-3">
             <MdPhone size={20} className="text-yellow-600" />
             <p>
-            +971 4449 0918
+            +971 4 449 0918
             </p>
           </div>
           <div className=" mt-3 text-gray-300 flex gap-3">
             <MdPhone size={20} className="text-yellow-600" />
             <p>
-            +971 589240564
+            +971 58 9240564
             </p>
           </div>
           <div className=" mt-3 text-gray-300 flex gap-3">

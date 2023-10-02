@@ -3,11 +3,11 @@ import Bar from "../Bar";
 const Message = () => {
     return (
       <div className="p-6 bg-gray-100 flex items-center justify-center text-gray-900 w-full">
-        <div className="w-[50vw]">
+        <div className="md:w-[50vw]">
             
         <h1 className="text-2xl font-medium font-play text-yellow-600 mb-4 text-center">A Message from Our CEO</h1>
         <Bar w={"w-[210px]"} />
-        <p className="mb-2 font-semibold">Greetings,</p>
+        <p className="mb-2 font-semibold mt-6 md:mt-0">Greetings,</p>
         <p className="mb-2">
           Welcome to ZeeVista Advisors, your trusted partner on the journey to global mobility and new horizons. 
           I'm honored to have this opportunity to share our vision, mission, and commitment with you.
