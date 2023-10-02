@@ -133,7 +133,7 @@ export default function Testimonials() {
           What our clients says
           <Bar w={"w-[160px]"} />
       </h2>
-      <p className="max-w-[800px]  text-center">
+      <p className="max-w-[800px] text-center">
         Our clients rate us as their "firm of choice" and have described us as "one of the world's very best immigration law firms". We are proud of our reputation for obtaining the results our clients need to meet their life and business goals.
       </p>
       <div className="w-full flex items-center justify-center">

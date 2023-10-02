@@ -18,6 +18,7 @@ import canadab from "../assets/canadab.jpeg";
 import ausa from "../assets/ausa.jpeg";
 import ausb from "../assets/ausc.jpeg";
 import canadac from "../assets/canada.jpg";
+import schengen from "../assets/schengen.jpg";
 
 const data = {
   "caribbean": {
@@ -200,7 +201,7 @@ const data = {
           "href": "/immigration/visit-visas/schengen",
           "name": "Schengen Tourist Visa",
           "id": "schengen",
-          "image": passport,
+          "image": schengen,
           "subtitle": "Unlock the Wonders of Europe: One Visa, 26 Countries, Endless Memories",
           "description": {
             "title": "Embark on a Grand European Odyssey with the Schengen Tourist Visa",

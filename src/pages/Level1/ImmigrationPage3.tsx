@@ -107,7 +107,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                         <br />
                     </h1>
                     <span
-                        className="text-white  mb-12"
+                        className="text-white text-justify mb-12"
                     >
                         {getCountryContent(country)}
                     </span>
@@ -131,7 +131,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                             style={{ backgroundImage: `url(${c.image})` }}
                             key={i}
                         >
-                            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 flex items-center justify-center"/>
+                            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center"/>
                             <div
                                 className=" w-full h-full flex items-center justify-center"
                             >
@@ -140,11 +140,11 @@ const ImmigrationPage3: React.FC<Props> = ({
                                         {c.name === "Immigration" ? "Immigration Services" : c.name}
                                     </h2>
                                     <div
-                                        className="flex h-full  flex-col w-full px-5 gap-2"
+                                        className="flex h-full  flex-col w-full px-5 gap-4"
                                     >
                                         {c.plans.map((p, i) => (
                                             <Link
-                                                className="flex text-white hover:text-gray-200 underline flex-col"
+                                                className="flex text-white text-center hover:text-gray-200 underline flex-col"
                                                 key={i}
                                                 to={p.href}
                                             >

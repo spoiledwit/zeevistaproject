@@ -18,7 +18,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ faq, onToggle, active, bo
     <>
     <div
       onClick={onToggle}
-      className={`tracking-wide ${active ? "border-b border-b-gray-200" : border ? "border-b border-b-gray-200" : "" } md:text-2xl font-play py-3 md:py-5 flex md:items-center justify-between w-full cursor-pointer`}
+      className={`tracking-wide  ${active ? "border-b border-b-gray-200" : border ? "border-b border-b-gray-200" : "" } md:text-2xl font-play py-3 md:py-5 flex md:items-center justify-between w-full cursor-pointer`}
     >
       {faq.question}
       <motion.div animate={{ rotate: active ? 0 : 180 }} className="h-4">
@@ -41,7 +41,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ faq, onToggle, active, bo
           <motion.div
             variants={{ collapsed: { y: 32 }, open: { y: 0 } }}
             transition={{ duration: 0.2 }}
-            className="w-full px-4 py-5 text-sm md:text-md font-open"
+            className="w-full text-justify px-4 py-5 text-sm md:text-md font-open"
           >
             {faq.answer}
           </motion.div>

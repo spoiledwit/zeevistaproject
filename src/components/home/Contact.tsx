@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <motion.div
-      className="w-full md:px-20 px-8 items-center flex flex-col gap-8 md:gap-20 lg:gap-0"
+      className="w-full md:px-20 px-8 items-center flex flex-col gap-8 md:gap-20 max-w-[1500px] lg:gap-0"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       ref={ref}

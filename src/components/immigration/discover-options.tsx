@@ -16,7 +16,7 @@ const DiscoverImmigrationOptions = ({
           {slogan}
         </h3>
         <section
-          className=" prose leading-relaxed"
+          className=" prose leading-relaxed text-justify"
           dangerouslySetInnerHTML={{
             __html: html,
           }}

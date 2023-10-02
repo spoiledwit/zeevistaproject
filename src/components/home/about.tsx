@@ -49,7 +49,7 @@ export default function About() {
   }
 
   return (
-    <div className="w-full md:mb-12 md:pt-0 md:px-0 flex mt-10 flex-col p-10 bg-gray-100">
+    <div className="w-full md:mb-12 md:pt-0 items-center md:px-0 flex mt-10 flex-col p-10 bg-gray-100">
       {/* why choose us */}
       <span className="mx-auto">
       <h2 className="text-yellow-600 text-3xl mt-4 md:mt-10 font-serif">Why Choose Us</h2>
@@ -57,7 +57,7 @@ export default function About() {
       </span>
       <div
           ref={ref}  
-        className="w-full mt-8 flex flex-col  md:flex-row md:mt-10 relative"
+        className="w-full mt-8 flex max-w-[1500px] flex-col  md:flex-row md:mt-10 relative"
       > 
       
         <motion.div
@@ -90,7 +90,7 @@ export default function About() {
                   <div className=" w-12 h-12 md:w-8 md:h-8">{r.icon}</div>
                   <Heading4 className=" text-gray-900">{r.title}</Heading4>
                 </div>
-                <p className=" text-gray-700 w-full leading-loose tracking-tight">
+                <p className=" text-gray-700 text-justify w-full leading-loose tracking-tight">
                   {r.description}
                 </p>
               </div>

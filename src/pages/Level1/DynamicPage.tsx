@@ -4,9 +4,9 @@ import Button from "../../components/Button";
 import { useNavigate } from "react-router-dom";
 import data from "../../../content/data";
 import { Link } from "react-router-dom";
-
-import visas from "../../../assets/london.webp";
-import passport from "../../../assets/passports.webp";
+import student from "../../../assets/student.jpg";
+import visas from "../../../assets/visit_visas.jpeg";
+import passport from "../../../assets/crb_passports.jpg";
 
 interface Props {
     setProgress: (progress: number) => void;
@@ -38,7 +38,7 @@ const DynamicPage: React.FC<Props> = ({
         },
         {
             name: "student-visas",
-            image: visas,
+            image: student,
             plans: data["student-visas"].plans.values
         },
         {
@@ -67,7 +67,7 @@ const DynamicPage: React.FC<Props> = ({
     };
 
     return (
-        <div className="w-full min-h-screen">
+        <div className="w-full  min-h-screen">
             <div className="relative h-screen w-full flex px-8 md:px-32 items-center"
                 style={{
                     backgroundImage: country === undefined ? `url(${img})` : `url(${countries.filter(c => c.name === country)[0].image})`,
@@ -87,7 +87,7 @@ const DynamicPage: React.FC<Props> = ({
                         <br />
                     </h1>
                     <span
-                        className="text-white text-xl mb-12"
+                        className="text-white text-xl text-justify mb-12"
                     >
                         {getCountryContent(country)}
                     </span>
@@ -129,7 +129,7 @@ const DynamicPage: React.FC<Props> = ({
                                             >
                                                 {p.name}
                                             </Link>
-                                            <p className="text-white text-center">
+                                            <p className="text-white  text-center">
                                                 {p.subtitle}
                                             </p>
 

@@ -13,24 +13,24 @@ interface Props {
 
 export default function Home({ setProgress }: Props) {
 
-  
+
   const [color, setColor] = useState("white");
   useEffect(() => {
 
   }, [color]);
 
-  useEffect(()=>{
+  useEffect(() => {
     // window.scrollTo(0,0);
     // adding a progress bar with delay of 0.5s
     setProgress(70);
     setTimeout(() => {
       setProgress(100);
     }
-    , 300);
+      , 300);
   }, [])
 
   return (
-    <div className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 w-full flex flex-col h-max`}>
+    <div className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 items-center w-full flex flex-col h-max`}>
       <Hero />
       <Introduction />
       <Countries setColor={setColor} />
@@ -39,9 +39,9 @@ export default function Home({ setProgress }: Props) {
       <br className="md:block hidden" />
       <br />
       <br />
-      
+
       <Accordion />
-      <Contact />
+        <Contact />
     </div>
   );
 }
