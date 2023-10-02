@@ -6,28 +6,34 @@ import Heading4 from "../heading4";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Bar from "../Bar";
+import {BsGlobe} from "react-icons/bs";
 
 export default function About() {
 
   const reasons = [
     {
-      title: "Expert Visa Consultants",
+      title: "Expertise",
       description:
-        "Our team of experienced visa consultants are dedicated to providing you with the best advice and guidance, ensuring a smooth and successful visa application process.",
+        "Our team of experienced immigration and visa professionals is well-versed in the intricacies of global immigration laws and regulations. We stay updated with the latest changes to ensure your application stands the best chance of success.",
       icon: <GiTechnoHeart className="text-yellow-600" size={32} />,
     },
     {
-      title: "Proven Success Record",
+      title: "Personalized Guidance",
       description:
-        "With over a decade of experience, we have helped thousands of individuals secure visas for their dream destinations, maintaining an impressive success rate throughout the years.",
+        "We believe in personalized, one-on-one guidance to understand your goals and aspirations fully. This approach allows us to recommend the most suitable immigration or citizenship options tailored to your individual circumstances.        ",
       icon: <FaPassport size={32} className="text-yellow-600" />,
     },
     {
-      title: "Comprehensive Services",
+      title: "Integrity",
       description:
-        "We represent a wide range of foreign institutes in Pakistan, offering free consultancy for admissions, scholarships, interview preparation, and visa-related matters across Australia, Canada, UK, USA, Europe, and more.",
+        "At ZeeVista Advisors, we uphold the highest standards of integrity and ethics. We provide transparent advice and maintain your confidentiality throughout the process.",
       icon: <MdBiotech size={42} className="text-yellow-600" />,
     },
+    {
+      title: "Global Network",
+      description:"With a global network of partners and resources, we can offer comprehensive services that cover a wide range of countries and citizenship-by-investment programs.",
+      icon: <BsGlobe size={32} className="text-yellow-600" />,
+    }
   ];
 
   const controlsImage = useAnimation();
@@ -64,7 +70,7 @@ export default function About() {
          transition={{ duration: 1 }}
          className="grid place-items-center w-full min-h-full"
         >
-          <img className="w-auto md:block hidden h-full md:h-[520px]" src={img} alt="image" />
+          <img className="w-auto md:block hidden h-full md:h-[620px]" src={img} alt="image" />
         </motion.div>
 
         <motion.div

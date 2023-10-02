@@ -1,6 +1,7 @@
 import Hero from "../components/AboutUs/Hero";
 import OurMission from "../components/AboutUs/OurMission";
 import { useEffect } from "react";
+import Message from "../components/AboutUs/Message";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -18,10 +19,8 @@ export default function About({ setProgress }: Props) {
 
   return (
     <div className="flex flex-col">
-      {/* <img src={img}
-      className="w-full fixed h-screen object-cover"
-      alt="" /> */}
       <Hero />
+      <Message />
       <OurMission />
      </div>
   );
