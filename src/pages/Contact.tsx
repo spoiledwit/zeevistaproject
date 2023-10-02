@@ -80,8 +80,9 @@ const Contact = ({ setProgress }: Props) => {
           </div>
         </div>
         <iframe className=" md:w-[50vw] w-[85vw] mt-10 md:mt-40 shadow-2xl border hover:border-black rounded-3xl " 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9188.621571131165!2d55.262344946395025!3d25.18092631951039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69cdf5cf9a7f%3A0xaa17e79f93b66aef!2sAl%20A&#39;amal%20St%20-%20Business%20Bay%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1695645937665!5m2!1sen!2s"
-        width="600" height="450" loading="lazy"></iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.735670147676!2d55.263824374836155!3d25.178401677723095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69cb98cd9041%3A0xe6be587070e7a89d!2sDAMAC%20Executive%20Bay!5e0!3m2!1sen!2s!4v1696005211967!5m2!1sen!2s"
+       
+      width="600" height="450" loading="lazy"></iframe>
       </div>
     </div>
   )
