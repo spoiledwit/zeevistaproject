@@ -1,7 +1,7 @@
 import passport from "../assets/passport2.png";
 import uk from "../assets/uk-visa.webp";
 import canada from "../assets/canada.jpg";
-import portugal from "../assets/portugal.webp";
+import portugal from "../assets/Portugals-Residence-Visas.png";
 import australia from "../assets/sydneyCover.webp";
 import canadaCover from "../assets/canada_im_cover.webp";
 import usa from "../assets/usa.jpeg";
@@ -12,13 +12,12 @@ import lucia from "../assets/saint.jpeg";
 import uka from "../assets/uka.webp";
 import ukb from "../assets/ukb.jpg";
 import portugala from "../assets/portugala.jpeg";
-import portugalb from "../assets/portugalb.jpeg";
+import portugalb from "../assets/portugalimmigration.jpeg";
 import canadaa from "../assets/canadaa.jpeg";
 import canadab from "../assets/canadab.jpeg";
-import canadac from "../assets/canadac.jpeg";
 import ausa from "../assets/ausa.jpeg";
 import ausb from "../assets/ausc.jpeg";
-
+import canadac from "../assets/canada.jpg";
 
 const data = {
   "caribbean": {

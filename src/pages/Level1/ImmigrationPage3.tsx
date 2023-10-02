@@ -23,7 +23,7 @@ const ImmigrationPage3: React.FC<Props> = ({
     const { country } = useParams();
     useEffect(() => {
         setProgress(70);
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
         setTimeout(() => {
             setProgress(100);
         }
