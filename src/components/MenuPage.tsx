@@ -2,7 +2,7 @@ import React from "react";
 import img from "../../assets/globe.jpg";
 import { AiOutlineClose } from "react-icons/ai";
 import logo from "../../assets/logo.png";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { MdArrowRightAlt } from "react-icons/md";
 import { desktopNav } from "../navs";
@@ -112,13 +112,13 @@ const MenuPage: React.FC<Props> = ({
             <span 
             className="flex text-yellow-600 gap-10 text-2xl mb-5  mt-auto"
             >
-                <a href="/">
+                <a href="https://www.facebook.com/zeevistaadvisors" target="_blank">
                     <FaFacebook className="opacity-80 hover:opacity-100"/>
                 </a>
-                <a href="/">
-                    <FaTwitter className="opacity-80 hover:opacity-100"/>
+                <a href="https://www.linkedin.com/company/zeevista-immigration-advisors/?viewAsMember=true" target="_blank">
+                    <FaLinkedin className="opacity-80 hover:opacity-100"/>
                 </a>
-                <a href="/">
+                <a href="https://www.instagram.com/zeevista/" target="_blank">
                     <FaInstagram className="opacity-80 hover:opacity-100"/>
                 </a>
             </span>

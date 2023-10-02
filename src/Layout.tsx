@@ -10,7 +10,7 @@ import { Toaster } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { MdContactSupport } from 'react-icons/md';
-// import SocialHeader from './components/SocialHeader';
+import SocialIcons from './components/SocialIcons';
 import whatsappimg from "../assets/whatsappimg.webp";
 
 const Layout = () => {
@@ -50,6 +50,9 @@ const Layout = () => {
 
   return (
     <div className="relative w-screen bg-white">
+      <div className="fixed right-5 bottom-[40%] z-50 md:hidden">
+        <SocialIcons />
+      </div>
       <Toaster />
       {isMenuOpen && <MenuPage closeMenu={() => setIsMenuOpen(false)} />}
       <div
