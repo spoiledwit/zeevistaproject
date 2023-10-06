@@ -10,6 +10,8 @@ import uk from "../../../assets/uk-visa.webp";
 import sydney from "../../../assets/sydney.webp";
 import canada from "../../../assets/canada.jpeg";
 import portugal from "../../../assets/portugal.jpeg"
+import { Helmet } from "react-helmet";
+
 interface Props {
     setProgress: (progress: number) => void;
 }
@@ -88,9 +90,13 @@ const ImmigrationPage3: React.FC<Props> = ({
 
     return (
         <div className="w-full min-h-screen">
+            <Helmet>
+                <title>ZeeVista Immigration Advisors</title>
+                <meta name="description" content="About Us" />
+            </Helmet>
             <div className="relative h-screen w-full flex px-8 md:px-32 items-center"
                 style={{
-                    backgroundImage: country === undefined || country ==="uk" ? `url(${img})` : country === "portugal" ?  `url(${portugal2})` : `url(${countries.filter(c => c.href.split('/')[2] === country)[0].image})`,
+                    backgroundImage: country === undefined || country === "uk" ? `url(${img})` : country === "portugal" ? `url(${portugal2})` : `url(${countries.filter(c => c.href.split('/')[2] === country)[0].image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -131,7 +137,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                             style={{ backgroundImage: `url(${c.image})` }}
                             key={i}
                         >
-                            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center"/>
+                            <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center" />
                             <div
                                 className=" w-full h-full flex items-center justify-center"
                             >
@@ -164,7 +170,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                     ))}
                 </div>
                 <div className="grid md:gris-cols-4 grid-cols-1 w-full gap-4">
-                {country && countries.map((c, i) => (
+                    {country && countries.map((c, i) => (
                         c.href.split('/')[2] === country && (
                             <div
                                 key={i}
@@ -176,14 +182,14 @@ const ImmigrationPage3: React.FC<Props> = ({
                                         style={{ backgroundImage: `url(${p.image})` }}
                                         key={i}
                                     >
-                                         <div 
+                                        <div
                                             className="w-[90%] z-20 h-[94%] border border-white absolute"
-                                            />
+                                        />
                                         <div className="absolute z-10 top-0 left-0 w-full h-full bg-black opacity-50" />
                                         <div
                                             className="absolute top-0 z-20 left-0 w-full h-full flex items-center justify-center"
                                         >
-                                           
+
                                             <Link
                                                 className="flex flex-col text-center font-play mb-20 text-2xl items-center text-white p-5"
                                                 to={p.href}
@@ -191,10 +197,10 @@ const ImmigrationPage3: React.FC<Props> = ({
                                                 {p.name}
                                             </Link>
                                             <Link
-                                        to={p.href}
-                                        className="text-white whitespace-nowrap hover:border-yellow-500 md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
-                                         More
-                                    </Link>
+                                                to={p.href}
+                                                className="text-white whitespace-nowrap hover:border-yellow-500 md:mb-0 md:text-md text-xs font-open font-medium text-center md:w-[130px] w-[100px] md:hover:w-[100px] transition-all duration-300 py-3 px-6 rounded-full border border-opacity-5 absolute bottom-10 glass">
+                                                More
+                                            </Link>
                                         </div>
                                     </div>
                                 ))}

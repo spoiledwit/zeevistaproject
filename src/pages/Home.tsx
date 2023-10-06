@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import Accordion from "../components/Accordian/Accordian";
 import Contact from "../components/home/Contact";
 import Introduction from "../components/home/Introduction";
+import { Helmet } from "react-helmet";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -20,7 +21,7 @@ export default function Home({ setProgress }: Props) {
   }, [color]);
 
   useEffect(() => {
-    // window.scrollTo(0,0);
+    window.scrollTo(0,0);
     // adding a progress bar with delay of 0.5s
     setProgress(70);
     setTimeout(() => {
@@ -31,6 +32,10 @@ export default function Home({ setProgress }: Props) {
 
   return (
     <div className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 items-center w-full flex flex-col h-max`}>
+      <Helmet>
+        <title>ZeeVista Immigration Advisors</title>
+        <meta name="description" content="About Us" />
+      </Helmet>
       <Hero />
       <Introduction />
       <Countries setColor={setColor} />

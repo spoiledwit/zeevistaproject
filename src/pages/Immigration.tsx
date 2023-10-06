@@ -5,7 +5,7 @@ import { CountryData, PlanData } from "../types";
 import immigrationData from "../../content/data.js";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-
+import { Helmet } from "react-helmet";
 
 const ImmigrationPage = ({setProgress}: any) => {
 
@@ -38,6 +38,10 @@ const ImmigrationPage = ({setProgress}: any) => {
 
   return (
     <div className="flex flex-col gap-20 mb-40">
+      <Helmet>
+        <title>ZeeVista Immigration Advisors</title>
+        <meta name="description" content="About Us" />
+      </Helmet>
       <Hero {...countryData.hero} />
       <DiscoverImmigrationOptions {...optionsData} />
       {countryData.plans && <ImmigrationPlans countryData={countryData} />}

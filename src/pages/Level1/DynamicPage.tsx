@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import student from "../../../assets/student.jpg";
 import visas from "../../../assets/visit_visas.jpeg";
 import passport from "../../../assets/crb_passports.jpg";
+import { Helmet } from "react-helmet";
 
 interface Props {
     setProgress: (progress: number) => void;
@@ -68,6 +69,10 @@ const DynamicPage: React.FC<Props> = ({
 
     return (
         <div className="w-full  min-h-screen">
+            <Helmet>
+                <title>ZeeVista Immigration Advisors</title>
+                <meta name="description" content="About Us" />
+            </Helmet>
             <div className="relative h-screen w-full flex px-8 md:px-32 items-center"
                 style={{
                     backgroundImage: country === undefined ? `url(${img})` : `url(${countries.filter(c => c.name === country)[0].image})`,
@@ -122,16 +127,16 @@ const DynamicPage: React.FC<Props> = ({
                                             className="absolute z-20 top-0 left-0 w-full h-full flex items-center justify-center"
                                         >
                                             <span className="flex flex-col mx-5">
-                                                
-                                            <Link
-                                                className="flex flex-col text-center font-play  text-2xl items-center text-white p-5"
-                                                to={p.href}
-                                            >
-                                                {p.name}
-                                            </Link>
-                                            <p className="text-white  text-center">
-                                                {p.subtitle}
-                                            </p>
+
+                                                <Link
+                                                    className="flex flex-col text-center font-play  text-2xl items-center text-white p-5"
+                                                    to={p.href}
+                                                >
+                                                    {p.name}
+                                                </Link>
+                                                <p className="text-white  text-center">
+                                                    {p.subtitle}
+                                                </p>
 
                                             </span>
                                             <Link

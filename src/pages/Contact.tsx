@@ -3,6 +3,7 @@ import Input from "../components/input/index";
 import { createContact } from "../../lib/utils";
 import Hero from "../components/Contact/Hero";
 import { toast } from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -20,7 +21,7 @@ const Contact = ({ setProgress }: Props) => {
 
 
   useEffect(() => {
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     setProgress(70);
     setTimeout(() => {
       setProgress(100);
@@ -56,6 +57,10 @@ const Contact = ({ setProgress }: Props) => {
 
   return (
     <div className="min-h-screen pb-32 bg-white relative">
+      <Helmet>
+        <title>Contact Us | ZeeVista Immigration Advisors</title>
+        <meta name="description" content="About Us" />
+      </Helmet>
       <Hero />
       <div className="flex md:flex-row flex-col w-full pt-10  md:justify-between px-8 md:px-20">
         <div className="md:mb-0 ">
