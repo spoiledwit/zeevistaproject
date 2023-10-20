@@ -9,6 +9,7 @@ const DiscoverImmigrationOptions = ({
   html: string;
 }) => {
 
+console.log(slogan, html)
   return (
     <div className=" w-full px-4 md:px-16 xl:px-32 flex flex-col md:flex-row ">
       <section className="md:w-[70%] flex flex-col gap-8 items-center md:items-start">

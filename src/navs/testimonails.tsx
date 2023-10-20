@@ -124,8 +124,6 @@ export default function Testimonials() {
 
   ];
 
-
-
   return (
     <div className=" flex items-center flex-col w-full  justify-center">
       <div className="flex flex-col w-full items-center mt-5 md:mt-0 mx-5">
