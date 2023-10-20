@@ -11,6 +11,9 @@ import logo2 from "../../assets/aisc_logo.png";
 import logo3 from "../../assets/mara.jpeg";
 import logo4 from "../../assets/iccrc.webp";
 
+import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
+
+
 export default function Footer() {
   return (
     <footer className=" w-full flex items-center flex-col border-t bg-black">
@@ -49,6 +52,29 @@ export default function Footer() {
         <img src={logo3} alt="logo" className="md:h-12 h-8" />
         <img src={logo4} alt="logo" className="md:h-12 h-8" />
       </div>
+      <span className=" flex gap-3 tracking-[10px]">
+            <a
+              href="https://www.facebook.com/zeevistaadvisors"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaFacebook className="inline-block text-white  hover:text-yellow-500 text-lg" />
+            </a>
+            <a
+              href="https://www.instagram.com/zeevista/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaInstagram className="inline-block  text-white  hover:text-yellow-500 hover:opacity-100 text-lg" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/zeevista-immigration-advisors/?viewAsMember=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedin className="inline-block  text-white  hover:text-yellow-500 hover:opacity-100 text-lg" />
+            </a>
+          </span>
         </section>
         <section className=" flex flex-col w-full md:w-1/4">
           <h3 className=" text-yellow-600 font-semibold font-serif text-2xl whitespace-nowrap">
@@ -71,7 +97,7 @@ export default function Footer() {
         </section>
         <section className=" flex flex-col w-full md:w-1/4">
           <h3 className=" text-yellow-600 font-serif text-2xl font-semibold">About Us</h3>
-
+         
           <div className=" mt-9 text-gray-300 flex gap-3">
             <FaLocationDot className="text-yellow-600 text-3xl md:text-5xl text-justify" />
             <p>Office 1503, 15th Floor, Executive Bay Tower B, Al Amal Street, Business Bay, Dubai, U.A.E</p>
