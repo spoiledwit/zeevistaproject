@@ -75,7 +75,7 @@ const MenuPage: React.FC<Props> = ({
             </div>
             </div> 
             <div className="md:flex hidden w-[33%] flex-col h-screen bg-white items-center">
-                <img src={logo} alt=""  className="w-[100px] h-[93px] mt-16"/>
+                <img src={logo} alt="ZeeVista Advisors"  className="w-[100px] h-[93px] mt-16"/>
                 <h2
                 className=" font-medium text-center mt-10 text-2xl font-play"
                 >

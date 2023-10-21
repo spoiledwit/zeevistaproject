@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="flex w-full h-[60vh] md:rounded-none rounded-b-[40px] overflow-hidden md:h-[100vh] justify-center items-center relative">
       <img
         src={london}
-        alt="london wallpaper"
+        alt="immigration consultants"
         className="object-cover w-full h-full absolute z-0"
       />
       <div className="absolute w-full h-full bg-black opacity-50 z-10"></div>

@@ -84,7 +84,7 @@ const ImmigrationPage3: React.FC<Props> = ({
                     "Australia has always been a popular choice for individuals who desire to migrate to another country. The country has favorable factors such as a thriving economy which means there are more jobs in Australia. Australia promises a better quality of life and a multicultural society where there is peace and harmony. Australia offers a permanent residency or PR visa to immigrants. The Australia PR visa has a validity of five years. You can move into Australia with your family with a PR visa. You can apply for citizenship after living in Australia for four years with an Australia"
                 );
             default:
-                return "Migration can lead to several different benefits, including personal growth, improved economic opportunities, and a better standard of living. Migration can also have a positive impact on the social and cultural integration of newcomers into their new country.";
+                return "Migration, often guided by skilled immigration consultants, brings a multitude of benefits including personal growth, better economic prospects, and an improved standard of living. The immigration process itself can be navigated more efficiently with the aid of qualified immigration services, resulting in a smoother social and cultural integration into the new country.";
         }
     };
 

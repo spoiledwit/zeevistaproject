@@ -20,7 +20,7 @@ const PlanCard = ({
         <img
         //@ts-ignore
           src={plan.image}
-          alt="Plan"
+          alt={plan.name}
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div

@@ -23,7 +23,7 @@ const DynamicPage: React.FC<Props> = ({
 
     useEffect(() => {
         setProgress(70);
-        // window.scrollTo(0, 0);
+        window.scrollTo(0, 0);
         setTimeout(() => {
             setProgress(100);
         }
@@ -53,17 +53,16 @@ const DynamicPage: React.FC<Props> = ({
         switch (country) {
             case 'visit-visas':
                 return (
-                    "Visit visas open the doors to explore new countries, experience diverse cultures, and create unforgettable memories. They are typically easy to obtain for travelers, allowing for short-term stays to visit family, tour landmarks, or attend events. Each country has its unique attractions and visit visa policies, enabling tourists to plan their adventures and discover the world at their own pace."
+                    "Visit visas, such as family visit visas, open the doors to explore new countries, experience diverse cultures, and create unforgettable memories. With the assistance of visit visa consultants, these visas are typically easy to obtain, allowing for short-term stays to visit family, tour landmarks, or even attend educational events with a student visa. Each country has its unique attractions and visit visa policies, often outlined by their immigration services, enabling tourists to plan their adventures and discover the world at their own pace."
                 );
             case 'student-visas':
                 return (
-                    "Student visas are a gateway for aspiring individuals to pursue education in renowned institutions worldwide. They not only provide access to quality education but also a chance to experience a new culture, hone language skills, and build a global network. Countries with established educational systems attract students from across the globe, offering a diverse learning environment and opportunities for personal and professional growth."
+                    "Student visas, often secured through specialized visa consultants, are the key for ambitious individuals to access renowned educational institutions globally. These visas not only offer a pathway to quality education but also give students the unique opportunity to immerse themselves in new cultural experiences, hone their language skills, and build an expansive global network. Countries with robust educational systems particularly attract a wide array of international students, creating a diverse and enriching learning environment that contributes to both personal and professional growth."
                 );
             case 'caribbean':
                 return (
-                    "Second citizenship has become a popular choice for high-net-worth individuals looking to invest their money in good opportunities. There are many benefits of second citizenship, including living and working in another country, travelling freely, and access to better education and healthcare.\n" +
-                    "Second citizenship can also provide a sense of security and stability, especially for those from countries with political or economic instability. In addition, second citizenship can offer opportunities for investment and business growth."
-                );
+                    "Second citizenship is gaining traction among high-net-worth individuals, particularly through options like Caribbean citizenship investment. This route offers a myriad of advantages, such as the freedom to travel using a Caribbean passport and improved access to quality education and healthcare. For individuals hailing from politically or economically unstable countries, a second citizenship can serve as a safety net, offering much-needed stability. Furthermore, owning a Caribbean island passport can unlock unique business and investment opportunities."
+                    );
         }
     };
 

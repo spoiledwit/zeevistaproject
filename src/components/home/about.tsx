@@ -70,7 +70,7 @@ export default function About() {
          transition={{ duration: 1 }}
          className="grid place-items-center w-full min-h-full"
         >
-          <img className="w-auto md:block hidden h-full md:h-[620px]" src={img} alt="image" />
+          <img className="w-auto md:block hidden h-full md:h-[620px]" src={img} alt="visa consultancy" />
         </motion.div>
 
         <motion.div

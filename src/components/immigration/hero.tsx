@@ -58,7 +58,7 @@ const Hero = ({
     <div className="flex w-full h-[calc(100vh)] justify-center items-center relative">
     <img
       src={getImageSource()}
-      alt="travel country wallpaper"
+      alt={pathname.includes("uk") ? "UK" : pathname.includes("portugal") ? "Portugal" : pathname.includes("canada") ? "Canada" : pathname.includes("australia") ? "Australia" : pathname.includes("new-zealand") ? "New Zealand" : "USA"}
       className="absolute w-full h-full object-cover z-0"
     />
     <div className="absolute w-full h-full bg-black opacity-50 z-10"></div>

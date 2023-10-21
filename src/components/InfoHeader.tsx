@@ -38,7 +38,7 @@ const InfoHeader = () => {
 
           <img
             src={logo}
-            alt="logo"
+            alt="ZeeVista Advisors"
             className="h-[100px] w-[100px] object-contain"
           />
         </Link>

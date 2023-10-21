@@ -89,7 +89,7 @@ const Layout = () => {
         target="_blank"
         className="fixed right-5 bottom-5 z-50"
       >
-        <img src={whatsappimg} className="w-14 md:animate-bounce" />
+        <img src={whatsappimg} alt='Whatsapp ZeeVista Advisors' className="w-14 md:animate-bounce" />
       </a>
     </div>
   );

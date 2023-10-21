@@ -45,7 +45,9 @@ export default function Hero() {
           <div
           className="absolute top-0 left-0 w-full h-full bg-black opacity-50"
           />
-          <img src={logo} className="w-32 md:mt-0 md:mb-[-30px] md:hidden block z-10" />
+          <img src={logo}
+          alt="immigration and second passport services"
+          className="w-32 md:mt-0 md:mb-[-30px] md:hidden block z-10" />
           <div className="flex mt-8 md:mt-20 flex-col items-center justify-center z-10">
           <h2 className="font-play text-white text-xl text-center md:text-3xl ">
             {item.subtitle}

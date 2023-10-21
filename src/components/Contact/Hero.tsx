@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="absolute w-full h-[65vh] md:h-screen bg-black opacity-50"></div>
       <img
         src={pic}
-        alt=""
+        alt="immigration consultants"
         className="w-full h-full object-cover object-center"
       />
       <div className="absolute w-full h-screen flex items-center justify-center px-4 md:px-20 xl:px-40">
