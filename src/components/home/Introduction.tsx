@@ -8,10 +8,10 @@ const Introduction = () => {
 
     return (
         <div className="w-full bg-gray-100 text-justify text-black pb-10">
-            <h2 className="mt-10 text-3xl font-play text-yellow-600 text-center">
+            <h1 className="mt-10 text-3xl font-play text-yellow-600 text-center">
                 ZeeVista Immigration Advisors
                 <Bar w={"w-[280px]"} />
-            </h2>
+            </h1>
             <div className="mt-12 md:flex-row flex-col flex font-play max-w-screen-lg gap-10 mx-auto text-sm leading-relaxed">
                 <div className="md:w-1/2  md:pl-0 px-8 md:border-r border-yellow-600 pr-5">
                 ZeeVista Immigration Advisors specialize in high-quality second citizenship and residency programs. Recognized as one of the best immigration consultants in Dubai for Europe and the Caribbean, our international team is founded on a legacy of professionalism, ethical conduct, and certified expertise.
