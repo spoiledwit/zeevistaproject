@@ -10,3 +10,11 @@
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
 }
+
+p, h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    text-align: justify;
+}

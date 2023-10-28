@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .div-img:hover > img {
   transform: scale(1.05);
 }
