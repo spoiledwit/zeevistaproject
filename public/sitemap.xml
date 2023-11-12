@@ -1,16 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://www.zeevistaadvisors.com/</loc>
   <lastmod>2023-10-20T11:56:05+00:00</lastmod>
 </url>
-
+<url>
+  <loc>https://www.zeevistaadvisors.com/about-us</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/contact</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/caribbean</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/australia</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/canada</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/caribbean/dominica</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/caribbean/grenada</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/caribbean/saint-lucia</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/caribbean/st-kitts-and-nevis</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/portugal</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/student-visas/australia</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/student-visas/canada</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/student-visas/uk</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/student-visas/usa</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/uk</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/visit-visas/australia</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/visit-visas/canada</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/visit-visas/new-zealand</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/visit-visas/schengen</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/visit-visas/uk</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/immigration/visit-visas/usa</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/student-visas</loc>
+</url>
+<url>
+  <loc>https://www.zeevistaadvisors.com/visit-visas</loc>
+</url>
 
 </urlset>
