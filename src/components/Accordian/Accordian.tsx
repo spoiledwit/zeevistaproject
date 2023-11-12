@@ -17,7 +17,7 @@ const Accordion = () => {
   return (
     <div className="flex md:flex-row gap-10 md:gap-20 justify-between flex-col mb-10 md:px-20 px-8">
     <div className="w-full max-w-[300px] flex flex-col md:items-center md:p-4">
-      <h1 className="md:text-3xl text-lg text-yellow-600 font-play text-db">Frequently Asked Questions</h1>
+      <p className="md:text-3xl text-lg text-yellow-600 font-play text-db">Frequently Asked Questions</p>
       <Bar w={"w-[132px] ml-0"} />
       <p className="md:text-lg text-db mt-2  md:mt-5 font-open">If you have any other questions, please feel free to contact us.</p>
     </div>

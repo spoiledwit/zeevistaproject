@@ -15,9 +15,9 @@ const Hero = () => {
       <div className="absolute w-full h-screen flex items-center justify-center px-4 md:px-20 xl:px-40">
         <AnimateToView scale={1.2} y={-12} opacity={1} duration={0.15}>
           <div className="flex flex-col mt-20 justify-center items-center">
-            <p className="text-white font-play text-4xl font-bask font-semibold md:text-5xl mb-4 leading-snug">
+            <h1 className="text-white font-play text-4xl font-bask font-semibold md:text-5xl mb-4 leading-snug">
               Contact Us
-            </p>
+            </h1>
             <p className="text-white text-xl text-center mb-12 font-bask">
               Get your queries answered by our experienced consultants!
             </p>

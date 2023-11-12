@@ -40,7 +40,7 @@ const ImmigrationPage = ({setProgress}: any) => {
     <div className="flex flex-col gap-20 mb-40">
       <Helmet>
         <title>ZeeVista Immigration Advisors</title>
-        <meta name="description" content="About Us" />
+        <meta name="description" content="Explore our Immigration Services" />
       </Helmet>
       <Hero {...countryData.hero} />
       <DiscoverImmigrationOptions {...optionsData} />

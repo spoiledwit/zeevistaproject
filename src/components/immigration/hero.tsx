@@ -72,7 +72,9 @@ const Hero = ({
               exit="hidden"
               transition={{ type: "spring", stiffness: 120 }}
             >
+              <h1>
               {title}
+              </h1>
               <br />
             </Motion>
           </AnimateToView>

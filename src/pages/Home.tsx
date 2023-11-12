@@ -34,7 +34,7 @@ export default function Home({ setProgress }: Props) {
     <div className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 items-center w-full flex flex-col h-max`}>
       <Helmet>
         <title>ZeeVista Immigration Advisors</title>
-        <meta name="description" content="About Us" />
+        <meta name="description" content="ZeeVista Immigration Advisors: Smooth second citizenship and Immigration guidance for Europe and the Caribbean." />
       </Helmet>
       <Hero />
       <Introduction />
@@ -44,7 +44,6 @@ export default function Home({ setProgress }: Props) {
       <br className="md:block hidden" />
       <br />
       <br />
-
       <Accordion />
         <Contact />
     </div>

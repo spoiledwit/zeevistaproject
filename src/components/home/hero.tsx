@@ -33,6 +33,8 @@ export default function Hero() {
       <div className="text-white absolute bottom-5 md:hidden animate-bounce left-[45%] z-10">
         <BsChevronDown className="text-white text-5xl" />
       </div>
+      <h1 className="sr-only">ZeeVista Immigration and Citizenship Services</h1> {/* sr-only class hides it visually but keeps it accessible to screen readers and SEO */}
+      <h2 className="sr-only">Explore ZeeVista Immigration Advisors' Services for Global Citizenship and Residency</h2>
       <Carousel options={{ loop: true }}>
         {data.map((item) => (
           <div
@@ -49,12 +51,12 @@ export default function Hero() {
               alt="immigration and second passport services"
               className="w-32 md:mt-0 md:mb-[-30px] md:hidden block z-10" />
             <div className="flex mt-8 md:mt-20 flex-col items-center justify-center z-10">
-              <h2 className="font-play text-white text-xl text-center md:text-3xl ">
+              <p className="font-play text-white text-xl text-center md:text-3xl ">
                 {item.subtitle}
-              </h2>
-              <h1 className="text-white font-play text-[34px] md:text-[110px]">
+              </p>
+              <p className="text-white font-play text-[34px] md:text-[110px]">
                 {item.title}
-              </h1>
+              </p>
               <p
                 className="text-white mt-2 md:mt-4 font-open tet md:text-xl">
                 {item.description}

@@ -13,7 +13,7 @@ const OurMission = () => {
         transition={{ duration: 0.5 }}
         className="our-mission bg-white max-w-[1500px] z-10 px-8 md:px-32 pb-32 md:pt-5"
       >
-        <h2 className="text-center font-play text-2xl font-medium text-yellow-600">About us</h2>
+        <h1 className="text-center font-play text-2xl font-medium text-yellow-600">About us</h1>
         <Bar w={"w-[90px]"} />
         <p className="mt-6 text-justify">
         <strong className="text-yellow-600">ZeeVista Advisors</strong> is a UAE-based firm specializing in a myriad of immigration and visa services, including Business Visit Visa, Tourist Visit Visa, and Student Visa. We also offer Permanent and Temporary Residency options as well as Caribbean Citizenship '2nd Passport' by investment. As your trusted partners, we navigate the intricate worlds of immigration, visa consultancy services, and second passports. Committed to excellence, we aim to facilitate global mobility for individuals and families, solidifying our reputation as a leader in the industry.

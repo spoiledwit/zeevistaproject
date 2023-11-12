@@ -6,7 +6,7 @@ const Message = () => {
       <div className="p-6  flex max-w-[1300px] items-center justify-center text-gray-900 w-full">
         <div className="md:w-[50vw]">
             
-        <h1 className="text-2xl font-medium font-play text-yellow-600 mb-4 text-center">A Message from Our CEO</h1>
+        <h2 className="text-2xl font-medium font-play text-yellow-600 mb-4 text-center">A Message from Our CEO</h2>
         <Bar w={"w-[210px]"} />
         <p className="mb-2 font-semibold mt-6 md:mt-0">Greetings,</p>
         <p className="mb-2 text-justify">

@@ -1,34 +1,47 @@
 export const faqs = [
   {
     id: 1,
-    question: "What types of visas does ZeeVista Advisors provide assistance with?",
-    answer:
-      "ZeeVista Advisors specializes in a wide range of visas including tourist, student, work, and family visas. Whether you're considering a Canadian work visa, a UK student visa, or Caribbean citizenship, our team is here to assist.",
+    question: "What is Immigration?",
+    answer: "Immigration refers to the movement of people across countries, driven by factors like job opportunities, business, or family reunions. While it offers exciting prospects, the procedure can be intricate. There are several legal intricacies that might lead to visa refusals, even for minor oversights. At ZeeVista Advisors, we leverage our expertise to guide you through these challenges, support your migration, provide investment opportunities, and even assist in educational choices for your children."
   },
   {
     id: 2,
-    question: "How does ZeeVista Advisors assist with the visa application process?",
-    answer:
-      "Yes, we can guide you through the entire visa application process, from understanding the specific requirements to helping you with documentation.",
+    question: "Why do I need an immigration consultant?",
+    answer: "An Immigration Consultant, like ZeeVista Advisors, is certified and continuously updated on migration rules and procedures. This ensures you receive accurate and timely visa advice, reducing the risk of oversights or errors that could jeopardize your application."
   },
   {
     id: 3,
-    question: "Do you provide immigration consultation services?",
-    answer:
-      "Absolutely, ZeeVista Advisors offers comprehensive immigration consultation. We cover a wide array of immigration policies, eligibility criteria, and procedures, whether you're interested in Canadian immigration services or considering citizenship by investment in the Caribbean.",
+    question: "Can I apply for the process if I am not in UAE?",
+    answer: "Absolutely. With ZeeVista Advisors, you can apply from any part of the world. Our global reach ensures that you get the best service, regardless of your location."
   },
   {
     id: 4,
-    question: "What countries do you specialize in for immigration and visa services?",
-    answer:
-      "Our expertise spans multiple countries including but not limited to the United States, Canada, the United Kingdom, and the Caribbean islands. We can assist with everything from permanent resident applications to dependent visas.",
+    question: "What are the benefits of using a law firm for my application?",
+    answer: "Engaging a specialized immigration law firm, like ZeeVista Advisors, guarantees expert handling of your application. We focus solely on immigration matters, which has allowed us to amass significant expertise. This specialization enhances the chances of a successful outcome and ensures the process is efficient, saving you time and potential costs."
   },
   {
     id: 5,
-    question: "What makes ZeeVista Advisors stand out?",
-    answer:
-      "What sets us apart is our personalized approach and a team of skilled immigration consultants. We prioritize client satisfaction and aim to be your trusted visa and migration services provider."
+    question: "What are your success rates?",
+    answer: "At ZeeVista Advisors, we believe every individual's circumstances are unique. Rather than providing generic statistics, we focus on assessing each person's specific situation and offering tailored advice. We're committed to transparency and prioritize your specific needs and history over broad claims."
+  },
+  {
+    id: 6,
+    question: "Why should I question a Visa Consultant before hiring?",
+    answer: "It's crucial to ensure that your Visa Consultant is experienced, transparent about fees, and doesn't engage in unnecessary procedures. By vetting consultants, you can safeguard against potential scams and make sure you're getting the best value. At ZeeVista Advisors, we encourage questions and believe in open communication."
+  },
+  {
+    id: 7,
+    question: "How can I avail the free visa assessment?",
+    answer: "For a free visa assessment from ZeeVista Advisors, choose your desired visa type and then contact us either via phone at (00 971 4 449 0918) or email at Info.zeevistaadvisors.com. One of our experts will be in touch to guide you further."
+  },
+  {
+    id: 8,
+    question: "What are your Professional Services Fees?",
+    answer: "At ZeeVista Advisors, our initial consultation is free. The fees for our services vary based on the application type. We maintain transparency by discussing all costs upfront and charging a flat fee. We pride ourselves on offering competitive rates that reflect the value and results we deliver."
+  },
+  {
+    id: 9,
+    question: "What is your registration process?",
+    answer: "The registration process at ZeeVista Advisors depends on the visa type and specific requirements. We recommend reaching out to us directly, and our team will guide you on the best starting point for your needs."
   }
 ];
-
-  

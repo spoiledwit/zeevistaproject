@@ -46,13 +46,13 @@ const Contact = () => {
           className="border border-white md:text-xl rounded-xl bg-gray-50 lg:w-[700px] flex flex-col justify-center items-start md:px-12 px-6 py-7 md:py-10"
         >
           <div className="flex">
-            <motion.h1
+            <motion.p
               className=" text-black ml-3 mb-4 font-play font-medium"
               animate={{ scale: 1.2 }}
               transition={{ duration: 1 }}
             >
               Contact Us
-            </motion.h1>
+            </motion.p>
           </div>
           <AssessmentForm />
         </motion.div>
