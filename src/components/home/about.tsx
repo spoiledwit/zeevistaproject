@@ -1,4 +1,4 @@
-import img from "../../../assets/bg1.jpeg";
+import img from "../../../assets/bg1.jpg";
 import { GiTechnoHeart } from "react-icons/gi";
 import { MdBiotech } from "react-icons/md";
 import { FaPassport } from "react-icons/fa6";

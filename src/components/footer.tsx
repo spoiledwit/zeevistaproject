@@ -30,7 +30,7 @@ export default function Footer() {
 
   return (
     <footer className=" w-full flex items-center flex-col border-t bg-black">
-      <span className="bg-yellow-600 max-w-[1400px] md:flex hidden w-[80vw] items-center z-10 justify-between h-40 mt-[-65px] bg-cover bg-center rounded-3xl overflow-hidden">
+      {/* <span className="bg-yellow-600 max-w-[1400px] md:flex hidden w-[80vw] items-center z-10 justify-between h-40 mt-[-65px] bg-cover bg-center rounded-3xl overflow-hidden">
         <img src={footer1} className="h-full w-[270px] object-cover" alt="immigration experts" />
         <span
           className="flex flex-col items-center"
@@ -51,7 +51,7 @@ export default function Footer() {
             objectPosition: "0% 0%"
           }}
         />
-      </span>
+      </span> */}
       <div className=" flex max-w-[1700px] flex-col md:flex-row w-full gap-10 md:gap-20 px-4 md:px-20 md:py-20 py-12 xl:px-40">
         <section className=" flex flex-col w-full md:w-1/2">
           <img src={logo} alt="logo" className="mt-[-10px]" width={80} height={40} />

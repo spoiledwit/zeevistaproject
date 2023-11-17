@@ -1,5 +1,5 @@
 import { BsChevronCompactDown } from "react-icons/bs";
-import pic from "../../../assets/contact.jpeg";
+import pic from "../../../assets/contact.jpg";
 import AnimateToView from "../AnimateToView";
 
 

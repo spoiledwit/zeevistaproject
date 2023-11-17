@@ -1,6 +1,6 @@
 import logo from "../../../assets/logowhite.png";
 import caribbean from "../../../assets/second.webp";
-import img3 from "../../../assets/immigration.jpeg";
+import img3 from "../../../assets/immigration.jpg";
 import { BsChevronDown } from "react-icons/bs";
 import Carousel from "../../components/carousel/simple";
 
