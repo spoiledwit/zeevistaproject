@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail, MdPhone } from "react-icons/md";
 import logo from "../../assets/logo.png"
-import footer1 from "../../assets/footer1.jpg";
-import footer2 from "../../assets/footer2.jpg";
+// import footer1 from "../../assets/footer1.jpg";
+// import footer2 from "../../assets/footer2.jpg";
 import {BiTime} from "react-icons/bi";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";

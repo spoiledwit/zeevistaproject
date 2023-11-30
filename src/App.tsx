@@ -8,6 +8,7 @@ import LoadingBar from 'react-top-loading-bar'
 import { useState } from "react";
 import DynamicPage from "./pages/Level1/DynamicPage";
 import ImmigrationPage3 from "./pages/Level1/ImmigrationPage3";
+import Admin from "./pages/Admin/Admin";
 
 const App = () => {
 
@@ -41,6 +42,8 @@ const App = () => {
           {/* Student visas */}
           <Route path="/student-visas" element={<DynamicPage country="student-visas" setProgress={setProgress} />} />
 
+          {/* Admin */}
+          <Route path="/admin" element={<Admin />} />
         </Route>
       </Routes>
     </>

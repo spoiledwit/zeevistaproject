@@ -1,17 +1,18 @@
-import { useEffect, useRef } from 'react';
-import {  useAnimation } from 'framer-motion';
-import { Outlet } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/footer';
-import MenuPage from './components/MenuPage';
-import Button from './components/Button';
-import { RiMenu3Fill } from 'react-icons/ri';
-import { Toaster } from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import { MdContactSupport } from 'react-icons/md';
-import SocialIcons from './components/SocialIcons';
+import { useEffect, useRef } from "react";
+import { useAnimation } from "framer-motion";
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/footer";
+import MenuPage from "./components/MenuPage";
+import Button from "./components/Button";
+import { RiMenu3Fill } from "react-icons/ri";
+import { Toaster } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { MdContactSupport } from "react-icons/md";
+import SocialIcons from "./components/SocialIcons";
 import whatsappimg from "../assets/whatsappimg.webp";
+import { useLocation } from "react-router-dom";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,6 +20,8 @@ const Layout = () => {
   const navigate = useNavigate();
   let lastScrollY = useRef(0);
   let ticking = useRef(false);
+  const location = useLocation();
+  const pathName = location.pathname;
 
   const update = () => {
     const currentScrollY = window.scrollY;
@@ -41,10 +44,10 @@ const Layout = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', requestTick);
+    window.addEventListener("scroll", requestTick);
 
     return () => {
-      window.removeEventListener('scroll', requestTick);
+      window.removeEventListener("scroll", requestTick);
     };
   }, []);
 
@@ -55,33 +58,33 @@ const Layout = () => {
       </div>
       <Toaster />
       {isMenuOpen && <MenuPage closeMenu={() => setIsMenuOpen(false)} />}
-      <div
-        className="fixed left-4 md:left-10 top-5"
-        style={{ zIndex: 999 }}
-       >
-        <Button
-          text="Menu"
-          Icon={RiMenu3Fill}
-          onClick={() => {
-            setIsMenuOpen(true);
-          }}
-        />
+      <div className="fixed left-4 md:left-10 top-5" style={{ zIndex: 999 }}>
+        {pathName !== "/admin" && (
+          <Button
+            text="Menu"
+            Icon={RiMenu3Fill}
+            onClick={() => {
+              setIsMenuOpen(true);
+            }}
+          />
+        )}
       </div>
-      <div
-        className="fixed md:right-10 right-4 top-5"
-        style={{ zIndex: 999 }}
-      >
-        <Button
-          text="Contact"
-          Icon={MdContactSupport}
-          onClick={() => {
-            navigate('/contact');
-          }}
-        />
+      <div className="fixed md:right-10 right-4 top-5" style={{ zIndex: 999 }}>
+        {pathName !== "/admin" && (
+          <Button
+            text="Contact"
+            Icon={MdContactSupport}
+            onClick={() => {
+              navigate("/contact");
+            }}
+          />
+        )}
       </div>
-      <div className="top-0 left-0 md:block hidden absolute w-full z-50">
-        <Header />
-      </div>
+      {pathName !== "/admin" && (
+        <div className="top-0 left-0 md:block hidden absolute w-full z-50">
+          <Header />
+        </div>
+      )}
       <Outlet />
       <Footer />
       <a
@@ -89,7 +92,11 @@ const Layout = () => {
         target="_blank"
         className="fixed right-5 bottom-5 z-50"
       >
-        <img src={whatsappimg} alt='Whatsapp ZeeVista Advisors' className="w-14 md:animate-bounce" />
+        <img
+          src={whatsappimg}
+          alt="Whatsapp ZeeVista Advisors"
+          className="w-14 md:animate-bounce"
+        />
       </a>
     </div>
   );
