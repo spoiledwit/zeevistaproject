@@ -16,7 +16,7 @@ const Stats = () => {
       const email = "admin@zeevistaadvisors.com";
       const password = "zeevista@2023";
       const res = await axios.post(
-        `${import.meta.env.VITE_SERVER_URL}/contact/count`,
+        `https://zeevistaserver.vercel.app/contact/count`,
         { email, password }
       );
       const { data } = res;
