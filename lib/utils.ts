@@ -7,7 +7,7 @@ export const totTitleCase = (s: string): string =>
 
 
 export const createContact = async (name: string, email:string, phone:string, jobTitle:string, education:string, nationality:string, text:string) => {
-  const res = await axios.post(`${import.meta.env.VITE_SERVER_URL}/contact`, {
+  const res = await axios.post(`https://zeevistaserver.vercel.app/contact`, {
     name,
     email,
     phone,
