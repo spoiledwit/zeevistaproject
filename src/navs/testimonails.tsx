@@ -1,9 +1,9 @@
 import Carousel from "../components/carousel/simple";
 import Bar from "../components/Bar";
-import globe from "../../assets/globe.jpg"
+import globe from "../../assets/globe.jpg";
 import { AiFillStar } from "react-icons/ai";
-import CountUp from 'react-countup';
-import VisibilitySensor from 'react-visibility-sensor';
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
 export default function Testimonials() {
   const testimonials = [
@@ -121,57 +121,57 @@ export default function Testimonials() {
         "ZeeVista Advisors turned the daunting task of immigration into a hassle-free experience for me. Their professional guidance and prompt responses were instrumental in ensuring a smooth visa application process. I am living my dream abroad, all thanks to their outstanding service.",
       image: globe,
     },
-
   ];
 
   return (
     <div className=" flex items-center flex-col w-full  justify-center">
       <div className="flex flex-col w-full items-center mt-5 md:mt-0 mx-5">
-      <h2 className=" text-yellow-600 text-center md:text-left self-center text-3xl md:px-0 px-8 md:text-3xl font-play">
+        <h2 className=" text-yellow-600 text-center md:text-left self-center text-3xl md:px-0 px-8 md:text-3xl font-play">
           What our clients says
           <Bar w={"w-[160px]"} />
-      </h2>
-      <p className="max-w-[800px] text-center">
-        Our clients rate us as their "firm of choice" and have described us as "one of the world's very best immigration law firms". We are proud of our reputation for obtaining the results our clients need to meet their life and business goals.
-      </p>
-      <div className="w-full flex items-center justify-center">
-        
-      <div className="flex max-w-[500px] gap-10 py-10 md:flex-row items-center justify-center md:justify-between w-full">
-        
-        <div className="flex flex-col items-center">
-          <VisibilitySensor
-            partialVisibility
-            offset={{ top: 10 }}
-            delayedCall
-          >
-            {({ isVisible }:{isVisible:any}) => (
-              <h3 className="text-5xl font-bold text-yellow-600">
-                <CountUp end={isVisible ? 10 : 0} duration={3} />
-              </h3>
-            )}
-          </VisibilitySensor>
-          <p className="text-center font-play text-lg mt-2 ">Countries</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <VisibilitySensor
-            partialVisibility
-            offset={{ top: 10 }}
-            delayedCall
-          >
-            {({ isVisible }:{isVisible:any}) => (
-              <h3 className="text-5xl font-bold text-yellow-600">
-                <CountUp end={isVisible ? 467 : 0} duration={3} />
-              </h3>
-            )}
-          </VisibilitySensor>
-          <p className="text-center text-lg mt-2 font-play">Visa Approvals</p>
+        </h2>
+        <p className="max-w-[800px] text-center">
+          Our clients rate us as their "firm of choice" and have described us as
+          "one of the best immigration law firms in Dubai." We are proud of our
+          reputation for obtaining the results our clients need to meet their
+          life and business goals.
+        </p>
+        <div className="w-full flex items-center justify-center">
+          <div className="flex max-w-[500px] gap-10 py-10 md:flex-row items-center justify-center md:justify-between w-full">
+            <div className="flex flex-col items-center">
+              <VisibilitySensor
+                partialVisibility
+                offset={{ top: 10 }}
+                delayedCall
+              >
+                {({ isVisible }: { isVisible: any }) => (
+                  <h3 className="text-5xl font-bold text-yellow-600">
+                    <CountUp end={isVisible ? 10 : 0} duration={3} />
+                  </h3>
+                )}
+              </VisibilitySensor>
+              <p className="text-center font-play text-lg mt-2 ">Countries</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <VisibilitySensor
+                partialVisibility
+                offset={{ top: 10 }}
+                delayedCall
+              >
+                {({ isVisible }: { isVisible: any }) => (
+                  <h3 className="text-5xl font-bold text-yellow-600">
+                    <CountUp end={isVisible ? 467 : 0} duration={3} />
+                  </h3>
+                )}
+              </VisibilitySensor>
+              <p className="text-center text-lg mt-2 font-play">
+                Visa Approvals
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
-      </div>
-      
-      </div>
-       
       <div className=" flex flex-col items-center justify-center w-full">
         <h2 className=" text-yellow-600 text-center md:text-left self-center text-3xl md:px-0 px-8 md:text-3xl font-play">
           Testimonials
@@ -182,10 +182,14 @@ export default function Testimonials() {
             {testimonials.map((t, i) => (
               <div key={i} className=" flex flex-col items-center">
                 <p className=" text-gray-500 leading-loose text-center text-lg max-w-3xl">
-                  <strong className="text-yellow-600 text-lg mr-1">"</strong>{t.content} <strong className="text-yellow-600 text-lg">"</strong>
+                  <strong className="text-yellow-600 text-lg mr-1">"</strong>
+                  {t.content}{" "}
+                  <strong className="text-yellow-600 text-lg">"</strong>
                 </p>
 
-                <h3 className="mt-10 font-serif text-yellow-600 text-lg md:mt-6 ">{t.name}</h3>
+                <h3 className="mt-10 font-serif text-yellow-600 text-lg md:mt-6 ">
+                  {t.name}
+                </h3>
                 <div className="flex my-2">
                   {[...Array(5)].map((_, i) => (
                     <AiFillStar key={i} className=" text-yellow-600 text-lg" />
@@ -202,7 +206,6 @@ export default function Testimonials() {
             ))}
           </Carousel>
         </div>
-
       </div>
     </div>
   );
