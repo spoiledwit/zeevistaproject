@@ -2,7 +2,7 @@ import Contact from "../../components/Admin/Contact";
 import Stats from "../../components/Admin/Stats";
 import { useState } from "react";
 import Contacts from "./Contacts";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 import Login from "./Login";
 
 const Admin = () => {
@@ -33,19 +33,7 @@ const Admin = () => {
                   >
                     View Contacts
                   </li>
-                  <li
-                    className="hover:bg-gray-700 p-3 rounded cursor-pointer"
-                    onClick={() => toast.error("Permission Denied!")}
-                  >
-                    Manage Content
-                  </li>
-
-                  <li
-                    className="hover:bg-gray-700 p-3 rounded cursor-pointer"
-                    onClick={() => toast.error("Permission Denied!")}
-                  >
-                    Settings
-                  </li>
+                  
                 </ul>
               </div>
             </div>
