@@ -13,28 +13,30 @@ interface Props {
 }
 
 export default function Home({ setProgress }: Props) {
-
-
   const [color, setColor] = useState("white");
-  useEffect(() => {
-
-  }, [color]);
+  useEffect(() => {}, [color]);
 
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
     // adding a progress bar with delay of 0.5s
     setProgress(70);
     setTimeout(() => {
       setProgress(100);
-    }
-      , 300);
-  }, [])
+    }, 300);
+  }, []);
 
   return (
-    <div className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 items-center w-full flex flex-col h-max`}>
+    <div
+      className={`md:pb-40 bg-[${color}] overflow-hidden pb-10 items-center w-full flex flex-col h-max`}
+    >
       <Helmet>
-        <title>ZeeVista Immigration Advisors</title>
-        <meta name="description" content="ZeeVista Immigration Advisors: Smooth second citizenship and Immigration guidance for Europe and the Caribbean." />
+        <title>
+          Welcome to ZeeVista: Your Trusted Immigration Partner in Dubai
+        </title>
+        <meta
+          name="description"
+          content="ZeeVista: Your trusted partner for hassle-free immigration to Dubai. Get visas, permits, and expert guidance for families, professionals, and students."
+        />
       </Helmet>
       <Hero />
       <Introduction />
@@ -45,7 +47,7 @@ export default function Home({ setProgress }: Props) {
       <br />
       <br />
       <Accordion />
-        <Contact />
+      <Contact />
     </div>
   );
 }
