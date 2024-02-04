@@ -8,6 +8,18 @@ import VisibilitySensor from "react-visibility-sensor";
 export default function Testimonials() {
   const testimonials = [
     {
+      name: "Ahmed S",
+      content:
+        "ZeeVista made my dream of immigration to UK from Dubai come true with their professional team who guided me step-by-step. I am grateful for their exceptional service and support throughout this journey.",
+      image: globe,
+    },
+    {
+      name: "Maryam K",
+      content:
+        "ZeeVista was exceptionally helpful when I needed help getting a work permit for Canada from Dubai. Their team was professional and knowledgeable, and I am now happily settled in my new home.",
+      image: globe,
+    },
+    {
       name: "Sania Iqbal",
       content:
         "The professionals at ZeeVista Advisors were remarkable in handling my immigration case. Their knowledge and diligence ensured a smooth process, making my dream of relocating a reality. I am eternally grateful for their exceptional service and support throughout this journey.",
@@ -119,6 +131,12 @@ export default function Testimonials() {
       name: "Ghahari Mohammed",
       content:
         "ZeeVista Advisors turned the daunting task of immigration into a hassle-free experience for me. Their professional guidance and prompt responses were instrumental in ensuring a smooth visa application process. I am living my dream abroad, all thanks to their outstanding service.",
+      image: globe,
+    },
+    {
+      name: "Ravi P",
+      content:
+        "I highly recommend ZeeVista's Portugal immigration services in Dubai; their consultants are top experts, and they Offer Comprehensive Visa Services.",
       image: globe,
     },
   ];
