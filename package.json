@@ -18,6 +18,8 @@
     "dayjs": "^1.11.13",
     "embla-carousel-autoplay": "^8.0.0-rc13",
     "embla-carousel-react": "^8.0.0-rc13",
+    "exceljs": "^4.4.0",
+    "file-saver": "^2.0.5",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
@@ -32,6 +34,7 @@
     "react-visibility-sensor": "^5.1.1"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.7",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-helmet": "^6.1.7",
