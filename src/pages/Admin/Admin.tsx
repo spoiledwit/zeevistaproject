@@ -48,7 +48,7 @@ const Admin = () => {
         <>
           <div className="flex min-h-screen bg-gray-100">
             {/* Sidebar */}
-            <div className="w-1/5 bg-gray-800 text-white px-8">
+            <div className="w-1/5 bg-gray-800 text-white px-8 shrink-0">
               <div className="flex flex-col py-8">
                 <div className="mb-10">
                   <h1 className="text-3xl font-bold">Admin Panel</h1>
