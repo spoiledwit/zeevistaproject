@@ -208,7 +208,7 @@ const Inquiries = () => {
       ) : (
         <>
           <div className="bg-white rounded shadow p-6 flex items-center justify-between mb-6">
-            <h1 className="text-4xl font-semibold text-gray-800">
+            <h1 className="text-3xl font-semibold text-gray-800">
               Manage Inquiries
             </h1>
             <button

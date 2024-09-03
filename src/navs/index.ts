@@ -10,6 +10,11 @@ export const desktopNav = [
     href: "/about-us",
   },
   {
+    id: "blogs",
+    title: "Blogs",
+    href: "/blogs",
+  },
+  {
     id: "caribbean-passports",
     title: "Caribbean Passports",
     href: "/caribbean",
