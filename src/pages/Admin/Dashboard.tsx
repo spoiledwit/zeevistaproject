@@ -5,6 +5,7 @@ import CardDataStats from "../../components/Admin/Card";
 import ChartOne from "../../components/Admin/Chart";
 import axios from "axios";
 import toast from "react-hot-toast";
+
 type Inquiry = {
   name: string;
   email: string;
@@ -21,6 +22,7 @@ const Dashboard = () => {
   const [inquiries, setInquiries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [blogs, setBlogs] = useState([]);
+
   useEffect(() => {
     getBlogs();
   }, []);
@@ -71,13 +73,15 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className="w-4/5 p-10">
+    <div className="w-full max-w-7xl mx-auto p-4 sm:p-6 lg:p-10">
       {loading ? (
         <p>Loading...</p>
       ) : (
         <>
-          <h2 className="text-4xl font-semibold mb-6">Dashboard</h2>
-          <div className="grid grid-cols-2 gap-5">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold mb-4 sm:mb-6">
+            Dashboard
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 lg:gap-6">
             <CardDataStats
               title="Inquiries"
               total={inquiries.length.toString()}
@@ -88,7 +92,9 @@ const Dashboard = () => {
               <IoBookOutline size={20} />
             </CardDataStats>
           </div>
-          <ChartOne inquiries={inquiries} />
+          <div className="mt-6">
+            <ChartOne inquiries={inquiries} />
+          </div>
         </>
       )}
     </div>
