@@ -1,77 +1,3 @@
-// import axios from "axios";
-// import { useState, useEffect } from "react";
-// import toast from "react-hot-toast";
-
-// const Contacts = () => {
-//   type Contact = {
-//     name: string;
-//     email: string;
-//     phone: string;
-//     jobTitle: string;
-//     education: string;
-//     nationality: string;
-//     text: string;
-//   };
-
-//   const [loading, setLoading] = useState(false);
-//   const [contacts, setContacts] = useState<Contact[]>([]);
-
-//   useEffect(() => {
-//     fetchContacts();
-//   }, []);
-
-//   const fetchContacts = async () => {
-//     setLoading(true);
-//     try {
-//       const email = "admin@zeevistaadvisors.com";
-//       const password = "zeevista@2023";
-//       const res = await axios.post(
-//         `https://zeevistaserver.vercel.app/contact/all`,
-//         {
-//           email,
-//           password,
-//         }
-//       );
-//       const { data } = res;
-//       console.log(data);
-//       setContacts(data);
-//     } catch (error) {
-//       toast.error("Error fetching contacts");
-//     }
-//     setLoading(false);
-//   };
-
-//   return (
-//     <div className="min-h-screen w-4/5 p-10 bg-white">
-//       {loading ? (
-//         <p>Loading...</p>
-//       ) : (
-//         <div>
-//           <h1 className="text-3xl font-semibold mb-6">Manage Queries</h1>
-//           <div className="flex gap-2  flex-wrap">
-//             {contacts.map((contact, i) => (
-//               <div
-//                 key={i}
-//                 className="bg-gray-100 w-fit p-6 text-sm gap-4 flex flex-col rounded-xl"
-//               >
-//                 <p>Name: {contact.name}</p>
-//                 <p>Email: {contact.email}</p>
-//                 <p>Phone: {contact.phone}</p>
-//                 <p>Job Title: {contact.jobTitle}</p>
-//                 <p> Nationality: {contact.nationality}</p>
-//                 <p>Education: {contact.education}</p>
-//                 <p>Message: {contact.text}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default Contacts;
-
 "use client";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -202,29 +128,29 @@ const Inquiries = () => {
   };
 
   return (
-    <div className="min-h-screen w-4/5 p-10">
+    <div className="min-h-screen w-full md:w-4/5 p-4 sm:p-10">
       {loading ? (
         <p>Loading...</p>
       ) : (
         <>
-          <div className="bg-white rounded shadow p-6 flex items-center justify-between mb-6">
-            <h1 className="text-3xl font-semibold text-gray-800">
+          <div className="bg-white rounded shadow p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6">
+            <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800">
               Manage Inquiries
             </h1>
             <button
               onClick={download}
-              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+              className="mt-4 sm:mt-0 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
             >
               Export to Excel
             </button>
           </div>
 
           <div className="bg-white rounded shadow">
-            <div className="flex items-center justify-between p-6">
-              <h4 className="text-xl font-semibold text-gray-800">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 sm:p-6">
+              <h4 className="text-lg sm:text-xl font-semibold text-gray-800">
                 All Inquiries
               </h4>
-              <div className="flex items-center gap-4">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mt-4 sm:mt-0">
                 <div className="flex items-center gap-2 border border-gray-300 px-4 py-2.5 rounded text-gray-500 text-sm">
                   <h2>Total Inquiries:</h2>
                   <p>{filteredInquiries.length}</p>

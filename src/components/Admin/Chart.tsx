@@ -19,7 +19,6 @@ const options: ApexOptions = {
   colors: ["#75924B"],
   chart: {
     fontFamily: "Satoshi, sans-serif",
-    height: 335,
     type: "area",
     dropShadow: {
       enabled: true,
@@ -33,24 +32,6 @@ const options: ApexOptions = {
       show: false,
     },
   },
-  responsive: [
-    {
-      breakpoint: 1024,
-      options: {
-        chart: {
-          height: 300,
-        },
-      },
-    },
-    {
-      breakpoint: 1366,
-      options: {
-        chart: {
-          height: 350,
-        },
-      },
-    },
-  ],
   stroke: {
     width: 2,
     curve: "straight",
@@ -108,6 +89,40 @@ const options: ApexOptions = {
     min: 0,
     max: 100,
   },
+  responsive: [
+    {
+      breakpoint: 768,
+      options: {
+        chart: {
+          height: 300, // For mobile or smaller screens
+        },
+      },
+    },
+    {
+      breakpoint: 1024,
+      options: {
+        chart: {
+          height: 350, // For tablet or medium screens
+        },
+      },
+    },
+    {
+      breakpoint: 1366,
+      options: {
+        chart: {
+          height: 350, // For desktop or large screens
+        },
+      },
+    },
+    {
+      breakpoint: 1920,
+      options: {
+        chart: {
+          height: 350, // For large desktop screens
+        },
+      },
+    },
+  ],
 };
 
 const getMonthlyInquiries = (inquiries: Inquiry[], year: number): number[] => {
@@ -154,8 +169,8 @@ const ChartOne: React.FC<ChartOneProps> = ({ inquiries }) => {
   ).sort((a, b) => b - a); // Sort years in descending order
 
   return (
-    <div className="mt-5 rounded-sm border border-gray-300 bg-white px-5 pb-5 pt-8 shadow-lg sm:px-8">
-      <div className="flex flex-col items-start gap-3 sm:flex-row sm:justify-between">
+    <div className="mt-5 rounded-sm border border-gray-300 bg-white px-4 sm:px-5 pb-5 pt-5 sm:pt-8 shadow-lg">
+      <div className="flex flex-col gap-3 sm:flex-row sm:justify-between sm:items-center">
         <div>
           <h3 className="text-lg font-semibold text-black">
             Inquiries Overview
@@ -185,8 +200,8 @@ const ChartOne: React.FC<ChartOneProps> = ({ inquiries }) => {
         </div>
       </div>
 
-      <div>
-        <div id="chartOne" className="-ml-5">
+      <div className="mt-4">
+        <div id="chartOne" className="-ml-2 sm:ml-0">
           <ReactApexChart
             options={chartOptions}
             series={series}

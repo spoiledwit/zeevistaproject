@@ -27,7 +27,7 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    width: "100%",
+    width: "90%", // Adjust for smaller screens
     maxWidth: "650px",
     maxHeight: "90vh",
     backgroundColor: "#ffffff",
@@ -165,12 +165,14 @@ const Blogs = () => {
   };
 
   return (
-    <div className="min-h-screen w-4/5 p-10">
-      <div className="bg-white rounded shadow p-6 flex items-center justify-between mb-6">
-        <h1 className="text-3xl font-semibold text-gray-800">Manage Blogs</h1>
+    <div className="min-h-screen w-full p-4 sm:p-10">
+      <div className="bg-white rounded shadow p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6">
+        <h1 className="text-2xl sm:text-3xl font-semibold text-gray-800">
+          Manage Blogs
+        </h1>
         <button
           onClick={openModal}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+          className="mt-4 sm:mt-0 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
         >
           Add a Blog
         </button>
@@ -261,7 +263,7 @@ const Blogs = () => {
         contentLabel={editMode ? "Edit Blog" : "Add Blog"}
       >
         <div className="flex items-center justify-between px-4 py-4">
-          <h4 className="text-xl font-semibold text-black">
+          <h4 className="text-lg sm:text-xl font-semibold text-black">
             {editMode ? "Edit Blog" : "Add Blog"}
           </h4>
           <button
