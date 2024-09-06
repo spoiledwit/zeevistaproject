@@ -15,6 +15,73 @@ export const desktopNav = [
     href: "/blogs",
   },
   {
+    id: "business-setup",
+    title: "Business Setup",
+    href: "#",
+    children: [
+      {
+        id: "company-formation-mainland",
+        title: "Company Formation Mainland",
+        href: "/business-setup/company-formation-mainland",
+      },
+      {
+        id: "company-formation-freezone",
+        title: "Company Formation Freezone",
+        href: "/business-setup/company-formation-freezone",
+      },
+      {
+        id: "offshore-company-formation",
+        title: "Offshore Company Formation",
+        href: "/business-setup/offshore-company-formation",
+      },
+      {
+        id: "legal-services",
+        title: "Legal Services",
+        href: "/business-setup/legal-services",
+      },
+      {
+        id: "pro-services",
+        title: "PRO Services",
+        href: "/business-setup/pro-services",
+      },
+      {
+        id: "investor-partner-visa",
+        title: "Investor & Partner Visa",
+        href: "/business-setup/investor-partner-visa",
+      },
+      {
+        id: "uae-golden-visa",
+        title: "UAE Golden Visa",
+        href: "/business-setup/uae-golden-visa",
+      },
+      {
+        id: "bank-account-services",
+        title: "Bank Account Services",
+        href: "/business-setup/bank-account-services",
+      },
+      {
+        id: "vat-corporate-tax",
+        title: "VAT & Corporate Tax",
+        href: "/business-setup/vat-corporate-tax",
+      },
+      {
+        id: "accounting-bookkeeping",
+        title: "Accounting & Bookkeeping",
+        href: "/business-setup/accounting-bookkeeping",
+      },
+      {
+        id: "office-for-rent-ejari",
+        title: "Office for Rent & Ejari",
+        href: "/business-setup/office-for-rent-ejari",
+      },
+      {
+        id: "web-development-social-media-marketing",
+        title: "Web Development & Social Media Marketing",
+        href: "/business-setup/web-development-social-media-marketing",
+      },
+    ],
+  },
+  {
     id: "caribbean-passports",
     title: "Caribbean Passports",
     href: "/caribbean",
