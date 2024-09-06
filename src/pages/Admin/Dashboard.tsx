@@ -44,17 +44,15 @@ const Dashboard = () => {
   const fetchInquiries = async () => {
     setLoading(true);
     try {
-      const email = "admin@zeevistaadvisors.com";
-      const password = "zeevista@2023";
-      const res = await axios.post(
-        `https://zeevistaserver.vercel.app/contact/all`,
+      const res = await axios.get(
+        `${import.meta.env.VITE_SERVER_URL}/contact/all`,
         {
-          email,
-          password,
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
         }
       );
       const { data } = res;
-      console.log(data);
       setInquiries(
         data.sort((a: Inquiry, b: Inquiry) => {
           return (
