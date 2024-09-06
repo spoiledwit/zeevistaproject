@@ -1,7 +1,7 @@
 import AssessmentForm from "@/components/assessment-form";
 import Hero from "@/components/BusinessSetup/hero";
 import { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { businessSetup } from "@/constants";
 import Services from "@/components/home/services";
 interface Props {
