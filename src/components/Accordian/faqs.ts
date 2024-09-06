@@ -53,4 +53,56 @@ export const faqs = [
     answer:
       "The registration process at ZeeVista Advisors depends on the visa type and specific requirements. We recommend reaching out to us directly, and our team will guide you on the best starting point for your needs.",
   },
+  // Added FAQs for services
+  {
+    id: 10,
+    question: "What services do you offer for Global Immigration?",
+    answer:
+      "ZeeVista Advisors offers comprehensive services for global immigration, including assistance with visas, residency, work permits, and citizenship programs for countries such as Canada, the USA, the UK, and Australia. Our team provides personalized advice tailored to your specific immigration goals.",
+  },
+  {
+    id: 11,
+    question: "What are PRO Services and how can ZeeVista Advisors assist?",
+    answer:
+      "PRO Services involve managing the administrative and government-related tasks for businesses and individuals. ZeeVista Advisors offers services such as visa processing, labor contracts, trade license renewals, and document attestation to ensure smooth operations with UAE government departments.",
+  },
+  {
+    id: 12,
+    question:
+      "How can I apply for a UAE Golden Visa through ZeeVista Advisors?",
+    answer:
+      "ZeeVista Advisors helps high-net-worth individuals, investors, and skilled professionals apply for the UAE Golden Visa, a long-term residency program. We guide you through the eligibility criteria, documentation, and application process to ensure a smooth and successful outcome.",
+  },
+  {
+    id: 13,
+    question: "Can ZeeVista Advisors help me open a bank account in the UAE?",
+    answer:
+      "Yes, ZeeVista Advisors assists both individuals and businesses in opening bank accounts in the UAE. We provide support with documentation, application submission, and follow-up with banks to ensure the account is set up quickly and smoothly.",
+  },
+  {
+    id: 14,
+    question: "What types of UAE visas can I apply for with ZeeVista Advisors?",
+    answer:
+      "ZeeVista Advisors provides assistance with various types of UAE visas, including residence visas, investor visas, family sponsorship visas, and visit visas. We guide you through the application process, ensuring all documentation is accurate and timely submitted.",
+  },
+  {
+    id: 15,
+    question:
+      "How can ZeeVista Advisors help with my business's Tax and Accounting needs?",
+    answer:
+      "ZeeVista Advisors offers tax and accounting services, including VAT compliance, corporate tax registration, and bookkeeping. Our team ensures your business meets all UAE tax regulations, helping you avoid penalties and manage your finances effectively.",
+  },
+  {
+    id: 16,
+    question: "What services do you offer for Social Media Marketing?",
+    answer:
+      "ZeeVista Advisors offers social media marketing services that help businesses build an online presence. We create targeted campaigns, manage social media platforms, and develop strategies to boost brand visibility and customer engagement.",
+  },
+  {
+    id: 17,
+    question:
+      "Can ZeeVista Advisors help with Website Development for my business?",
+    answer:
+      "Yes, we provide custom website development services that include designing, developing, and optimizing websites to meet your business goals. Our team creates responsive, SEO-friendly websites that help you establish a strong digital presence.",
+  },
 ];

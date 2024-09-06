@@ -7,6 +7,7 @@ import Accordion from "../components/Accordian/Accordian";
 import Contact from "../components/home/Contact";
 import Introduction from "../components/home/Introduction";
 import { Helmet } from "react-helmet";
+import Services from "@/components/home/services";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -41,6 +42,7 @@ export default function Home({ setProgress }: Props) {
       <Hero />
       <Introduction />
       <Countries setColor={setColor} />
+      <Services setColor={setColor} />
       <About />
       <Testimonials />
       <br className="md:block hidden" />
