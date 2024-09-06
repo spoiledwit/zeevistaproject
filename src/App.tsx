@@ -11,6 +11,7 @@ import ImmigrationPage3 from "./pages/Level1/ImmigrationPage3";
 import Admin from "./pages/Admin/Admin";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
+import BusinessSetup from "./pages/BusinessSetup";
 
 const App = () => {
   const [progress, setProgress] = useState(0);
@@ -37,6 +38,10 @@ const App = () => {
           <Route
             path="/blogs/:id"
             element={<BlogDetails setProgress={setProgress} />}
+          />
+          <Route
+            path="/business-setup/:id"
+            element={<BusinessSetup setProgress={setProgress} />}
           />
           {/* Immmigration Pages */}
           <Route
