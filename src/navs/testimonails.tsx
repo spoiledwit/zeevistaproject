@@ -67,76 +67,47 @@ export default function Testimonials() {
         "My experience with ZeeVista Advisors has been nothing short of excellent. Their proficient team guided me meticulously through every step, ensuring a successful visa application. Their dedication and expertise are why I am happily settled abroad today.",
       image: globe,
     },
+    // New testimonials for specific services
     {
-      name: "Lakshmi Narayan",
+      name: "Zara Iqbal",
       content:
-        "The unparalleled expertise of ZeeVista Advisors made my immigration process smooth and stress-free. Their diligent team was always there to address my concerns, making sure every aspect of the application was perfectly handled. I am immensely thankful for their support.",
+        "ZeeVista Advisors provided exceptional support in helping me obtain the UAE Golden Visa. Their team was highly knowledgeable about the application process and ensured all my documents were in order. Thanks to their guidance, I now have the long-term residency I dreamed of.",
       image: globe,
     },
     {
-      name: "Mahfuz Rahman",
+      name: "Hassan Ali",
       content:
-        "ZeeVista Advisors turned the complicated process of visa application into a hassle-free experience. Their professional guidance and timely responses were invaluable, making my dream of studying abroad a reality. I can't express enough gratitude for their exceptional service.",
+        "The PRO services provided by ZeeVista Advisors saved my business so much time. They handled everything from company registration to visa processing seamlessly. I highly recommend their professional and efficient services to any business in need of PRO support in Dubai.",
       image: globe,
     },
     {
-      name: "Anushka Perera",
+      name: "Sara Khan",
       content:
-        "Engaging with ZeeVista Advisors was a turning point in my immigration journey. Their team's professionalism and meticulous approach made every step manageable. Today, I am living my dream abroad, and it's all thanks to their remarkable service.",
+        "Thanks to ZeeVista Advisors' Banking Services, I was able to open my business account in the UAE quickly and efficiently. Their expertise and connections with local banks made the entire process hassle-free. I would definitely recommend their banking solutions to anyone setting up in the UAE.",
       image: globe,
     },
     {
-      name: "Hassan Malik",
+      name: "Manoj Desai",
       content:
-        "ZeeVista Advisors provided unparalleled support throughout my visa application process. Their expertise in handling complex cases ensured a smooth journey from start to finish. I am eternally grateful for their commitment and exceptional service, making my dream come true.",
+        "ZeeVista Advisors helped me with my UAE Residence Visa, and I couldn’t be more satisfied. Their clear communication, professional approach, and timely updates made the entire process smooth. I’m now happily settled in Dubai thanks to their expert guidance.",
       image: globe,
     },
     {
-      name: "Kashif Raza",
+      name: "Fatima Al Zahra",
       content:
-        "The team at ZeeVista Advisors is nothing short of amazing. Their comprehensive understanding of immigration laws and professional handling of my case made the process seem effortless. I am now happily settled in my dream country, all thanks to their outstanding service.",
+        "I engaged ZeeVista Advisors for Social Media Marketing Services for my startup, and they exceeded my expectations. Their creative campaigns boosted my online presence significantly. If you are looking to grow your brand through social media, ZeeVista is the go-to team.",
       image: globe,
     },
     {
-      name: "Bimal Roy",
+      name: "Imran Malik",
       content:
-        "ZeeVista Advisors were a beacon of hope during my visa application process. Their seasoned professionals provided invaluable guidance, ensuring a smooth and successful journey. I am now living my dream, and it's all thanks to their exceptional service.",
-      image: globe,
-    },
-    {
-      name: "Saima Khan",
-      content:
-        "The expertise of ZeeVista Advisors in handling my immigration case was exemplary. Their dedicated team ensured a seamless process, making my dream of relocating abroad a reality. Their professionalism and support have been invaluable, and I highly recommend their services.",
-      image: globe,
-    },
-    {
-      name: "Mohamed Ahmad",
-      content:
-        "Engaging with ZeeVista Advisors was the gateway to realizing my ambitions of moving abroad. Their seasoned team meticulously handled every aspect of my immigration case, making the process seamless. I am now thriving in my new home, all thanks to their exemplary services.",
-      image: globe,
-    },
-    {
-      name: "Raid",
-      content:
-        "The professional demeanor and expertise of ZeeVista Advisors were beyond my expectations. Their personalized approach to my case made the complex immigration process a breeze. I now enjoy a new life abroad, all thanks to their dedicated and proficient team.",
-      image: globe,
-    },
-    {
-      name: "Moussa Mohammed",
-      content:
-        "The moment I engaged with ZeeVista Advisors, I knew my immigration journey would be in capable hands. Their in-depth understanding and tailored solutions made every step straightforward. I am immensely grateful for their dedication which has allowed me to live my dream.",
-      image: globe,
-    },
-    {
-      name: "Ghahari Mohammed",
-      content:
-        "ZeeVista Advisors turned the daunting task of immigration into a hassle-free experience for me. Their professional guidance and prompt responses were instrumental in ensuring a smooth visa application process. I am living my dream abroad, all thanks to their outstanding service.",
+        "The website development team at ZeeVista Advisors did an incredible job creating my business website. It is modern, responsive, and perfectly aligned with my brand. They are thorough professionals who understand how to create a digital presence that delivers results.",
       image: globe,
     },
     {
       name: "Ravi P",
       content:
-        "I highly recommend ZeeVista's Portugal immigration services in Dubai; their consultants are top experts, and they Offer Comprehensive Visa Services.",
+        "I highly recommend ZeeVista's Portugal immigration services in Dubai; their consultants are top experts, and they offer comprehensive visa services.",
       image: globe,
     },
   ];

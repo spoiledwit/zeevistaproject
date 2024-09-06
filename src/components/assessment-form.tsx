@@ -9,8 +9,8 @@ export type SubmitProps = {
   email: string;
   phone: string;
   jobTitle: string;
-  education: string;
   nationality: string;
+  service: string;
   visaType: string;
 };
 
@@ -19,8 +19,8 @@ const AssessmentForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [jobTitle, setJobTitle] = useState("");
-  const [education, setEducation] = useState("");
   const [nationality, setNationality] = useState("");
+  const [service, setService] = useState("");
   const [text, setText] = useState("");
 
   const handleSubmit = async (e: any) => {
@@ -30,10 +30,11 @@ const AssessmentForm = () => {
       email,
       phone,
       jobTitle,
-      education,
       nationality,
+      service,
       text
     );
+    console.log(res);
     if (res.success) {
       toast.success("Message Submitted successfully!");
       setPhone("");
@@ -41,46 +42,75 @@ const AssessmentForm = () => {
       setPhone("");
       setEmail("");
       setText("");
-      setEducation("");
       setName("");
       setJobTitle("");
+      setService("");
+    } else {
+      toast.error("Please try again later!");
     }
-    else {
-      toast.error("Please try again later!")
-    }
-
   };
 
   return (
     <form onSubmit={handleSubmit} className="w-full flex flex-col gap-8">
-      <Input label="Full Name" value={name} onChange={(e) => setName(e.target.value)} />
-      <Input label="Mobile Number" value={phone} onChange={(e) => setPhone(e.target.value)} />
       <Input
-        label="Email Address"
+        label="Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <Input
+        label="Email"
         value={email}
         type="email"
         onChange={(e) => setEmail(e.target.value)}
       />
-      <Input value={jobTitle} label="Job Title" onChange={(e) => setJobTitle(e.target.value)} />
+      <Input
+        label="Mobile Number"
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
+      />
+      <Input
+        value={jobTitle}
+        label="Current Job Title"
+        onChange={(e) => setJobTitle(e.target.value)}
+      />
       <Input
         label="Nationality"
         value={nationality}
         onChange={(e) => setNationality(e.target.value)}
       />
+      <select
+        value={service}
+        onChange={(e) => setService(e.target.value)}
+        className="border-b-[2px] border-black/30  rounded-none shadow-none py-2 appearance-none text-gray-600 text-sm outline-none focus:border-yellow-600 ring-0 focus:delay-[99999] peer"
+      >
+        <option value="">Select a service</option>
+        <option value="Global immigration Services">
+          Global Immigration Services
+        </option>
+        <option value="PRO Services">PRO Services</option>
+        <option value="Banking Services">Banking Services</option>
+        <option value="UAE Golden Visa Services">
+          UAE Golden Visa Services
+        </option>
+        <option value="I Need UAE Residence Visa only">
+          I Need UAE Residence Visa only
+        </option>
+        <option value="UAE visit Visa">UAE visit Visa</option>
+        <option value="Other Services">Other Services</option>
+        <option value="Tax & Accounting Services">
+          Tax & Accounting Services
+        </option>
+        <option value="Social media Marketing Services">
+          Social Media Marketing Services
+        </option>
+        <option value="Website Development">Website Development</option>
+      </select>
       <Input
-        label="Education"
-        value={education}
-        onChange={(e) => setEducation(e.target.value)}
-      />
-      <Input
-        label="Message"
+        label="Write Your Message"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <Button
-        text="Submit"
-        onClick={() => { handleSubmit }}
-      />
+      <Button text="Submit" onClick={() => handleSubmit} />
     </form>
   );
 };

@@ -5,16 +5,23 @@ export const totTitleCase = (s: string): string =>
     .replace(/^[-_]*(.)/, (_, c) => c.toUpperCase())
     .replace(/[-_]+(.)/g, (_, c) => " " + c.toUpperCase());
 
-
-export const createContact = async (name: string, email:string, phone:string, jobTitle:string, education:string, nationality:string, text:string) => {
+export const createContact = async (
+  name: string,
+  email: string,
+  phone: string,
+  jobTitle: string,
+  nationality: string,
+  service: string,
+  text: string
+) => {
   const res = await axios.post(`https://zeevistaserver.vercel.app/contact`, {
     name,
     email,
     phone,
     jobTitle,
-    education,
     nationality,
-    text
+    service,
+    text,
   });
   return res.data;
 };
