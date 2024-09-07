@@ -12,6 +12,59 @@ import img11 from "../../assets/11.jpg";
 import img12 from "../../assets/12.jpg";
 export const businessSetup = [
   {
+    id: "overview",
+    title: "Business Setup Services",
+    description:
+      "ZeeVista Advisors offers comprehensive business setup services in the UAE, guiding you through each phase of establishing your company. Whether it's setting up in the mainland, a freezone, or offshore, we simplify the entire process, ensuring your business is fully compliant and operational. With our extensive local knowledge and expertise, we help you navigate the legal and regulatory requirements, giving you the freedom to focus on your core business.",
+    imageURL: img1,
+    slogan: "Your Trusted Partner for UAE Business Setup",
+    content: `
+      <h1>Comprehensive Business Setup Services in UAE</h1>
+      <p>Setting up a business in the UAE is a rewarding venture, but it can also be complex with numerous legal requirements and procedures to follow. ZeeVista Advisors provides expert guidance to streamline the business setup process, making it easier for you to establish your presence in one of the world’s fastest-growing economies. Whether you’re looking to set up a mainland company, freezone entity, or offshore business, our team ensures a smooth and compliant setup process.</p>
+      
+      <h2>Why Choose ZeeVista Advisors for Business Setup?</h2>
+      <p>At ZeeVista Advisors, we understand that each business is unique. That's why we offer personalized solutions tailored to your specific needs. Here are just a few reasons to trust us with your UAE business setup:</p>
+      <ul>
+        <li>Expert knowledge of UAE regulations and requirements</li>
+        <li>End-to-end support from business licensing to operational setup</li>
+        <li>Local sponsorship and government approvals handled by us</li>
+        <li>Tailored solutions for mainland, freezone, and offshore setups</li>
+        <li>Ongoing support for business growth and compliance</li>
+      </ul>
+      
+      <h2>Our Range of Business Setup Services</h2>
+      <p>We offer a full range of services to help you establish and grow your business in the UAE:</p>
+      <ul>
+        <li><strong>Mainland Company Formation:</strong> We help you navigate the legal and regulatory requirements to establish a mainland business in the UAE, providing local sponsorship if necessary and ensuring compliance with all government regulations.</li>
+        <li><strong>Freezone Company Formation:</strong> For businesses looking to take advantage of tax exemptions and 100% ownership, we offer complete freezone company setup services across all major UAE freezones.</li>
+        <li><strong>Offshore Company Formation:</strong> For businesses looking to manage international operations with confidentiality and tax benefits, we provide offshore company setup services, ensuring full compliance and security.</li>
+        <li><strong>PRO Services:</strong> We handle all the administrative and government documentation processes, including visa processing, trade license renewals, and legal document attestation.</li>
+        <li><strong>Legal Services:</strong> Our experienced legal team assists with contract drafting, corporate governance, and regulatory compliance to ensure your business operates within the framework of UAE laws.</li>
+        <li><strong>Office Space & Ejari:</strong> We assist in finding and securing the perfect office space for your business, as well as completing Ejari registration to ensure compliance with local rental laws.</li>
+      </ul>
+      
+      <h2>Tailored Solutions for Your Business</h2>
+      <p>Every business is different, and we believe in offering solutions that fit your specific business goals and industry needs. Our team works closely with you to understand your vision, provide strategic advice, and implement the best practices for successful market entry and long-term growth in the UAE.</p>
+
+      <h2>How ZeeVista Advisors Supports Your Growth</h2>
+      <p>Beyond the initial setup, ZeeVista Advisors is committed to your business's success. We provide ongoing consultancy to help your business adapt to changing market conditions, comply with evolving regulations, and identify growth opportunities in the UAE and beyond. Our team is always available to support your needs, from operational expansions to handling new regulatory requirements.</p>
+      
+      <h2>Why the UAE is the Ideal Place to Start Your Business</h2>
+      <p>The UAE offers a strategic location, world-class infrastructure, and a business-friendly environment that attracts investors and entrepreneurs from around the world. Some of the key benefits of starting your business in the UAE include:</p>
+      <ul>
+        <li>Access to a growing and dynamic economy</li>
+        <li>Tax benefits, including zero corporate tax in many zones</li>
+        <li>Strategic location as a gateway to the Middle East, Africa, and Asia</li>
+        <li>Advanced infrastructure and technological ecosystem</li>
+        <li>Ease of doing business with robust legal frameworks and business laws</li>
+      </ul>
+
+      <h2>Get Started with ZeeVista Advisors</h2>
+      <p>Ready to take the next step? ZeeVista Advisors is here to make your business setup journey as seamless and stress-free as possible. Whether you are an entrepreneur, investor, or company looking to expand, we provide expert services tailored to your needs.</p>
+      <p>Contact us today to schedule a consultation and learn more about how we can help you set up and grow your business in the UAE.</p>
+    `,
+  },
+  {
     id: "company-formation-mainland",
     title: "Company Formation Mainland",
     description:

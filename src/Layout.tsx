@@ -21,13 +21,23 @@ const Layout = () => {
   let ticking = useRef(false);
   const location = useLocation();
   const pathName = location.pathname;
-
+  const popupTimeoutRef = useRef<any>(null);
   useEffect(() => {
-    const shouldShowPopup = pathName === '/';
-    if (shouldShowPopup) {
+    popupTimeoutRef.current = setTimeout(() => {
       setIsPopupOpen(true);
+    }, 10000);
+
+    return () => clearTimeout(popupTimeoutRef.current);
+  }, []);
+
+  const showPopup = () => {
+    if (popupTimeoutRef.current) {
+      clearTimeout(popupTimeoutRef.current);
     }
-  }, [pathName]);
+    popupTimeoutRef.current = setTimeout(() => {
+      setIsPopupOpen(true);
+    }, 120000);
+  };
 
   const update = () => {
     const currentScrollY = window.scrollY;
@@ -95,7 +105,13 @@ const Layout = () => {
         </div>
       )}
 
-      <ProfessionalPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} />
+      <ProfessionalPopup
+        isOpen={isPopupOpen}
+        onClose={() => {
+          setIsPopupOpen(false);
+          showPopup();
+        }}
+      />
 
       <Outlet />
       <Footer />

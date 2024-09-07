@@ -17,7 +17,7 @@ export const desktopNav = [
   {
     id: "business-setup",
     title: "Business Setup",
-    href: "/business-setup/company-formation-mainland",
+    href: "/business-setup/overview",
     children: [
       {
         id: "company-formation-mainland",

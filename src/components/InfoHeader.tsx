@@ -1,4 +1,4 @@
-import logo from "../../assets/logowhite.png";
+import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa6";
 import { GrMail } from "react-icons/gr";
@@ -6,7 +6,6 @@ import { TbDeviceLandlinePhone } from "react-icons/tb";
 import { PiWhatsappLogoFill } from "react-icons/pi";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
 const InfoHeader = () => {
   const [contactInfo, setContactInfo] = useState<any>(null);
   const fetchContactInfo = async () => {
@@ -54,11 +53,7 @@ const InfoHeader = () => {
           </div>
         </div>
         <Link to={"/"}>
-          <img
-            src={logo}
-            alt="ZeeVista Advisors"
-            className="h-[100px] w-[100px] object-contain"
-          />
+          <img src={logo} alt="ZeeVista Advisors" className="w-[100px]" />
         </Link>
         <div className="flex gap-4 items-center justify-center">
           <span className=" flex gap-3 tracking-[10px]">

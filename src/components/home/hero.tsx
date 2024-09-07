@@ -1,9 +1,10 @@
-import logo from "../../../assets/logowhite.png";
+import logo from "../../../assets/logo.png";
 import caribbean from "../../../assets/second.webp";
 import img3 from "../../../assets/immigration.jpg";
 import img1 from "../../../assets/hero1.jpg";
 import { BsChevronDown } from "react-icons/bs";
 import Carousel from "../../components/carousel/simple";
+import { PopupButton } from "@typeform/embed-react";
 
 const data = [
   {
@@ -85,6 +86,12 @@ export default function Hero() {
                 {item.description}
               </p>
             </div>
+            <PopupButton
+              id=""
+              className="text-sm md:text-base bg-yellow-600 text-white py-3 md:py-4 rounded-full px-6 md:px-8 font-medium mt-5 md:mt-10 z-10 font-play"
+            >
+              Cost Calculator
+            </PopupButton>
           </div>
         ))}
       </Carousel>
