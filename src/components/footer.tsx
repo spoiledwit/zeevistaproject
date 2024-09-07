@@ -71,20 +71,17 @@ export default function Footer() {
       </span> */}
       <div className=" flex max-w-[1700px] flex-col md:flex-row w-full gap-10 md:gap-20 px-4 md:px-20 md:py-20 py-12 xl:px-40">
         <section className=" flex flex-col w-full md:w-1/2">
-          <img
-            src={logo}
-            alt="logo"
-            className="mt-[-10px]"
-            width={80}
-            height={40}
-          />
+          <img src={logo} alt="logo" className="mt-[-10px]" width={100} />
           <p className="text-gray-300 mt-5">
             <strong className="text-yellow-600 text-justify">
-              ZeeVista Advisors{" "}
+              Get a Free Consultation:
             </strong>{" "}
-            specializes in providing hassle-free secondary passports and
-            citizenships, alongside comprehensive immigration services including
-            visit and student visa facilitations.
+            Zeevista Business Advisors is dedicated to being your comprehensive
+            partner for all business needs. For over 15 years, our expert team
+            has supported more than 15,000 startups and SMEs in achieving their
+            growth and expansion goals. We provide customized solutions to guide
+            your business from initial setup through to thriving success. Reach
+            out to us to start your prosperous business journey in the UAE.
           </p>
 
           <div className="flex  md:flex-row justify-between md:justify-center items-center gap-2 md:gap-6 md:px-20 px-4 py-10">

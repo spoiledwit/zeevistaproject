@@ -41,8 +41,8 @@ export default function Home({ setProgress }: Props) {
       </Helmet>
       <Hero />
       <Introduction />
-      <Countries setColor={setColor} />
       <Services setColor={setColor} />
+      <Countries setColor={setColor} />
       <About />
       <Testimonials />
       <br className="md:block hidden" />

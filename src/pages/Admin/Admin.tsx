@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { useUserStore} from "../../store/user";
+import { useUserStore } from "../../store/user";
 import Login from "./Login";
 import Dashboard from "./Dashboard";
 import Contacts from "./Contacts";
@@ -10,6 +10,8 @@ import { MdContactPhone } from "react-icons/md";
 import { IoBook } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { Loader2 } from "lucide-react";
+import { IoIosContact } from "react-icons/io";
+import Info from "./Info";
 
 const Admin: React.FC = () => {
   const [tab, setTab] = useState("dashboard");
@@ -28,9 +30,12 @@ const Admin: React.FC = () => {
 
   const getUser = async (token: string) => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}/user/user`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const response = await axios.get(
+        `${import.meta.env.VITE_SERVER_URL}/user/user`,
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
       setUser(response.data.user);
     } catch (error) {
       console.error("Error fetching user:", error);
@@ -39,7 +44,6 @@ const Admin: React.FC = () => {
       setLoading(false);
     }
   };
-
 
   if (loading) {
     return (
@@ -74,7 +78,10 @@ const Admin: React.FC = () => {
                 setSidebarOpen(false);
               }}
             >
-              <LuLayoutDashboard className="inline-block mr-2 fill-current" size={20} />
+              <LuLayoutDashboard
+                className="inline-block mr-2 fill-current"
+                size={20}
+              />
               <span>Dashboard</span>
             </li>
             <li
@@ -84,7 +91,10 @@ const Admin: React.FC = () => {
                 setSidebarOpen(false);
               }}
             >
-              <MdContactPhone className="inline-block mr-2 fill-current" size={20} />
+              <MdContactPhone
+                className="inline-block mr-2 fill-current"
+                size={20}
+              />
               <span>Manage Inquiries</span>
             </li>
             <li
@@ -96,6 +106,19 @@ const Admin: React.FC = () => {
             >
               <IoBook className="inline-block mr-2 fill-current" size={20} />
               <span>Manage Blogs</span>
+            </li>
+            <li
+              className="hover:bg-gray-700 p-3 rounded cursor-pointer flex items-center"
+              onClick={() => {
+                setTab("info");
+                setSidebarOpen(false);
+              }}
+            >
+              <IoIosContact
+                className="inline-block mr-2 fill-current"
+                size={20}
+              />
+              <span>Contact Info</span>
             </li>
           </ul>
         </div>
@@ -114,7 +137,10 @@ const Admin: React.FC = () => {
         {/* Hamburger Menu Button for mobile */}
         <div className="md:hidden flex items-center justify-between bg-gray-800 text-white p-4">
           <h1 className="text-2xl font-bold">Admin Panel</h1>
-          <button className="text-white" onClick={() => setSidebarOpen(!sidebarOpen)}>
+          <button
+            className="text-white"
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+          >
             <FaBars size={24} />
           </button>
         </div>
@@ -126,6 +152,8 @@ const Admin: React.FC = () => {
           <Contacts />
         ) : tab === "blogs" ? (
           <Blogs />
+        ) : tab === "info" ? (
+          <Info />
         ) : null}
       </div>
     </div>

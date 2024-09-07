@@ -21,12 +21,12 @@ const Services = ({ setColor }: Props) => {
   return (
     <div ref={ref} className="mt-10 items-center md:px-24 md:justify-between">
       <h2 className="text-3xl text-center md:mr-5 white font-play font-medium text-yellow-600 mb-10 ">
-        Explore our Business Setup Services
+        ZeeVista Business Setup Services
         <Bar w={"w-[300px]"} />
       </h2>
       <div className="w-full relative flex justify-center items-center">
         <div className="grid md:grid-cols-4 max-w-[1500px] grid-cols-1 w-full gap-4">
-          {businessSetup.map((c, i) => (
+          {businessSetup.slice(1).map((c, i) => (
             <Link
               to={`/business-setup/${c.id}`}
               key={i}
