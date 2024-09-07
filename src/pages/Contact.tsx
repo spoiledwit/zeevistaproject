@@ -107,6 +107,9 @@ const Contact = ({ setProgress }: Props) => {
               <option value="" disabled>
                 Select a service
               </option>
+              <option value="Business Setup Services">
+         Business Setup Services
+        </option>
               <option value="Global immigration Services">
                 Global Immigration Services
               </option>
