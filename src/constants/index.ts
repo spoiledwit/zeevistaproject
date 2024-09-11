@@ -10,6 +10,18 @@ import img9 from "../../assets/9.jpg";
 import img10 from "../../assets/10.jpg";
 import img11 from "../../assets/11.jpg";
 import img12 from "../../assets/12.jpg";
+import ifza from "../../assets/freezone/logo-clr.png";
+import maydan from "../../assets/freezone/Meydan-FZ-Logo-01-1024x522.png.webp";
+import rakez from "../../assets/freezone/RAKEZ+Logo+-+English.png";
+import shams from "../../assets/freezone/Yo4cnqftF7.png";
+import ajman from "../../assets/freezone/logo-freezone-ajman.jpg";
+import dubaiEconomy from "../../assets/freezone/g5.png";
+import dubaiSouth from "../../assets/freezone/unnamed.jpg";
+import Creative from "../../assets/freezone/images.png";
+import dmcc from "../../assets/freezone/dmcc.svg";
+import gov from "../../assets/freezone/Government_of_Dubai_logo.svg.png";
+import dubaiInt from "../../assets/freezone/Dubai_International_Financial_Centre_logo.png";
+import sharjah from "../../assets/freezone/MainLogo22-386x330.jpg";
 export const businessSetup = [
   {
     id: "overview",
@@ -437,5 +449,80 @@ export const businessSetup = [
         <p>Our team of digital marketing and web development experts is dedicated to helping your business thrive in the online space. We work closely with you to create a digital strategy that aligns with your business goals and delivers measurable results.</p>
         <p>Contact ZeeVista Advisors today to learn more about how we can help you build a powerful online presence and grow your brand.</p>
       `,
+  },
+];
+
+export const freezoneCards = [
+  {
+    title: "IFZA",
+    description:
+      "For Dubai free zone company establishment, IFZA is a very competitive free zone. It provides investors with affordable costs and open procedures for starting a firm.",
+    imageURL: ifza,
+  },
+  {
+    title: "Meydan Freezone",
+    description:
+      "Meydan Free Zone (MFZ), founded in February 2009 under Ruler’s Decree No. 5, provides a quick and smooth company start-up in one of Dubai's most premium locations.",
+    imageURL: maydan,
+  },
+  {
+    title: "Rakez Freezone",
+    description:
+      "A powerhouse supporting startup businesses, SMEs, and global manufacturing players with their company formation in the UAE.",
+    imageURL: rakez,
+  },
+  {
+    title: "Shams",
+    description:
+      "The Shams Group (TSG) is a digitally born free zone authority launched after an Emiri Decree issued in 2017, by His Highness Sheikh Dr. Sultan Bin Muhammad Al Qasimi.",
+    imageURL: shams,
+  },
+  {
+    title: "Ajman Freezone",
+    description:
+      "Ajman Free Zone is a free trade zone and one of the designated free zones located in Ajman, United Arab Emirates. First established in 1988, it is one of a number of strategic business locations.",
+    imageURL: ajman,
+  },
+  {
+    title: "Dubai Economy & Tourism",
+    description:
+      "Dubai Department of Economy and Tourism (DET) is committed to realizing a leadership vision that aims to build an unparalleled future for our city, aligned with the strategic goals of the emirate.",
+    imageURL: dubaiEconomy,
+  },
+  {
+    title: "Dubai South",
+    description:
+      "Dubai South is a city under construction in Dubai, United Arab Emirates, planned to be an economic zone to support a number of activities including logistics, aviation, and trade.",
+    imageURL: dubaiSouth,
+  },
+  {
+    title: "Creative City Freezone",
+    description:
+      "Creative City Free Zone Authority in Fujairah specializes in Media, Events, Consulting, Education, Communication and Marketing, Music and Entertainment, and Design.",
+    imageURL: Creative,
+  },
+  {
+    title: "DMCC Dubai Multi Commodities Centre",
+    description:
+      "The Dubai Multi Commodities Centre is a commodities exchange and free-trade zone located in the Jumeirah Lake Towers district of Dubai.",
+    imageURL: dmcc,
+  },
+  {
+    title: "Government of Dubai",
+    description:
+      "The Government of Dubai is the subnational authority that governs the Emirate of Dubai, one of the seven constituent monarchies that make up the United Arab Emirates.",
+    imageURL: gov,
+  },
+  {
+    title: "Dubai International Financial Centre",
+    description:
+      "The Dubai International Financial Centre is a special economic zone in Dubai covering 110 hectares, established in 2004 as a financial hub for companies operating throughout the Middle East, Africa, and South Asia.",
+    imageURL: dubaiInt,
+  },
+  {
+    title: "Sharjah Publishing City",
+    description:
+      "Sharjah Publishing City offers a specialized free zone for media, events, and creative industries with world-class facilities and a growth-friendly environment.",
+    imageURL: sharjah,
   },
 ];

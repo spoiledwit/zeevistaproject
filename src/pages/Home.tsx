@@ -8,6 +8,8 @@ import Contact from "../components/home/Contact";
 import Introduction from "../components/home/Introduction";
 import { Helmet } from "react-helmet";
 import Services from "@/components/home/services";
+import Clients from "@/components/home/clients";
+import Freezone from "@/components/home/freezone";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -43,7 +45,9 @@ export default function Home({ setProgress }: Props) {
       <Introduction />
       <Services setColor={setColor} />
       <Countries setColor={setColor} />
+      <Freezone />
       <About />
+      <Clients />
       <Testimonials />
       <br className="md:block hidden" />
       <br />
