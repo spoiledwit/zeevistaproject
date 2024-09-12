@@ -59,16 +59,7 @@ export const desktopNav = [
         title: "Bank Account Services",
         href: "/business-setup/bank-account-services",
       },
-      {
-        id: "vat-corporate-tax",
-        title: "VAT & Corporate Tax",
-        href: "/business-setup/vat-corporate-tax",
-      },
-      {
-        id: "accounting-bookkeeping",
-        title: "Accounting & Bookkeeping",
-        href: "/business-setup/accounting-bookkeeping",
-      },
+
       {
         id: "office-for-rent-ejari",
         title: "Office for Rent & Ejari",
@@ -82,37 +73,65 @@ export const desktopNav = [
     ],
   },
   {
-    id: "caribbean-passports",
-    title: "Caribbean Passports",
-    href: "/caribbean",
+    id: "account-tax-services",
+    title: "Account & Tax Services",
+    href: "#",
     children: [
       {
-        id: "saint-lucia",
-        title: "Saint Lucia",
-        href: "/immigration/caribbean/saint-lucia",
+        id: "vat-corporate-tax",
+        title: "VAT & Corporate Tax",
+        href: "/business-setup/vat-corporate-tax",
       },
       {
-        id: "st-kitts-and-nevis",
-        title: "Saint Kitts & Nevis",
-        href: "/immigration/caribbean/st-kitts-and-nevis",
+        id: "accounting-bookkeeping",
+        title: "Accounting & Bookkeeping",
+        href: "/business-setup/accounting-bookkeeping",
       },
       {
-        id: "grenada",
-        title: "Grenada",
-        href: "/immigration/caribbean/grenada",
+        id: "audit",
+        title: "Audit",
+        href: "/business-setup/audit",
       },
       {
-        id: "dominica",
-        title: "Dominica",
-        href: "/immigration/caribbean/dominica",
+        id: "account-software-crm",
+        title: "Account Software & CRM",
+        href: "/business-setup/account-software-crm",
       },
     ],
   },
+
   {
     id: "immigration",
-    title: "Immigration",
+    title: "Global Immigration",
     href: "/immigration",
     children: [
+      {
+        id: "caribbean-passports",
+        title: "Caribbean Passports",
+        href: "/caribbean",
+        children: [
+          {
+            id: "saint-lucia",
+            title: "Saint Lucia",
+            href: "/immigration/caribbean/saint-lucia",
+          },
+          {
+            id: "st-kitts-and-nevis",
+            title: "Saint Kitts & Nevis",
+            href: "/immigration/caribbean/st-kitts-and-nevis",
+          },
+          {
+            id: "grenada",
+            title: "Grenada",
+            href: "/immigration/caribbean/grenada",
+          },
+          {
+            id: "dominica",
+            title: "Dominica",
+            href: "/immigration/caribbean/dominica",
+          },
+        ],
+      },
       {
         id: "uk",
         title: "United Kingdom",
