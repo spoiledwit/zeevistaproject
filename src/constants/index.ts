@@ -10,6 +10,8 @@ import img9 from "../../assets/9.jpg";
 import img10 from "../../assets/10.jpg";
 import img11 from "../../assets/11.jpg";
 import img12 from "../../assets/12.jpg";
+import img13 from "../../assets/img13.jpg";
+import img14 from "../../assets/img14.jpg";
 import ifza from "../../assets/freezone/logo-clr.png";
 import maydan from "../../assets/freezone/Meydan-FZ-Logo-01-1024x522.png.webp";
 import rakez from "../../assets/freezone/RAKEZ+Logo+-+English.png";
@@ -448,6 +450,129 @@ export const businessSetup = [
         <h2>Why Choose ZeeVista Advisors for Digital Solutions?</h2>
         <p>Our team of digital marketing and web development experts is dedicated to helping your business thrive in the online space. We work closely with you to create a digital strategy that aligns with your business goals and delivers measurable results.</p>
         <p>Contact ZeeVista Advisors today to learn more about how we can help you build a powerful online presence and grow your brand.</p>
+      `,
+  },
+  {
+    id: "audit",
+    title: "Audit Services",
+    description:
+      "ZeeVista Advisors offers comprehensive audit services to ensure that your financial statements are accurate and compliant with UAE regulations. We provide thorough audits that help identify risks, improve internal controls, and enhance financial transparency.",
+    imageURL: img13,
+    slogan: "Accurate Audits for Financial Transparency",
+    content: `
+        <h1>Professional Audit Services in the UAE</h1>
+        <p>In today's dynamic business environment, auditing has become an essential component of a company’s financial management. Regular audits provide critical insights into the financial health of your business and ensure that your operations are compliant with all local laws and regulations. At ZeeVista Advisors, we offer a full range of audit services that not only ensure compliance but also help to identify opportunities for improving financial efficiency, mitigating risks, and enhancing business performance.</p>
+        
+        <h2>Why Audits Are Crucial for Your Business</h2>
+        <p>Audits are not just about regulatory compliance—they are a vital tool for ensuring that your financial statements are accurate and reflect the true position of your business. Audits help to:</p>
+        <ul>
+          <li>Ensure the accuracy and reliability of your financial reports</li>
+          <li>Identify and mitigate risks before they become major issues</li>
+          <li>Strengthen internal controls and improve overall efficiency</li>
+          <li>Provide transparency to stakeholders, including investors and regulatory authorities</li>
+          <li>Highlight opportunities for cost-saving and revenue generation</li>
+        </ul>
+        
+        <h2>Our Comprehensive Audit Services</h2>
+        <p>ZeeVista Advisors offers a wide range of audit services tailored to meet the needs of businesses across various sectors. Whether you're a small business, a large corporation, or a non-profit, we provide audit services that ensure compliance and add value to your operations:</p>
+        <ul>
+          <li><strong>Statutory Audits:</strong> We conduct statutory audits in line with UAE laws, ensuring that your financial statements meet all local regulatory requirements. Our team ensures that your business remains compliant with all financial regulations.</li>
+          <li><strong>Internal Audits:</strong> Our internal audit services focus on assessing and improving the internal controls of your business. We work closely with your management team to identify weaknesses and suggest improvements to your financial and operational processes.</li>
+          <li><strong>Risk Management Audits:</strong> Proactive risk management is essential in today’s fast-paced business world. Our risk management audits identify potential financial and operational risks and provide solutions to mitigate them effectively.</li>
+          <li><strong>Forensic Audits:</strong> In cases of suspected fraud or financial irregularities, our forensic audit services provide in-depth investigations to uncover discrepancies and suggest corrective actions. Our forensic auditors are experts at identifying even the smallest anomalies.</li>
+          <li><strong>Specialized Audits:</strong> Depending on your industry, you may require specialized audit services. Whether it’s an environmental audit, IT audit, or compliance audit, ZeeVista Advisors can provide tailored solutions for your specific needs.</li>
+        </ul>
+        
+        <h2>Our Audit Process</h2>
+        <p>Our audit process is comprehensive, ensuring that every aspect of your business’s financial health is thoroughly examined. Our team follows a systematic approach that includes:</p>
+        <ul>
+          <li><strong>Planning & Risk Assessment:</strong> We start by understanding your business, its environment, and the specific risks you face. This helps us plan a focused audit strategy that addresses your unique needs.</li>
+          <li><strong>Fieldwork:</strong> Our team then conducts a detailed review of your financial records, systems, and controls. We identify areas of concern and gather evidence to support our findings.</li>
+          <li><strong>Reporting:</strong> After the audit is completed, we provide you with a detailed report outlining our findings. We also offer practical recommendations to improve your financial and operational processes.</li>
+          <li><strong>Follow-up:</strong> Our services don’t end with the final report. We provide ongoing support and follow-up to ensure that any issues identified are addressed effectively and that your business continues to operate in compliance with regulations.</li>
+        </ul>
+        
+        <h2>Why Choose ZeeVista Advisors for Audit Services?</h2>
+        <p>At ZeeVista Advisors, we believe in providing more than just an audit report. Our audit services are designed to add value to your business, offering insights that help you improve your operations and financial management. Our team of expert auditors has extensive experience in a variety of industries and is committed to delivering results that make a real difference to your business. By working with us, you benefit from:</p>
+        <ul>
+          <li>A personalized approach tailored to your specific industry and business needs</li>
+          <li>Expert guidance and insights that go beyond compliance</li>
+          <li>Access to a team of experienced professionals with deep knowledge of UAE regulations</li>
+          <li>Support in implementing recommendations to improve your business’s financial health</li>
+        </ul>
+        
+        <h2>Get in Touch with ZeeVista Advisors</h2>
+        <p>If you're looking for a trusted partner to handle your audit needs, ZeeVista Advisors is here to help. Our experienced team is ready to support your business with comprehensive audit services that provide clarity, transparency, and actionable insights. Contact us today to learn more about how we can assist with your auditing requirements.</p>
+      `,
+  },
+  {
+    id: "account-software-crm",
+    title: "Accounting Software & CRM Solutions",
+    description:
+      "ZeeVista Advisors offers tailored accounting software and CRM solutions to help businesses streamline their financial management and customer relationships. We provide expert guidance in selecting and implementing software that meets your business's unique needs.",
+    imageURL: img14,
+    slogan: "Streamline Your Business with Accounting Software & CRM Solutions",
+    content: `
+        <h1>Comprehensive Accounting Software & CRM Solutions</h1>
+        <p>In today’s fast-paced business environment, managing your finances and customer relationships efficiently is key to staying competitive. ZeeVista Advisors provides customized solutions to help businesses implement the right accounting software and Customer Relationship Management (CRM) systems that enhance operational efficiency and drive growth. Whether you are a small business looking to simplify your accounting or a large enterprise seeking to streamline customer interactions, we have the tools and expertise to deliver powerful solutions tailored to your needs.</p>
+        
+        <h2>The Importance of Accounting Software for Your Business</h2>
+        <p>Accounting software plays a crucial role in managing your business’s financial operations. It automates many of the manual processes involved in bookkeeping, invoicing, payroll, and financial reporting. By implementing the right accounting software, you can:</p>
+        <ul>
+          <li>Reduce human error and improve the accuracy of financial data</li>
+          <li>Save time by automating repetitive tasks such as invoicing and reconciliation</li>
+          <li>Access real-time financial insights to make informed business decisions</li>
+          <li>Ensure compliance with UAE financial regulations, including VAT and corporate tax filings</li>
+          <li>Enhance collaboration across departments by centralizing financial data</li>
+        </ul>
+        
+        <h2>Our Accounting Software Solutions</h2>
+        <p>ZeeVista Advisors offers a range of accounting software solutions that cater to businesses of all sizes and industries. We help you select, implement, and optimize accounting tools that meet your specific financial needs:</p>
+        <ul>
+          <li><strong>QuickBooks:</strong> Ideal for small and medium-sized businesses, QuickBooks offers an easy-to-use interface for managing your accounting, payroll, and taxes.</li>
+          <li><strong>Xero:</strong> A cloud-based solution designed to provide real-time financial data, Xero is perfect for businesses that want to manage their accounting on the go.</li>
+          <li><strong>SAP Business One:</strong> For larger enterprises, we offer SAP Business One, a powerful tool that integrates accounting with other business functions like sales and inventory management.</li>
+          <li><strong>Customized Solutions:</strong> If your business requires a more specialized solution, we can help design and implement custom accounting software that integrates with your existing systems.</li>
+        </ul>
+
+        <h2>How CRM Solutions Can Transform Your Business</h2>
+        <p>Customer relationship management (CRM) is essential for businesses that want to improve how they interact with customers, streamline sales processes, and enhance customer satisfaction. A CRM system centralizes all customer information, allowing you to track interactions, manage leads, and create personalized marketing campaigns. Benefits of a CRM system include:</p>
+        <ul>
+          <li>Improved customer retention and satisfaction through personalized experiences</li>
+          <li>Increased sales efficiency by tracking and managing leads more effectively</li>
+          <li>Better decision-making with data-driven insights into customer behavior</li>
+          <li>Enhanced collaboration across sales, marketing, and customer service teams</li>
+        </ul>
+
+        <h2>Our CRM Solutions</h2>
+        <p>We offer a range of CRM platforms to suit the unique needs of your business. Our team will guide you through the process of selecting and implementing the CRM solution that works best for your operations:</p>
+        <ul>
+          <li><strong>Salesforce:</strong> One of the leading CRM platforms in the world, Salesforce helps businesses of all sizes manage their customer relationships with robust features for lead tracking, sales forecasting, and customer service.</li>
+          <li><strong>Zoho CRM:</strong> A cost-effective CRM solution for small and medium businesses, Zoho CRM offers tools for managing sales pipelines, customer data, and marketing campaigns.</li>
+          <li><strong>Microsoft Dynamics 365:</strong> For businesses looking for a CRM solution that integrates seamlessly with other Microsoft products, Dynamics 365 offers powerful tools for customer engagement, sales automation, and service management.</li>
+          <li><strong>HubSpot CRM:</strong> A popular choice for startups and small businesses, HubSpot CRM offers free tools for managing contacts, sales pipelines, and customer interactions.</li>
+        </ul>
+
+        <h2>Our Process for Software Implementation</h2>
+        <p>At ZeeVista Advisors, we follow a structured process to ensure that your accounting and CRM software implementation is smooth and successful:</p>
+        <ul>
+          <li><strong>Needs Assessment:</strong> We begin by understanding your business’s unique needs and objectives. Based on this, we recommend the best software solutions for your financial and customer management requirements.</li>
+          <li><strong>Software Selection:</strong> We help you choose the right accounting software or CRM platform, taking into consideration factors such as scalability, ease of use, and integration with existing systems.</li>
+          <li><strong>Implementation:</strong> Our team manages the entire implementation process, from installation and configuration to data migration and user training. We ensure that the software is tailored to fit your business processes.</li>
+          <li><strong>Ongoing Support:</strong> After implementation, we provide ongoing support to ensure that your software continues to meet your evolving needs. Our team is always available for troubleshooting, updates, and enhancements.</li>
+        </ul>
+
+        <h2>Why Choose ZeeVista Advisors?</h2>
+        <p>With years of experience in providing software solutions to businesses in the UAE, ZeeVista Advisors is your trusted partner for accounting software and CRM implementation. We offer:</p>
+        <ul>
+          <li>A deep understanding of the unique needs of UAE businesses</li>
+          <li>Expertise in a wide range of software platforms</li>
+          <li>Personalized solutions that are tailored to your business goals</li>
+          <li>Ongoing support to ensure that your systems are always optimized for success</li>
+        </ul>
+        
+        <h2>Get Started with ZeeVista Advisors</h2>
+        <p>Streamline your business operations with ZeeVista Advisors’ expert accounting software and CRM solutions. Contact us today to learn how we can help you choose and implement the best tools for your business, ensuring efficiency, accuracy, and growth.</p>
       `,
   },
 ];
