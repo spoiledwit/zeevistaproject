@@ -84,7 +84,7 @@ const Message = () => {
           <p className="font-bold text-justify">
             Muhammad
             <br />
-            CEO, ZeeVista Immigration Advisors
+            CEO, ZeeVista Business Advisors
           </p>
         </div>
       </div>

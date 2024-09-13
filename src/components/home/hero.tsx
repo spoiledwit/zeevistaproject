@@ -4,7 +4,8 @@ import img3 from "../../../assets/immigration.jpg";
 import img1 from "../../../assets/hero1.jpg";
 import { BsChevronDown } from "react-icons/bs";
 import Carousel from "../../components/carousel/simple";
-import { PopupButton } from "@typeform/embed-react";
+import CostCalculator from "../CostCalculator";
+import { useState } from "react";
 
 const data = [
   {
@@ -50,6 +51,7 @@ const data = [
 ];
 
 export default function Hero() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full relative h-[70vh] md:h-screen">
       <div className="text-white absolute bottom-5 md:hidden animate-bounce left-[45%] z-10">
@@ -58,8 +60,8 @@ export default function Hero() {
       <h1 className="sr-only">ZeeVista Immigration and Citizenship Services</h1>{" "}
       {/* sr-only class hides it visually but keeps it accessible to screen readers and SEO */}
       <h2 className="sr-only">
-        Explore ZeeVista Immigration Advisors' Services for Global Citizenship
-        and Residency
+        Explore ZeeVista Business Advisors' Services for Global Citizenship and
+        Residency
       </h2>
       <Carousel options={{ loop: true }}>
         {data.map((item) => (
@@ -86,15 +88,22 @@ export default function Hero() {
                 {item.description}
               </p>
             </div>
-            <PopupButton
+            <button
               id=""
+              onClick={() => setIsOpen(true)}
               className="text-sm md:text-base bg-yellow-600 text-white py-3 md:py-4 rounded-full px-6 md:px-8 font-medium mt-5 md:mt-10 z-10 font-play"
             >
               Cost Calculator
-            </PopupButton>
+            </button>
           </div>
         ))}
       </Carousel>
+      <CostCalculator
+        isOpen={isOpen}
+        onClose={() => {
+          setIsOpen(false);
+        }}
+      />
     </div>
   );
 }

@@ -24,6 +24,12 @@ import dmcc from "../../assets/freezone/dmcc.svg";
 import gov from "../../assets/freezone/Government_of_Dubai_logo.svg.png";
 import dubaiInt from "../../assets/freezone/Dubai_International_Financial_Centre_logo.png";
 import sharjah from "../../assets/freezone/MainLogo22-386x330.jpg";
+import xero from "../../assets/xero.png";
+import oracle from "../../assets/oracle.png";
+import sap from "../../assets/sap.svg.png";
+import tally from "../../assets/tally.png";
+import zoho from "../../assets/zoho.png";
+import quickbooks from "../../assets/quickbooks.png";
 export const businessSetup = [
   {
     id: "overview",
@@ -649,5 +655,44 @@ export const freezoneCards = [
     description:
       "Sharjah Publishing City offers a specialized free zone for media, events, and creative industries with world-class facilities and a growth-friendly environment.",
     imageURL: sharjah,
+  },
+];
+
+export const accountingCards = [
+  {
+    title: "Oracle",
+    description:
+      "Oracle designs, manufactures, and sells both software and hardware products and offers services that complement them (such as financing, training, consulting, and hosting services). Many of the products",
+    imageURL: oracle,
+  },
+  {
+    title: "SAP",
+    description:
+      "SAP SE is a worldwide software firm with European headquarters. To handle client relationships and corporate processes, it creates enterprise software. The business is the top seller of corporate, it creates enterprise software.",
+    imageURL: sap,
+  },
+  {
+    title: "Tally",
+    description:
+      "Tally Prime is a complete business management software that enables you to manage all aspects of your business such as accounting, inventory, taxation, payroll and much more. With everything taken care of, you now have...",
+    imageURL: tally,
+  },
+  {
+    title: "ZOHO",
+    description:
+      "Zoho's operating system is very robust and contains the collective memory of Selecta's entire business.....",
+    imageURL: zoho,
+  },
+  {
+    title: "Quickbooks",
+    description:
+      "QuickBooks gives your business, be it in services or support, construction, retail or hospitality, the tools to keep pace with UAE's growing economy.",
+    imageURL: quickbooks,
+  },
+  {
+    title: "XERO",
+    description:
+      "Xero is a New Zealand-based technology company that provides cloud-based accounting software for small and medium-sized businesses. The company has offices in New Zealand, Australia, the United Kingdom and the United States",
+    imageURL: xero,
   },
 ];
