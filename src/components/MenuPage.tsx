@@ -96,7 +96,7 @@ const MenuPage: React.FC<Props> = ({ closeMenu }) => {
             className="w-[100px] h-[93px] mt-16"
           />
           <h2 className=" font-medium text-center mt-10 text-2xl font-play">
-            ZeeVista Immigration <br /> Advisors
+            ZeeVista Business <br /> Advisors
           </h2>
 
           <p className=" text-center font-open mt-4 max-w-[300px]">

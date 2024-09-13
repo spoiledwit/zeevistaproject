@@ -74,7 +74,7 @@ export const desktopNav = [
   },
   {
     id: "account-tax-services",
-    title: "Account & Tax Services",
+    title: "Accounting & Tax Services",
     href: "#",
     children: [
       {
@@ -94,7 +94,7 @@ export const desktopNav = [
       },
       {
         id: "account-software-crm",
-        title: "Account Software & CRM",
+        title: "Accounting Software & CRM",
         href: "/business-setup/account-software-crm",
       },
     ],

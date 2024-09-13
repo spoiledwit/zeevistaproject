@@ -24,15 +24,14 @@ const data = {
   caribbean: {
     name: "caribbean",
     hero: {
-      title: "Unlock Caribbean Dreams with ZeeVista Immigration Advisors",
+      title: "Unlock Caribbean Dreams with ZeeVista Business Advisors",
       description:
-        "Welcome to ZeeVista Immigration Advisors – Your gateway to Caribbean dreams. Let our experts simplify your Caribbean plans with seamless visa consultancy services.",
+        "Welcome to ZeeVista Business Advisors – Your gateway to Caribbean dreams. Let our experts simplify your Caribbean plans with seamless visa consultancy services.",
     },
     plans: {
-      title:
-        "Discover all Plans for Caribbean with ZeeVista Immigration Advisors",
+      title: "Discover all Plans for Caribbean with ZeeVista Business Advisors",
       description:
-        "Unlock Caribbean Dreams with ZeeVista Immigration Advisors. Let our experts simplify your Caribbean plans with seamless visa consultancy services.",
+        "Unlock Caribbean Dreams with ZeeVista Business Advisors. Let our experts simplify your Caribbean plans with seamless visa consultancy services.",
       values: [
         {
           id: "saint-lucia",
@@ -97,8 +96,7 @@ const data = {
   "student-visas": {
     name: "Easy Visa For Students Across The Globe",
     hero: {
-      title:
-        "Unlock Your Dreams as a Student with ZeeVista Immigration Advisors",
+      title: "Unlock Your Dreams as a Student with ZeeVista Business Advisors",
       description:
         "A pathway to permanent residence and citizenship for entrepreneurs wishing to start or invest in a business in Portugal.",
     },
@@ -164,9 +162,9 @@ const data = {
   "visit-visas": {
     name: "Visit Visa For People Across The Globe",
     hero: {
-      title: "Unlock Your Dreams with ZeeVista Immigration Advisors",
+      title: "Unlock Your Dreams with ZeeVista Business Advisors",
       description:
-        "Embark on Your Global Adventures with Confidence, Guided by Our Visa Consultancy Experts. Your Journey to Explore, Connect, and Prosper Awaits at ZeeVista Immigration Advisors.",
+        "Embark on Your Global Adventures with Confidence, Guided by Our Visa Consultancy Experts. Your Journey to Explore, Connect, and Prosper Awaits at ZeeVista Business Advisors.",
     },
     plans: {
       values: [

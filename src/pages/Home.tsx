@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import Services from "@/components/home/services";
 import Clients from "@/components/home/clients";
 import Freezone from "@/components/home/freezone";
+import Accounting from "@/components/home/accounting";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -34,7 +35,7 @@ export default function Home({ setProgress }: Props) {
     >
       <Helmet>
         <title>
-          Welcome to ZeeVista: Your Trusted Immigration Partner in Dubai
+          Welcome to ZeeVista: Your Trusted Business Partner in Dubai
         </title>
         <meta
           name="description"
@@ -46,6 +47,7 @@ export default function Home({ setProgress }: Props) {
       <Services setColor={setColor} />
       <Countries setColor={setColor} />
       <Freezone />
+      <Accounting />
       <About />
       <Clients />
       <Testimonials />

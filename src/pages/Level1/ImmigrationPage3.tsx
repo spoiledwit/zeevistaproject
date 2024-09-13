@@ -60,7 +60,7 @@ const ImmigrationPage3: React.FC<Props> = ({ setProgress }) => {
       case "uk":
         return "UK Visa From Dubai ZeeVista Advisors";
       case "portugal":
-        return "Portugal Work Visa from Dubai: ZeeVista Immigration Consultants";
+        return "Portugal Work Visa from Dubai: ZeeVista Business Consultants";
       case "canada":
         return "Canada Immigration from the UAE: Your Bridge to the Great";
       case "australia":

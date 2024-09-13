@@ -54,7 +54,7 @@ const Contact = ({ setProgress }: Props) => {
   return (
     <div className="min-h-screen pb-32 bg-white relative">
       <Helmet>
-        <title>Contact Us | ZeeVista Immigration Advisors</title>
+        <title>Contact Us | ZeeVista Business Advisors</title>
         <meta name="description" content="About Us" />
       </Helmet>
       <Hero />
