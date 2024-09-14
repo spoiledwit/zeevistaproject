@@ -6,7 +6,7 @@ const Accounting = () => {
     <div className="w-full md:mb-12 md:pt-0 items-center flex mt-10 flex-col md:px-20 px-8">
       <span className="mx-auto">
         <h2 className="text-yellow-600 text-3xl mt-4 md:mt-10 font-serif">
-          Accouning Software & CRM
+          Accounting Software & CRM
         </h2>
         <Bar w={"w-[120px]"} />
       </span>

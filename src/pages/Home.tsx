@@ -49,7 +49,7 @@ export default function Home({ setProgress }: Props) {
       <Freezone />
       <Accounting />
       <About />
-      <Clients />
+      {/* <Clients /> */}
       <Testimonials />
       <br className="md:block hidden" />
       <br />

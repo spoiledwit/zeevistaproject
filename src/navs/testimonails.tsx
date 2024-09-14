@@ -141,7 +141,7 @@ export default function Testimonials() {
           life and business goals.
         </p>
         <div className="w-full flex items-center justify-center">
-          <div className="flex max-w-[1000px] gap-10 py-10 md:flex-row items-center justify-center md:justify-between w-full">
+          <div className="flex flex-col max-w-[1000px] gap-10 py-10 md:flex-row items-center justify-center md:justify-between w-full">
             <div className="flex flex-col items-center">
               <VisibilitySensor
                 partialVisibility
@@ -166,7 +166,7 @@ export default function Testimonials() {
               >
                 {({ isVisible }: { isVisible: any }) => (
                   <h3 className="text-5xl font-bold text-yellow-600">
-                    <CountUp end={isVisible ? 10 : 0} duration={3} />+
+                    <CountUp end={isVisible ? 15 : 0} duration={3} />+
                   </h3>
                 )}
               </VisibilitySensor>
