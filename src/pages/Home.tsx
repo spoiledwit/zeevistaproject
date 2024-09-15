@@ -8,7 +8,6 @@ import Contact from "../components/home/Contact";
 import Introduction from "../components/home/Introduction";
 import { Helmet } from "react-helmet";
 import Services from "@/components/home/services";
-import Clients from "@/components/home/clients";
 import Freezone from "@/components/home/freezone";
 import Accounting from "@/components/home/accounting";
 
@@ -49,7 +48,7 @@ export default function Home({ setProgress }: Props) {
       <Freezone />
       <Accounting />
       <About />
-      <Clients />
+      {/* <Clients /> */}
       <Testimonials />
       <br className="md:block hidden" />
       <br />

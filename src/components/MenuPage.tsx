@@ -25,7 +25,6 @@ const MenuPage: React.FC<Props> = ({ closeMenu }) => {
       const res = await axios.get(
         `${import.meta.env.VITE_SERVER_URL}/contactInfo`
       );
-      console.log(res.data);
       setContactInfo(res.data);
     } catch (error) {
       console.log(error);

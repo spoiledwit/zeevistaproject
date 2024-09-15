@@ -89,7 +89,7 @@ export const desktopNav = [
       },
       {
         id: "audit",
-        title: "Audit",
+        title: "Audit Services",
         href: "/business-setup/audit",
       },
       {

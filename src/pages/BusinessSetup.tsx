@@ -40,7 +40,7 @@ const BusinessSetup = ({ setProgress }: Props) => {
         </section>
         <div className="md:w-[35%] h-min shadow-lg rounded-xl px-4 py-8  border sticky top-10">
           <h2 className="text-yellow-600 mb-5 text-center font-semibold font-play text-xl md:text-2xl tracking-wider">
-            Apply For Free Assessment
+            Apply For Cost Calculation
           </h2>
           <AssessmentForm />
         </div>
