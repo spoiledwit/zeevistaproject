@@ -41,7 +41,7 @@ const Hero = ({
           </AnimateToView>
           <AnimateToView>
             <Motion
-              className="text-white text-justify text-xl mb-12"
+              className="text-white text-justify md:text-xl mb-12"
               variants={textVariants}
               initial="hidden"
               animate="show"

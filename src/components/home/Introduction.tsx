@@ -7,9 +7,9 @@ const Introduction = () => {
 
   return (
     <div className="w-full bg-gray-100 text-justify text-black pb-10">
-      <p className="mt-10 text-3xl font-play text-yellow-600 text-center">
+      <p className="mt-10 text-xl md:text-3xl font-play text-yellow-600 text-center">
         ZeeVista Business Advisors
-        <Bar w={"w-[280px]"} />
+        <Bar w={"w-[150px] md:w-[280px]"} />
       </p>
       <div className="mt-12 md:flex-row flex-col flex font-play max-w-screen-lg gap-10 mx-auto text-sm leading-relaxed">
         <div className="md:w-1/2  md:pl-0 px-8 md:border-r border-yellow-600 pr-5">

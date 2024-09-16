@@ -30,6 +30,7 @@ import sap from "../../assets/sap.svg.png";
 import tally from "../../assets/tally.png";
 import zoho from "../../assets/zoho.png";
 import quickbooks from "../../assets/quickbooks.png";
+import govOfSharjah from "../../assets/freezone/sharjah.jpg";
 export const businessSetup = [
   {
     id: "overview",
@@ -39,7 +40,7 @@ export const businessSetup = [
     imageURL: img1,
     slogan: "Your Trusted Partner for UAE Business Setup",
     content: `
-      <h1>Comprehensive Business Setup Services in UAE</h1>
+      <h2>Comprehensive Business Setup Services in UAE</h2>
       <p>Setting up a business in the UAE is a rewarding venture, but it can also be complex with numerous legal requirements and procedures to follow. ZeeVista Advisors provides expert guidance to streamline the business setup process, making it easier for you to establish your presence in one of the world’s fastest-growing economies. Whether you’re looking to set up a mainland company, freezone entity, or offshore business, our team ensures a smooth and compliant setup process.</p>
       
       <h2>Why Choose ZeeVista Advisors for Business Setup?</h2>
@@ -86,38 +87,52 @@ export const businessSetup = [
   },
   {
     id: "company-formation-mainland",
-    title: "Company Formation Mainland",
+    title: "Mainland Business Setup in UAE",
     description:
-      "ZeeVista Advisors provides end-to-end solutions for setting up your business in the UAE mainland, guiding you through every step of the process. From legal requirements to operational setup, we ensure your business is fully compliant and ready for success.",
+      "ZeeVista Advisors provides complete solutions for establishing your business on the UAE mainland. We guide you through the process, ensuring compliance and a smooth setup, allowing you to unlock the full potential of the UAE market.",
     imageURL: img1,
-    slogan: "Your Complete Mainland Company Setup Partner",
+    slogan: "Your Trusted Mainland Company Setup Partner",
     content: `
-        <h1>Mainland Company Formation in UAE</h1>
-        <p>Setting up a mainland company in the UAE is a powerful step towards establishing a successful business in one of the world’s most dynamic markets. At ZeeVista Advisors, we provide comprehensive services that ensure a smooth and hassle-free setup. Our team of experts handles all aspects of the process, so you can focus on growing your business.</p>
+        <p>What exactly is a UAE mainland company and why is it so important to have one? A mainland company is a company licensed by the Department of Economic Development (DED) in the relevant Emirate of the United Arab Emirates. Here’s a summary of the benefits of company registration on the UAE mainland, plus a guide to business setup on the Dubai mainland!</p>
         
-        <h2>Why Choose UAE Mainland for Your Business?</h2>
-        <p>Starting a business in the UAE mainland offers numerous advantages, including:</p>
+        <h2>Benefits of Mainland Company Formation in Dubai</h2>
+        <p>Setting up a mainland company in Dubai comes with many advantages. Here are some key benefits:</p>
         <ul>
-          <li>Ability to trade directly within the UAE market and internationally</li>
-          <li>No restrictions on the number of visas</li>
-          <li>Access to government contracts and tenders</li>
-          <li>Potential to open branch offices across the UAE</li>
+          <li><strong>Wider Business Opportunities:</strong> Mainland companies can trade anywhere in Dubai and across the UAE, giving you access to a larger market.</li>
+          <li><strong>Full Ownership:</strong> You can have 100% ownership of your business, providing you with full control and flexibility.</li>
+          <li><strong>Flexible Locations:</strong> Choose from various locations to set up your business, allowing you to find the best spot for your needs.</li>
         </ul>
+        <p>These benefits make mainland company formation an attractive option for entrepreneurs looking to grow and succeed.</p>
+  
+        <h2>Location Flexibility and Zero Trade Restrictions</h2>
+        <p>With a Dubai mainland company, you can trade freely with other businesses and have unlimited location options. These companies can also offer services to the government and sell directly to consumers anywhere in the UAE. Plus, setting up a mainland company allows you to open multiple branches, establishing a strong presence throughout the Emirates.</p>
+  
+        <h2>Broad Working Scope</h2>
+        <p>Mainland businesses can take on a wide range of work. If you want to diversify your services within the mainland, simply re-register the new business activity with the DED, and you can start trading freely.</p>
+  
+        <h2>Access to Lucrative Government Contracts</h2>
+        <p>A large incentive to set up a mainland business in Dubai is the access to valuable government contracts in the UAE. In recent years, the Abu Dhabi Executive Council approved AED 17.5bn (USD 4.76bn) of spending on government projects, including over AED 4bn on infrastructure. As an established mainland company in Dubai, you’ll be well-positioned to take advantage of these opportunities.</p>
+  
+        <h2>100% Ownership Control of Mainland Business Entities</h2>
+        <p>Traditionally, 100% foreign ownership of a UAE business entity was only possible under two circumstances: when setting up in a free zone or when establishing a professional services company in the mainland. However, recent changes allow 100% foreign ownership of mainland companies in the UAE, opening up incredible potential for international investors, except for certain strategic sectors such as oil and gas.</p>
+  
+        <h2>Switching from Free Zone to Mainland Company Formation in Dubai</h2>
+        <p>If you’re currently operating within a free zone business structure and considering transitioning to a mainland company, we’re here to assist you. This switch is vital for your business’s growth. With the right UAE national sponsor or company formation specialist, moving from a free zone to the mainland is both a strategic and manageable decision.</p>
+  
+        <h2>Your Checklist for Mainland Business Setup in Dubai</h2>
+        <ol>
+          <li><strong>Choose Your Business Activity:</strong> The first step is selecting the industry in which you will trade. There are over 2000 permitted business activities listed by the DED, including trading, agriculture, hospitality, and manufacturing.</li>
+          <li><strong>Find the Ideal Location for Your Business:</strong> Mainland businesses face no restrictions on where they can set up. Choose a location based on budgeting and business activity.</li>
+          <li><strong>Determine Your Business Legal Structure:</strong> Most mainland companies are set up as Limited Liability Companies (LLCs). Professional services companies can be 100% foreign-owned.</li>
+          <li><strong>Obtain a Local Sponsor or Local Service Agent:</strong> An LLC requires a local sponsor, who will own 51% of the business. However, a local service agent is needed for professional service companies, without any share ownership.</li>
+          <li><strong>Name Your Company:</strong> Ensure your company name follows UAE regulations regarding language, cultural sensitivity, and personal names.</li>
+          <li><strong>Apply for a Mainland Trade License:</strong> Submit the necessary documents to the DED to acquire your business license.</li>
+          <li><strong>Secure Your Office Space:</strong> Choose between serviced offices or shell and core options based on your business needs.</li>
+          <li><strong>Apply for Relevant Visas:</strong> Apply for visas for yourself, employees, and dependents. The number of visas depends on your office space.</li>
+          <li><strong>Partner with a Company Setup Consultant:</strong> Working with UAE-based business setup consultants ensures a smooth and compliant company formation process.</li>
+        </ol>
         
-        <h2>Our Mainland Company Formation Services</h2>
-        <p>At ZeeVista Advisors, we offer a full range of services to help you set up your mainland company:</p>
-        <ul>
-          <li>Business License Acquisition</li>
-          <li>Local Sponsorship (if required)</li>
-          <li>Trade Name Reservation</li>
-          <li>Government Approvals and Documentation</li>
-          <li>Visa Processing for Owners and Employees</li>
-          <li>Office Space Solutions</li>
-        </ul>
-        
-        <h2>How We Support Your Growth</h2>
-        <p>Beyond the initial setup, we provide ongoing support to ensure your business thrives in the UAE. Our consultants offer tailored advice on how to expand your operations, stay compliant with regulations, and take advantage of opportunities in the local market.</p>
-        <p>Get in touch with ZeeVista Advisors today to start your mainland business in the UAE with confidence.</p>
+        <p>Partner with ZeeVista Advisors for expert guidance and a seamless UAE mainland business setup experience.</p>
       `,
   },
   {
@@ -615,12 +630,6 @@ export const freezoneCards = [
     imageURL: ajman,
   },
   {
-    title: "Dubai Economy & Tourism",
-    description:
-      "Dubai Department of Economy and Tourism (DET) is committed to realizing a leadership vision that aims to build an unparalleled future for our city, aligned with the strategic goals of the emirate.",
-    imageURL: dubaiEconomy,
-  },
-  {
     title: "Dubai South",
     description:
       "Dubai South is a city under construction in Dubai, United Arab Emirates, planned to be an economic zone to support a number of activities including logistics, aviation, and trade.",
@@ -637,12 +646,6 @@ export const freezoneCards = [
     description:
       "The Dubai Multi Commodities Centre is a commodities exchange and free-trade zone located in the Jumeirah Lake Towers district of Dubai.",
     imageURL: dmcc,
-  },
-  {
-    title: "Government of Dubai",
-    description:
-      "The Government of Dubai is the subnational authority that governs the Emirate of Dubai, one of the seven constituent monarchies that make up the United Arab Emirates.",
-    imageURL: gov,
   },
   {
     title: "Dubai International Financial Centre",
@@ -694,5 +697,26 @@ export const accountingCards = [
     description:
       "Xero is a New Zealand-based technology company that provides cloud-based accounting software for small and medium-sized businesses. The company has offices in New Zealand, Australia, the United Kingdom and the United States",
     imageURL: xero,
+  },
+];
+
+export const authorities = [
+  {
+    title: "Dubai Economy & Tourism",
+    description:
+      "Dubai Department of Economy and Tourism (DET) is committed to realizing a leadership vision that aims to build an unparalleled future for our city, aligned with the strategic goals of the emirate.",
+    imageURL: dubaiEconomy,
+  },
+  {
+    title: "Government of Dubai",
+    description:
+      "The Government of Dubai is the subnational authority that governs the Emirate of Dubai, one of the seven constituent monarchies that make up the United Arab Emirates.",
+    imageURL: gov,
+  },
+  {
+    title: "Government of Sharjah",
+    description:
+      "The Government of Sharjah is the governmental authority of the Emirate of Sharjah, one of the seven emirates that make up the United Arab Emirates.",
+    imageURL: govOfSharjah,
   },
 ];
