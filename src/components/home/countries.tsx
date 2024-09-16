@@ -47,7 +47,7 @@ const Countries = ({ setColor }: Props) => {
 
   return (
     <div ref={ref} className="mt-10 items-center md:px-24 md:justify-between">
-      <h2 className="text-3xl text-center md:mr-5 white font-play font-medium text-yellow-600 mb-10 ">
+      <h2 className="text-xl md:text-3xl text-center md:mr-5 white font-play font-medium text-yellow-600 mb-10 ">
         Our Global Immigration Services
         <Bar w={"w-[130px]"} />
       </h2>

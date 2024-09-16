@@ -52,7 +52,7 @@ export default function About() {
     <div className="w-full md:mb-12 md:pt-0 items-center md:px-0 flex mt-10 flex-col p-10 bg-gray-100">
       {/* why choose us */}
       <span className="mx-auto">
-        <h2 className="text-yellow-600 text-3xl mt-4 md:mt-10 font-serif">
+        <h2 className="text-yellow-600 text-xl md:text-3xl mt-4 md:mt-10 font-serif">
           Why Choose Us
         </h2>
         <Bar w={"w-[120px]"} />

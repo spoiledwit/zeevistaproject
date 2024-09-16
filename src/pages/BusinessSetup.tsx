@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { businessSetup } from "@/constants";
 import Services from "@/components/home/services";
+import Authorities from "@/components/home/authorities";
+import Freezone from "@/components/home/freezone";
 interface Props {
   setProgress: (progress: number) => void;
 }
@@ -26,6 +28,8 @@ const BusinessSetup = ({ setProgress }: Props) => {
         description={data?.description || ""}
         imageURL={data?.imageURL || ""}
       />
+      {id == "company-formation-mainland" && <Authorities />}
+      {id == "company-formation-freezone" && <Freezone />}
       <div className="w-full px-4 md:px-16 xl:px-32 flex flex-col md:flex-row">
         <section className="md:w-[70%] flex flex-col gap-8 items-center md:items-start">
           <h3 className=" md:-translate-x-10 text-xl text-center md:text-start text-yellow-600 font-play md:text-3xl uppercase tracking-wide">
@@ -38,9 +42,9 @@ const BusinessSetup = ({ setProgress }: Props) => {
             }}
           />
         </section>
-        <div className="md:w-[35%] h-min shadow-lg rounded-xl px-4 py-8  border sticky top-10">
+        <div className="mt-10 md:mt-0 md:w-[35%] h-min shadow-lg rounded-xl px-4 py-8  border sticky top-10">
           <h2 className="text-yellow-600 mb-5 text-center font-semibold font-play text-xl md:text-2xl tracking-wider">
-            Apply For Cost Calculation
+            Contact Us For Cost Calculation
           </h2>
           <AssessmentForm />
         </div>

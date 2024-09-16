@@ -10,6 +10,7 @@ import { Helmet } from "react-helmet";
 import Services from "@/components/home/services";
 import Freezone from "@/components/home/freezone";
 import Accounting from "@/components/home/accounting";
+import Authorities from "@/components/home/authorities";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -46,6 +47,7 @@ export default function Home({ setProgress }: Props) {
       <Services setColor={setColor} />
       <Countries setColor={setColor} />
       <Freezone />
+      <Authorities />
       <Accounting />
       <About />
       {/* <Clients /> */}

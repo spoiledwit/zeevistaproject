@@ -5,10 +5,10 @@ const Accounting = () => {
   return (
     <div className="w-full md:mb-12 md:pt-0 items-center flex mt-10 flex-col md:px-20 px-8">
       <span className="mx-auto">
-        <h2 className="text-yellow-600 text-3xl mt-4 md:mt-10 font-serif">
+        <h2 className="text-yellow-600 text-xl md:text-3xl mt-4 md:mt-10 font-serif">
           Accounting Software & CRM
         </h2>
-        <Bar w={"w-[120px]"} />
+        <Bar w={"w-[200px]"} />
       </span>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
         {accountingCards.map((card, index) => (
