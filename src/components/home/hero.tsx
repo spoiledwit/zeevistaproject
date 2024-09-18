@@ -53,7 +53,7 @@ const data = [
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="w-full relative h-[70vh] md:h-screen">
+    <div className="w-full relative h-screen md:h-screen">
       <div className="text-white absolute bottom-5 md:hidden animate-bounce left-[45%] z-10">
         <BsChevronDown className="text-white text-5xl" />
       </div>
@@ -66,7 +66,7 @@ export default function Hero() {
       <Carousel options={{ loop: true }}>
         {data.map((item) => (
           <div
-            className="w-full flex-col items-center justify-center flex h-[70vh] md:h-screen bg-cover bg-center"
+            className="w-full flex-col items-center justify-center flex h-screen md:h-screen bg-cover bg-center"
             style={{
               backgroundImage: `url(${item.image})`,
             }}
