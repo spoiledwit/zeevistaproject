@@ -238,6 +238,9 @@ const Contact = () => {
           </form>
         </motion.div>
         <div className="w-full md:w-1/2">
+          <h1 className="text-xl md:text-3xl font-play font-medium mb-5 text-center">
+            Calculate Your License Registration Cost
+          </h1>
           <div className="w-full flex flex-col md:flex-row justify-center">
             <div className="w-full md:w-1/3 bg-[#071e3c] text-white py-8 px-6 space-y-6">
               <div className="md:hidden">
