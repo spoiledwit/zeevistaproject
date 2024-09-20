@@ -183,6 +183,9 @@ const ProfessionalPopup = ({
                     className="w-full border border-gray-300 rounded-lg px-4 py-2 pl-10 focus:outline-none focus:ring-2 focus:ring-[#E9B306] focus:border-transparent appearance-none"
                   >
                     <option value="">Select a service</option>
+                    <option value="Business Setup Services">
+         Business Setup Services
+        </option>
                     <option value="Global immigration Services">
                       Global Immigration Services
                     </option>

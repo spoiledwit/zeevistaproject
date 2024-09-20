@@ -84,6 +84,9 @@ const AssessmentForm = () => {
         className="border-b-[2px] border-black/30  rounded-none shadow-none py-2 appearance-none text-gray-600 text-sm outline-none focus:border-yellow-600 ring-0 focus:delay-[99999] peer"
       >
         <option value="">Select a service</option>
+        <option value="Business Setup Services">
+         Business Setup Services
+        </option>
         <option value="Global immigration Services">
           Global Immigration Services
         </option>
