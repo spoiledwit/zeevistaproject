@@ -208,6 +208,7 @@ const Inquiries: React.FC = () => {
                     <th className="px-3 py-2 text-left text font-semibold text-gray-600">Job Title</th>
                     <th className="px-3 py-2 text-left text font-semibold text-gray-600">Education</th>
                     <th className="px-3 py-2 text-left text font-semibold text-gray-600">Nationality</th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Message</th>
                     <th className="px-3 py-2 text-left text font-semibold text-gray-600">Created At</th>
                     <th className="px-3 py-2 text-center text font-semibold text-gray-600">Actions</th>
                   </tr>
@@ -221,6 +222,7 @@ const Inquiries: React.FC = () => {
                       <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.jobTitle, 35)}</td>
                       <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.education, 35)}</td>
                       <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.nationality, 20)}</td>
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.text, 50)}</td>
                       <td className="px-3 py-2 whitespace-nowrap text text-gray-600">
                         {inquiry.createdAt ? new Date(inquiry.createdAt).toLocaleDateString() : "N/A"}
                       </td>
