@@ -105,13 +105,15 @@ const Layout = () => {
         </div>
       )}
 
-      <ProfessionalPopup
-        isOpen={isPopupOpen}
-        onClose={() => {
-          setIsPopupOpen(false);
-          showPopup();
-        }}
-      />
+      {!pathName.includes("admin") && (
+        <ProfessionalPopup
+          isOpen={isPopupOpen}
+          onClose={() => {
+            setIsPopupOpen(false);
+            showPopup();
+          }}
+        />
+      )}
 
       <Outlet />
       <Footer />

@@ -10,6 +10,7 @@ import { MdContactPhone } from "react-icons/md";
 import { IoBook } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { Loader2 } from "lucide-react";
+import { FaSignOutAlt } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
 import Info from "./Info";
 
@@ -53,7 +54,7 @@ const Admin: React.FC = () => {
     );
   }
 
-  if (!user.email) {
+  if (!user?.email) {
     return <Login />;
   }
 
@@ -119,6 +120,21 @@ const Admin: React.FC = () => {
                 size={20}
               />
               <span>Contact Info</span>
+            </li>
+            <li>
+              <button
+                className="hover:bg-gray-700 p-3 rounded cursor-pointer flex items-center"
+                onClick={() => {
+                  localStorage.removeItem("token");
+                  setUser(null);
+                }}
+              >
+                <FaSignOutAlt
+                  className="inline-block mr-2 fill-current"
+                  size={20}
+                />
+                <span>Logout</span>
+              </button>
             </li>
           </ul>
         </div>

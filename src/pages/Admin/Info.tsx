@@ -1,12 +1,28 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { FaPhone } from "react-icons/fa6";
+import { FaPhone, FaEye, FaEyeSlash } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import toast from "react-hot-toast";
+import { useUserStore } from "@/store/user";
 
 const Info: React.FC = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [loading, setLoading] = useState(false);
+  const { user, setUser } = useUserStore();
+  const [email, setEmail] = useState(user?.email);
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  
+  const [formData, setFormData] = useState({
+    email: "",
+    phones: [] as string[],
+    address: "",
+    facebook: "",
+    linkedin: "",
+    instagram: "",
+    timings: "",
+  });
+
   const fetchContactInfo = async () => {
     try {
       const res = await axios.get(
@@ -22,23 +38,14 @@ const Info: React.FC = () => {
         timings: res.data.timings,
       });
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      toast.error("Failed to fetch contact information");
     }
   };
 
   useEffect(() => {
     fetchContactInfo();
   }, []);
-
-  const [formData, setFormData] = useState({
-    email: "",
-    phones: [] as string[],
-    address: "",
-    facebook: "",
-    linkedin: "",
-    instagram: "",
-    timings: "",
-  });
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -61,6 +68,7 @@ const Info: React.FC = () => {
 
   const handleCancelClick = () => {
     setIsEditing(false);
+    fetchContactInfo(); // Reset to original data
   };
 
   const handleUpdateClick = async () => {
@@ -82,19 +90,46 @@ const Info: React.FC = () => {
         `${import.meta.env.VITE_SERVER_URL}/contactInfo`,
         formData
       );
-      toast.success("Information updated successfully");
-      setLoading(false);
+      toast.success("Contact information updated successfully");
+      setIsEditing(false);
     } catch (error) {
-      console.log(error);
-      toast.error("Something went wrong");
+      console.error(error);
+      toast.error("Failed to update contact information");
+    } finally {
       setLoading(false);
     }
-    setIsEditing(false);
+  };
+
+  const handleUpdateUser = async () => {
+    if (!email) {
+      toast.error("Please enter email");
+      return;
+    }
+    setLoading(true);
+    try {
+      const response = await axios.put(
+        `${import.meta.env.VITE_SERVER_URL}/user`,
+        {
+          email,
+          password,
+        },
+        {
+          headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
+        }
+      );
+      toast.success("User information updated successfully");
+      setPassword("");
+    } catch (error) {
+      console.error(error);
+      toast.error("Failed to update user information");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
     <div className="min-h-screen w-full bg-gray-100 p-6 md:p-10">
-      <div className="bg-white p-6 shadow-lg">
+      <div className="bg-white p-6 shadow-lg mb-6">
         <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
         <div className="mb-4">
           <label className="block text-gray-700">Email</label>
@@ -111,7 +146,7 @@ const Info: React.FC = () => {
         </div>
         <div className="mb-4">
           <label className="block text-gray-700">Phones</label>
-          {formData.phones.map((phone: any, index: any) => (
+          {formData.phones.map((phone, index) => (
             <div className="flex items-center gap-3" key={index}>
               {index === 0 ? (
                 <FaPhone className="text-gray-700" size={20} />
@@ -221,6 +256,46 @@ const Info: React.FC = () => {
             </button>
           </div>
         )}
+      </div>
+
+      <div className="bg-white p-6 shadow-lg">
+        <h2 className="text-2xl font-bold mb-4">Update User Information</h2>
+        <div className="mb-4">
+          <label className="block text-gray-700 mb-2">Email</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            placeholder="Enter new email"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-gray-700 mb-2">Password</label>
+          <div className="relative">
+            <input
+              type={showPassword ? "text" : "password"}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+              placeholder="Enter new password (optional)"
+            />
+            <button
+              type="button"
+              className="absolute inset-y-0 right-0 pr-3 flex items-center"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
+          </div>
+        </div>
+        <button
+          onClick={handleUpdateUser}
+          disabled={loading}
+          className="w-full bg-gray-800 text-white py-2 px-4 rounded-md hover:bg-black focus:outline-none"
+        >
+          {loading ? "Updating..." : "Update User Information"}
+        </button>
       </div>
     </div>
   );

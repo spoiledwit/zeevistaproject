@@ -4,8 +4,10 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import * as exceljs from "exceljs";
 import { saveAs } from "file-saver";
-import { Search, Download, ChevronDown, Loader2 } from "lucide-react";
+import { Search, Download, ChevronDown, Loader2, Eye } from "lucide-react";
 import { MdDelete } from "react-icons/md";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 type Inquiry = {
   _id: string;
@@ -25,6 +27,7 @@ const Inquiries: React.FC = () => {
   const [sortField, setSortField] = useState("");
   const [loading, setLoading] = useState(true);
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
+  const [selectedInquiry, setSelectedInquiry] = useState<Inquiry | null>(null);
 
   useEffect(() => {
     fetchInquiries();
@@ -121,6 +124,13 @@ const Inquiries: React.FC = () => {
     toast.success("Inquiries exported successfully");
   };
 
+  const shortenText = (text: string, maxLength: number) => {
+    if (text.length > maxLength) {
+      return text.slice(0, maxLength) + "...";
+    }
+    return text;
+  };
+
   return (
     <div className="min-h-screen w-[80vw] bg-gray-50 p-4 md:p-6">
       <div className="max-w-7xl mx-auto">
@@ -192,70 +202,40 @@ const Inquiries: React.FC = () => {
               <table className="w-full">
                 <thead>
                   <tr className="bg-gray-100">
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Name
-                    </th>
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Email
-                    </th>
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Phone
-                    </th>
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Job Title
-                    </th>
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Education
-                    </th>
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Nationality
-                    </th>
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Text
-                    </th>
-                    <th className="px-3 py-3 text-left text-sm font-semibold text-gray-600">
-                      Created At
-                    </th>
-                    <th className="px-3 py-3 text-end text-sm font-semibold text-gray-600">
-                      Actions
-                    </th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Name</th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Email</th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Phone</th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Job Title</th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Education</th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Nationality</th>
+                    <th className="px-3 py-2 text-left text font-semibold text-gray-600">Created At</th>
+                    <th className="px-3 py-2 text-center text font-semibold text-gray-600">Actions</th>
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {filteredInquiries.map((inquiry, index) => (
-                    <tr
-                      key={index}
-                      className="hover:bg-gray-50 transition-colors duration-150"
-                    >
-                      <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-900">
-                        {inquiry.name}
+                    <tr key={index} className="hover:bg-gray-50 transition-colors duration-150">
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-900">{shortenText(inquiry.name, 25)}</td>
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.email, 35)}</td>
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.phone, 20)}</td>
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.jobTitle, 35)}</td>
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.education, 35)}</td>
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-600">{shortenText(inquiry.nationality, 20)}</td>
+                      <td className="px-3 py-2 whitespace-nowrap text text-gray-600">
+                        {inquiry.createdAt ? new Date(inquiry.createdAt).toLocaleDateString() : "N/A"}
                       </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-600">
-                        {inquiry.email}
-                      </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-600">
-                        {inquiry.phone}
-                      </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-600">
-                        {inquiry.jobTitle}
-                      </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-600">
-                        {inquiry.education}
-                      </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-600">
-                        {inquiry.nationality}
-                      </td>
-                      <td className="px-3 py-4 text-sm text-gray-600 max-w-xs truncate">
-                        {inquiry.text}
-                      </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-sm text-gray-600">
-                        {inquiry.createdAt
-                          ? new Date(inquiry.createdAt).toLocaleString()
-                          : "N/A"}
-                      </td>
-                      <td className="px-3 py-4 whitespace-nowrap text-right text-sm font-medium">
-                        <button onClick={() => deleteInquiry(inquiry._id)}>
-                          <MdDelete size={24} />
+                      <td className="px-3 py-2 whitespace-nowrap text-center text font-medium">
+                        <button
+                          onClick={() => setSelectedInquiry(inquiry)}
+                          className="text-blue-600 hover:text-blue-900 mr-2"
+                        >
+                          <Eye size={18} />
+                        </button>
+                        <button
+                          onClick={() => deleteInquiry(inquiry._id)}
+                          className="text-red-600 hover:text-red-900"
+                        >
+                          <MdDelete size={18} />
                         </button>
                       </td>
                     </tr>
@@ -271,6 +251,29 @@ const Inquiries: React.FC = () => {
           </div>
         )}
       </div>
+
+      <Dialog open={!!selectedInquiry} onOpenChange={() => setSelectedInquiry(null)}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Inquiry Details</DialogTitle>
+          </DialogHeader>
+          <DialogDescription>
+            {selectedInquiry && (
+              <div className="space-y-2">
+                <p><strong>Name:</strong> {selectedInquiry.name}</p>
+                <p><strong>Email:</strong> {selectedInquiry.email}</p>
+                <p><strong>Phone:</strong> {selectedInquiry.phone}</p>
+                <p><strong>Job Title:</strong> {selectedInquiry.jobTitle}</p>
+                <p><strong>Education:</strong> {selectedInquiry.education}</p>
+                <p><strong>Nationality:</strong> {selectedInquiry.nationality}</p>
+                <p><strong>Message:</strong> {selectedInquiry.text}</p>
+                <p><strong>Created At:</strong> {selectedInquiry.createdAt ? new Date(selectedInquiry.createdAt).toLocaleString() : "N/A"}</p>
+              </div>
+            )}
+          </DialogDescription>
+          <Button onClick={() => setSelectedInquiry(null)}>Close</Button>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
