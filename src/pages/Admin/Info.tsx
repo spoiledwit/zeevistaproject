@@ -8,7 +8,7 @@ import { useUserStore } from "@/store/user";
 const Info: React.FC = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [loading, setLoading] = useState(false);
-  const { user, setUser } = useUserStore();
+  const { user } = useUserStore();
   const [email, setEmail] = useState(user?.email);
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -107,7 +107,7 @@ const Info: React.FC = () => {
     }
     setLoading(true);
     try {
-      const response = await axios.put(
+      await axios.put(
         `${import.meta.env.VITE_SERVER_URL}/user`,
         {
           email,
