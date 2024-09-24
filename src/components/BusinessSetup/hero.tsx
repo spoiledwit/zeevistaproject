@@ -11,10 +11,12 @@ const Hero = ({
   title,
   description,
   imageURL,
+  buttonText,
 }: {
   title: string;
   description: string;
   imageURL: string;
+  buttonText?: string;
 }) => {
   const navigate = useNavigate();
   return (
@@ -55,7 +57,9 @@ const Hero = ({
             onClick={() => {
               navigate("/contact");
             }}
-            text="Get Free Assessment"
+            text= {
+              buttonText ? buttonText :
+              "Get Free Assessment"}
           />
         </div>
       </div>

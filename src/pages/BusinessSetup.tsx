@@ -137,6 +137,7 @@ const BusinessSetup = ({ setProgress }: Props) => {
         title={data?.title || ""}
         description={data?.description || ""}
         imageURL={data?.imageURL || ""}
+        buttonText={"Get a Quote"}
       />
       {id == "company-formation-mainland" && <Authorities />}
       {id == "company-formation-freezone" && <Freezone />}
