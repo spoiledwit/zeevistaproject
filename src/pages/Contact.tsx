@@ -61,10 +61,10 @@ const Contact = ({ setProgress }: Props) => {
       <div className="flex md:flex-row flex-col w-full pt-10 md:justify-between px-8 md:px-20">
         <div className="md:mb-0">
           <h2 className="md:text-[60px] text-[35px] leading-10 md:leading-[65px] font-serif font-medium">
-            Get a free
+            Get a Free
             <br />
             <span className="font-medium text-[40px] md:text-[70px] italic border-b-yellow-600 border-b-[5px]">
-              assessment
+              Quote
             </span>
             <span className="text-yellow-600">.</span>
           </h2>
