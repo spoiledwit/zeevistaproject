@@ -58,8 +58,8 @@ const Contact = ({ setProgress }: Props) => {
         <meta name="description" content="About Us" />
       </Helmet>
       <Hero />
-      <div className="flex md:flex-row flex-col w-full pt-10 md:justify-between px-8 md:px-20">
-        <div className="md:mb-0">
+      <div className="flex md:flex-row flex-col w-full pt-10 md:justify-between items-center px-8 md:px-20 gap-10">
+        <div className="w-full md:w-1/2">
           <h2 className="md:text-[60px] text-[35px] leading-10 md:leading-[65px] font-serif font-medium">
             Get a free
             <br />
@@ -68,7 +68,7 @@ const Contact = ({ setProgress }: Props) => {
             </span>
             <span className="text-yellow-600">.</span>
           </h2>
-          <div className="mt-14 max-w-[400px] flex flex-col gap-4">
+          <div className="mt-14 flex flex-col gap-4">
             <Input
               value={name}
               label="Name"
@@ -108,8 +108,8 @@ const Contact = ({ setProgress }: Props) => {
                 Select a service
               </option>
               <option value="Business Setup Services">
-         Business Setup Services
-        </option>
+                Business Setup Services
+              </option>
               <option value="Global immigration Services">
                 Global Immigration Services
               </option>
@@ -148,7 +148,7 @@ const Contact = ({ setProgress }: Props) => {
           <div></div>
         </div>
         <iframe
-          className="md:w-[50vw] w-[85vw] mt-10 md:mt-40 shadow-2xl border hover:border-black rounded-3xl"
+          className="md:w-1/2 w-full shadow-2xl border hover:border-black rounded-3xl"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.735670147676!2d55.263824374836155!3d25.178401677723095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69cb98cd9041%3A0xe6be587070e7a89d!2sDAMAC%20Executive%20Bay!5e0!3m2!1sen!2s!4v1696005211967!5m2!1sen!2s"
           width="600"
           height="450"
