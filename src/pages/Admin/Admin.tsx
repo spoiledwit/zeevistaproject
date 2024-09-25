@@ -13,6 +13,8 @@ import { Loader2 } from "lucide-react";
 import { FaSignOutAlt } from "react-icons/fa";
 import { IoIosContact } from "react-icons/io";
 import Info from "./Info";
+import CostCalculators from "./CostCalculator";
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
 
 const Admin: React.FC = () => {
   const [tab, setTab] = useState("dashboard");
@@ -111,6 +113,19 @@ const Admin: React.FC = () => {
             <li
               className="hover:bg-gray-700 p-3 rounded cursor-pointer flex items-center"
               onClick={() => {
+                setTab("costCalculators");
+                setSidebarOpen(false);
+              }}
+            >
+              <RiMoneyDollarCircleLine
+                className="inline-block mr-2 fill-current"
+                size={20}
+              />
+              <span>Cost Calculators</span>
+            </li>
+            <li
+              className="hover:bg-gray-700 p-3 rounded cursor-pointer flex items-center"
+              onClick={() => {
                 setTab("info");
                 setSidebarOpen(false);
               }}
@@ -170,6 +185,8 @@ const Admin: React.FC = () => {
           <Blogs />
         ) : tab === "info" ? (
           <Info />
+        ) : tab === "costCalculators" ? (
+          <CostCalculators />
         ) : null}
       </div>
     </div>

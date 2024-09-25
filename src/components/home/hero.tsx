@@ -88,13 +88,15 @@ export default function Hero() {
                 {item.description}
               </p>
             </div>
-            <button
-              id=""
-              onClick={() => setIsOpen(true)}
-              className="text-sm md:text-base bg-yellow-600 text-white py-3 md:py-4 rounded-full px-6 md:px-8 font-medium mt-5 md:mt-10 z-10 font-play"
-            >
-              Cost Calculator
-            </button>
+            {item.id === 1 && (
+              <button
+                id=""
+                onClick={() => setIsOpen(true)}
+                className="text-sm md:text-base bg-yellow-600 text-white py-3 md:py-4 rounded-full px-6 md:px-8 font-medium mt-5 md:mt-10 z-10 font-play"
+              >
+                Cost Calculator
+              </button>
+            )}
           </div>
         ))}
       </Carousel>
