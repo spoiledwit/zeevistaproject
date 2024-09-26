@@ -11,6 +11,7 @@ import sydney from "../../../assets/sydney.webp";
 import canada from "../../../assets/canada.jpeg";
 import portugal from "../../../assets/portugal.jpeg";
 import { Helmet } from "react-helmet";
+import AssessmentForm from "@/components/assessment-form";
 
 interface Props {
   setProgress: (progress: number) => void;
@@ -1333,8 +1334,16 @@ const ImmigrationPage3: React.FC<Props> = ({ setProgress }) => {
           />
         </div>
       </div>
-      <div className="bg-white flex-col min-h-screen flex justify-center px-8 md:px-32 pb-32 w-ful">
-        <div className="my-20 w-2/3">{getCountryContent2(country)}</div>
+      <div className="bg-white flex-col min-h-screen flex justify-center px-8 md:px-16 lg:px-24 pb-32 w-ful">
+        <div className="flex flex-col md:flex-row gap-20">
+          <div className="my-20 md:w-2/3">{getCountryContent2(country)}</div>
+          <div className="sticky top-20 md:my-20 md:w-1/3 h-min shadow-lg rounded-xl px-4 py-8  border">
+            <h2 className="text-yellow-600 mb-5 text-center font-semibold font-play text-xl md:text-2xl tracking-wider">
+              Apply For Free Assessment
+            </h2>
+            <AssessmentForm />
+          </div>
+        </div>
         <h2 className=" font-play mb-10 text-yellow-600 mt-10 text-center text-3xl">
           Select from the following countries to know more
         </h2>
