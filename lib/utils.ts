@@ -15,15 +15,19 @@ export const createContact = async (
   education: string,
   text: string
 ) => {
-  const res = await axios.post(`${import.meta.env.VITE_SERVER_URL}/contact`, {
-    name,
-    email,
-    phone,
-    jobTitle,
-    nationality,
-    service,
-    education,
-    text,
-  });
+  const res = await axios.post(
+    `${import.meta.env.VITE_SERVER_URL}
+    /contact`,
+    {
+      name,
+      email,
+      phone,
+      jobTitle,
+      nationality,
+      service,
+      education,
+      text,
+    }
+  );
   return res.data;
 };
