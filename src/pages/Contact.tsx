@@ -15,6 +15,7 @@ const Contact = ({ setProgress }: Props) => {
   const [phone, setPhone] = useState("");
   const [jobTitle, setJobTitle] = useState("");
   const [nationality, setNationality] = useState("");
+  const [education, setEducation] = useState("");
   const [service, setService] = useState("");
   const [text, setText] = useState("");
 
@@ -34,6 +35,7 @@ const Contact = ({ setProgress }: Props) => {
       jobTitle,
       nationality,
       service,
+      education,
       text
     );
     if (res.success) {
@@ -43,6 +45,7 @@ const Contact = ({ setProgress }: Props) => {
       setPhone("");
       setEmail("");
       setText("");
+      setEducation("");
       setName("");
       setJobTitle("");
       setService("");
@@ -92,6 +95,12 @@ const Contact = ({ setProgress }: Props) => {
               value={jobTitle}
               type="text"
               onChange={(e) => setJobTitle(e.target.value)}
+            />
+            <Input
+              label="Education"
+              value={education}
+              type="text"
+              onChange={(e) => setEducation(e.target.value)}
             />
             <Input
               label="Nationality"

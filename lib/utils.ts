@@ -12,15 +12,17 @@ export const createContact = async (
   jobTitle: string,
   nationality: string,
   service: string,
+  education: string,
   text: string
 ) => {
-  const res = await axios.post(`https://zeevistaserver.vercel.app/contact`, {
+  const res = await axios.post(`${import.meta.env.VITE_SERVER_URL}/contact`, {
     name,
     email,
     phone,
     jobTitle,
     nationality,
     service,
+    education,
     text,
   });
   return res.data;
